@@ -76,6 +76,16 @@ factory_type_information = (
                    'action': 'string:javascript:open_external_window()',
                    'permissions': (View,),
                    },
+                  {'id': 'action_reply_question',
+                   'name': 'action_reply_question',
+                   'action': 'Chat_addAnswerForm',
+                   'permissions': (ManageProperties,),
+                   },
+                  {'id': 'action_post_question',
+                   'name': 'action_post_question',
+                   'action': 'Chat_quickPostForm',
+                   'permissions': (ManageProperties,),
+                   },
                   {'id': 'metadata',
                    'name': 'action_metadata',
                    'action': 'metadata_edit_form',
@@ -141,7 +151,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
         if REQUEST:
             REQUEST.RESPONSE.redirect(self.absolute_url() + '/Chat_history')
 
-    security.declareProtected('Moderate Chat', 'addQuestion')
+    security.declareProtected('Moderate Chat', 'editProperties')
     def editProperties(self, title='', description='', host='',
                        REQUEST=None):
         """
@@ -164,7 +174,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
 
         if REQUEST is not None:
             REQUEST.RESPONSE.redirect(
-                self.absolute_url() + '/Chat_index')
+                self.absolute_url() )
 
     #
     # Moderation methods
