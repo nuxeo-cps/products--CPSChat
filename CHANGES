@@ -3,13 +3,10 @@ Requires:
 -
 New features:
 ~~~~~~~~~~~~~
-- Scrool the main chat frame at the bottom
-- Fullname are displayed instead of login
-- dates are consistent
-- display user fullname instead of user id
+-
 Bug fixes:
 ~~~~~~~~~~
-- i18n was fucked up
+-
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 -

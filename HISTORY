@@ -1,4 +1,23 @@
 *******************************************
+** CPSChat V0.6.0 [R1 build 2004/08/23-05:40 by fermigier]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Scrool the main chat frame at the bottom
+- Fullname are displayed instead of login
+- dates are consistent
+- display user fullname instead of user id
+Bug fixes:
+~~~~~~~~~~
+- i18n was fucked up
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
 ** CPSChat V0.5.0 [R1 build 2004/04/28-17:21 by anguenot]
 
 Requires:
