@@ -124,13 +124,14 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
     ##############################################
 
     security.declareProtected(View, 'getPublicMessages')
-    def getPublicMessages(self):
+    def getPublicMessages(self, include_pending=0):
         """Returns the whole chat items
         """
         wftool = self.portal_workflow
         list = []
         for post in self.values():
-            if wftool.getInfoFor(post, 'review_state') == 'published':
+            rstate = wftool.getInfoFor(post, 'review_state')
+            if rstate == 'published' or include_pending and rstate == 'pending':
                 list.append(post)
         return list
 
@@ -168,8 +169,14 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
         """
         wftool = self.portal_workflow
         for post_id, published in messages.items():
-            if int(published):
-                message = self.get(post_id)
+            action = int(published)
+            message = self.get(post_id)
+            if action == 2:
+                wftool.doActionFor(message,
+                                   'submit_question',
+                                   comment='Submit question to guest',
+                                   workflow_id='chat_item_wf')
+            elif action == 1:
                 wftool.doActionFor(message,
                                    'publish_post',
                                    comment='Message Acceptance',
@@ -199,6 +206,14 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
                                    workflow_id='chat_item_wf')
             else:
                 parent.manage_delObjects([post_id])
+                # if the answer to a pending question was deleted
+                # we change back the status of the question to "waiting"
+                # so that the moderator can re-submit, accept or reject it
+                if wftool.getInfoFor(parent, 'review_state') == 'pending':
+                    wftool.doActionFor(parent,
+                                   'unsubmit',
+                                   comment='Unsubmit question',
+                                   workflow_id='chat_item_wf')
 
     security.declarePublic('isClosed')
     def isClosed(self):
