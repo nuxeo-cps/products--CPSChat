@@ -233,8 +233,8 @@ def install(self):
     # SKINS
     ##########################################
 
-    skins = ('cps_forum',)
-    paths = {'cps_forum': 'Products/CPSChat/skins/forum_default'}
+    skins = ('cps_chat',)
+    paths = {'cps_chat': 'Products/CPSChat/skins/cps_chat'}
 
     for skin in skins:
         path = paths[skin]
