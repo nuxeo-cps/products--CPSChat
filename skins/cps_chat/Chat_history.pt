@@ -59,6 +59,10 @@
                   Answer
                 </span>
               </strong>
+              <span i18n:translate="label_from">from</span>
+              <strong>
+               <span tal:replace="here/host" />
+              </strong>
             </td>
             <td>
               <i>
