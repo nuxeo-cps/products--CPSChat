@@ -200,6 +200,13 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
             else:
                 parent.manage_delObjects([post_id])
 
+    security.declarePublic('isClosed')
+    def isClosed(self):
+        """Is the chat closed
+        """
+        wftool = self.portal_workflow
+        return wftool.getInfoFor(self, 'review_state') == 'closed'
+
     ##############################################
     ##############################################
 
@@ -207,6 +214,8 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
     def addChatItem(self, message='', pseudo=''):
         """Add a Chat Item
         """
+        if self.isClosed():
+            return 0
 
         # Injecting the post within the chat
         new_id = self.computeId() # skins
