@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
-"POT-Creation-Date: 2003-09-23 19:39default\n"
-"PO-Revision-Date: 2003-09-23 19:42+0200\n"
+"POT-Creation-Date: 2003-09-23 21:31default\n"
+"PO-Revision-Date: 2003-09-23 21:32+0200\n"
 "Last-Translator: Julien Anguenot <ja@nuxeo.com>\n"
 "Language-Team: Français <fr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -59,9 +59,18 @@ msgstr ""
 msgid "Modify the question &nbsp;:&nbsp; ${id_question}"
 msgstr "Modifier la question &nbsp;:&nbsp; ${id_question}"
 
+#.   <span>
+#.                   Modify the reply &nbsp;:&nbsp;
+#.                     ${id_question (tal content="question/id")}
+#.                 </span>
+#: from ../skins/cps_chat/Chat_modify_reply_form.pt
+msgid "Modify the reply &nbsp;:&nbsp; ${id_question}"
+msgstr "Modifier la réponse &nbsp;:&nbsp; ${id_question}"
+
 #.   <input value="button_change" type="submit" />
 #: from ../skins/cps_chat/Chat_edit_form.pt
 #: ../skins/cps_chat/Chat_modify_question_form.pt
+#: ../skins/cps_chat/Chat_modify_reply_form.pt
 msgid "button_change"
 msgstr "Changer"
 
@@ -125,6 +134,7 @@ msgstr "Votre pseudo"
 #.       </h1>
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 #: ../skins/cps_chat/Chat_modify_question_form.pt
+#: ../skins/cps_chat/Chat_modify_reply_form.pt
 msgid "chat_moderate_heading"
 msgstr "Modérer le chat"
 
@@ -218,6 +228,7 @@ msgstr "Description"
 #: from ../skins/cps_chat/Chat_history.pt
 #: ../skins/cps_chat/Chat_moderateForm.pt
 #: ../skins/cps_chat/Chat_modify_question_form.pt
+#: ../skins/cps_chat/Chat_modify_reply_form.pt
 #: ../skins/cps_chat/Chat_questions.pt
 msgid "label_from"
 msgstr "De :"
@@ -234,8 +245,8 @@ msgstr "Personnalité invitée"
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_moderate_phase1"
 msgstr ""
-"Cela donnera la possiblité de répondre à la question. "
-"Vous pouvez encore modifier la question."
+"Cela donnera la possiblité de répondre à la question. Vous pouvez encore "
+"modifier la question."
 
 #.   <span>
 #.       This is the last step. You can still modify the answer if you need to.
@@ -244,9 +255,9 @@ msgstr ""
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_moderate_phase2"
 msgstr ""
-"Dernière étapa avant publication. "
-"Vous pouvez encore modifier la réponse si vous en avez besoin. "
-"Après cette étape la réponse la question sera disponible au publique."
+"Dernière étapa avant publication. Vous pouvez encore modifier la réponse si "
+"vous en avez besoin. Après cette étape la réponse la question sera "
+"disponible au publique."
 
 #.   <span>modify</span>
 #: from ../skins/cps_chat/Chat_moderateForm.pt
@@ -267,6 +278,11 @@ msgstr "Pas de questions soumisses"
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_published"
 msgstr "Publier"
+
+#.   <span>Answer</span>
+#: from ../skins/cps_chat/Chat_moderateForm.pt
+msgid "label_question_answer"
+msgstr "Réponse"
 
 #.   <span>Question from :</span>
 #: from ../skins/cps_chat/Chat_addAnswerForm.pt
@@ -300,6 +316,7 @@ msgstr "Titre"
 
 #.   <span>To :</span>
 #: from ../skins/cps_chat/Chat_modify_question_form.pt
+#: ../skins/cps_chat/Chat_modify_reply_form.pt
 msgid "label_to"
 msgstr "en :"
 

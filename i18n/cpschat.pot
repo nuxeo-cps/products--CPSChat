@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: default\n"
-"POT-Creation-Date: 2003-09-23 19:39default\n"
+"POT-Creation-Date: 2003-09-23 21:31default\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Your Name <your@email>\n"
 "Language-Team: Name <email>\n"
@@ -58,9 +58,18 @@ msgstr ""
 msgid "Modify the question &nbsp;:&nbsp; ${id_question}"
 msgstr ""
 
+#.   <span>
+#.                   Modify the reply &nbsp;:&nbsp;
+#.                     ${id_question (tal content="question/id")}
+#.                 </span>
+#: from ../skins/cps_chat/Chat_modify_reply_form.pt
+msgid "Modify the reply &nbsp;:&nbsp; ${id_question}"
+msgstr ""
+
 #.   <input value="button_change" type="submit" />
 #: from ../skins/cps_chat/Chat_edit_form.pt
 #: ../skins/cps_chat/Chat_modify_question_form.pt
+#: ../skins/cps_chat/Chat_modify_reply_form.pt
 msgid "button_change"
 msgstr ""
 
@@ -122,6 +131,7 @@ msgstr ""
 #.       </h1>
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 #: ../skins/cps_chat/Chat_modify_question_form.pt
+#: ../skins/cps_chat/Chat_modify_reply_form.pt
 msgid "chat_moderate_heading"
 msgstr ""
 
@@ -213,6 +223,7 @@ msgstr ""
 #: from ../skins/cps_chat/Chat_history.pt
 #: ../skins/cps_chat/Chat_moderateForm.pt
 #: ../skins/cps_chat/Chat_modify_question_form.pt
+#: ../skins/cps_chat/Chat_modify_reply_form.pt
 #: ../skins/cps_chat/Chat_questions.pt
 msgid "label_from"
 msgstr ""
@@ -258,6 +269,11 @@ msgstr ""
 msgid "label_published"
 msgstr ""
 
+#.   <span>Answer</span>
+#: from ../skins/cps_chat/Chat_moderateForm.pt
+msgid "label_question_answer"
+msgstr ""
+
 #.   <span>Question from :</span>
 #: from ../skins/cps_chat/Chat_addAnswerForm.pt
 msgid "label_question_form"
@@ -288,6 +304,7 @@ msgstr ""
 
 #.   <span>To :</span>
 #: from ../skins/cps_chat/Chat_modify_question_form.pt
+#: ../skins/cps_chat/Chat_modify_reply_form.pt
 msgid "label_to"
 msgstr ""
 

@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: en\n"
-"POT-Creation-Date: 2003-09-23 19:39default\n"
-"PO-Revision-Date: 2003-09-23 19:40+0200\n"
+"POT-Creation-Date: 2003-09-23 21:31default\n"
+"PO-Revision-Date: 2003-09-23 21:32+0200\n"
 "Last-Translator: Julien Anguenot <ja@nuxeo.com>\n"
 "Language-Team: Français <fr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -59,9 +59,18 @@ msgstr ""
 msgid "Modify the question &nbsp;:&nbsp; ${id_question}"
 msgstr "Modify the question &nbsp;:&nbsp; ${id_question}"
 
+#.   <span>
+#.                   Modify the reply &nbsp;:&nbsp;
+#.                     ${id_question (tal content="question/id")}
+#.                 </span>
+#: from ../skins/cps_chat/Chat_modify_reply_form.pt
+msgid "Modify the reply &nbsp;:&nbsp; ${id_question}"
+msgstr "Modify the reply &nbsp;:&nbsp; ${id_question}"
+
 #.   <input value="button_change" type="submit" />
 #: from ../skins/cps_chat/Chat_edit_form.pt
 #: ../skins/cps_chat/Chat_modify_question_form.pt
+#: ../skins/cps_chat/Chat_modify_reply_form.pt
 msgid "button_change"
 msgstr "Change"
 
@@ -125,6 +134,7 @@ msgstr "Your nick name"
 #.       </h1>
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 #: ../skins/cps_chat/Chat_modify_question_form.pt
+#: ../skins/cps_chat/Chat_modify_reply_form.pt
 msgid "chat_moderate_heading"
 msgstr "Moderate the chat"
 
@@ -218,6 +228,7 @@ msgstr "Description"
 #: from ../skins/cps_chat/Chat_history.pt
 #: ../skins/cps_chat/Chat_moderateForm.pt
 #: ../skins/cps_chat/Chat_modify_question_form.pt
+#: ../skins/cps_chat/Chat_modify_reply_form.pt
 #: ../skins/cps_chat/Chat_questions.pt
 msgid "label_from"
 msgstr "From"
@@ -234,8 +245,8 @@ msgstr "Host"
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_moderate_phase1"
 msgstr ""
-"It will give the possiblity to reply to the question. "
-"You can still modify the question."
+"It will give the possiblity to reply to the question. You can still modify "
+"the question."
 
 #.   <span>
 #.       This is the last step. You can still modify the answer if you need to.
@@ -244,8 +255,8 @@ msgstr ""
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_moderate_phase2"
 msgstr ""
-"This is the last step. You can still modify the answer if you need to. "
-"After this step the answer will be available to the public."
+"This is the last step. You can still modify the answer if you need to. After "
+"this step the answer will be available to the public."
 
 #.   <span>modify</span>
 #: from ../skins/cps_chat/Chat_moderateForm.pt
@@ -266,6 +277,11 @@ msgstr "No question with a pending state."
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_published"
 msgstr "Published"
+
+#.   <span>Answer</span>
+#: from ../skins/cps_chat/Chat_moderateForm.pt
+msgid "label_question_answer"
+msgstr "Answer"
 
 #.   <span>Question from :</span>
 #: from ../skins/cps_chat/Chat_addAnswerForm.pt
@@ -297,6 +313,7 @@ msgstr "Title"
 
 #.   <span>To :</span>
 #: from ../skins/cps_chat/Chat_modify_question_form.pt
+#: ../skins/cps_chat/Chat_modify_reply_form.pt
 msgid "label_to"
 msgstr "To :"
 
