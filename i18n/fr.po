@@ -117,7 +117,7 @@ msgstr "Répondre aux questions"
 #: ../skins/cps_chat/Chat_quickPostForm.pt
 msgid "chat_ass_post_warning"
 msgstr ""
-"Rappellez vous que les questions que vous soumettez ne seront pas accessible "
+"Rappellez vous que les questions que vous soumettez ne seront pas accessibles "
 "tout de suite sur le chat. Un modérateur la validera par la suite."
 
 #.   <h1>
