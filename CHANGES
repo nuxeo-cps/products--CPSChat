@@ -3,7 +3,8 @@ Requires:
 -
 New features:
 ~~~~~~~~~~~~~
--
+-New workflow elements: possibility of submitting questions to the chat guest - these questions are
+automatically published along with the answers when the latters are accepted.
 Bug fixes:
 ~~~~~~~~~~
 -
