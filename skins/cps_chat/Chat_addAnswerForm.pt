@@ -17,7 +17,7 @@
   <div align="center">
      [
      <a tal:attributes="href
-       string:${here/absolute_url}/Chat_moderateForm">
+       string:${here/absolute_url}/Chat_addAnswerForm">
        <span i18n:translate="label_refresh">Refresh for the latest ones</span>
      </a>
      |
