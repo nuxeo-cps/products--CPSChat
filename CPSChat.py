@@ -42,6 +42,7 @@ from Products.CMFCore.CMFCorePermissions import View, \
 from Products.CPSCore.CPSBase import CPSBaseDocument
 
 # This product
+from CPSChatPermissions import chatModerate, chatReply, chatPost
 from Question import Question
 
 factory_type_information = (
@@ -64,36 +65,36 @@ factory_type_information = (
                   {'id': 'edit',
                    'name': 'action_edit',
                    'action': 'Chat_edit_form',
-                   'permissions': (ManageProperties,),
+                   'permissions': (chatModerate,),
                    },
                   {'id': 'moderate_chat',
                    'name': 'action_moderate_chat',
                    'action': 'Chat_moderateForm',
-                   'permissions': (ManageProperties,),
+                   'permissions': (chatModerate,),
                    },
-                  {'id': 'action_access_chat_room',
-                   'name': 'action_access_chat_room',
-                   'action': 'string:javascript:open_external_window()',
-                   'permissions': (View,),
-                   },
+#                  {'id': 'action_access_chat_room',
+#                   'name': 'action_access_chat_room',
+#                   'action': 'string:javascript:open_external_window()',
+#                   'permissions': (View,),
+#                   },
                   {'id': 'action_reply_question',
                    'name': 'action_reply_question',
                    'action': 'Chat_addAnswerForm',
-                   'permissions': (ManageProperties,),
+                   'permissions': (chatReply,),
                    },
                   {'id': 'action_post_question',
                    'name': 'action_post_question',
                    'action': 'Chat_quickPostForm',
-                   'permissions': (ManageProperties,),
+                   'permissions': (chatPost,),
                    },
                   {'id': 'metadata',
                    'name': 'action_metadata',
                    'action': 'metadata_edit_form',
-                   'permissions': (ModifyPortalContent,)},
+                   'permissions': (chatModerate,)},
                   {'id': 'localroles',
                    'name': 'action_local_roles',
                    'action': 'folder_localrole_form',
-                   'permissions': ('Change permissions',)
+                   'permissions': (chatModerate,)
                    },
                   ),
       },
@@ -144,6 +145,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
     #
     # Publicly available methods
     #
+
     def index_html(self, REQUEST=None):
         """
         Default view -> redirect to Chat_history
@@ -151,7 +153,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
         if REQUEST:
             REQUEST.RESPONSE.redirect(self.absolute_url() + '/Chat_history')
 
-    security.declareProtected('Moderate Chat', 'editProperties')
+    security.declareProtected(chatModerate, 'editProperties')
     def editProperties(self, title='', description='', host=''):
         """
         Edit chat object properties.
@@ -160,7 +162,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
         self.description = description
         self.host = host
 
-    security.declareProtected('View', 'addQuestion')
+    security.declareProtected(chatPost, 'addQuestion')
     def addQuestion(self, question, pseudo='', REQUEST=None):
         """
         Add a new (hence unmoderated) question
@@ -177,7 +179,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
     #
     # Moderation methods
     #
-    security.declareProtected('Moderate Chat', 'addAnswer')
+    security.declareProtected(chatReply, 'addAnswer')
     def addAnswer(self, question_id, answer, REQUEST=None):
         """
         Add an answer to a question
@@ -219,7 +221,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
         return l
 
 
-    security.declareProtected('Moderate Chat', 'moderate')
+    security.declareProtected(chatModerate, 'moderate')
     def moderate(self, REQUEST):
         """
         Moderate a batch of questions
@@ -242,7 +244,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
             REQUEST.RESPONSE.redirect(
                 self.absolute_url() + '/Chat_moderateForm')
 
-    security.declareProtected('Moderate Chat', 'publish')
+    security.declareProtected(chatModerate, 'publish')
     def publish(self, REQUEST):
         """
         Publish a batch of questions
@@ -262,7 +264,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
                 self.absolute_url() + '/Chat_moderateForm')
 
 
-    security.declareProtected('Moderate Chat', 'answerQuestion')
+    security.declareProtected(chatReply, 'answerQuestion')
     def answerQuestion(self, question_id, answer, REQUEST=None):
         """
         Answer a question
@@ -275,7 +277,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
                 self.absolute_url() + '/Chat_moderateForm')
 
 
-def manage_addCPSChat(self, id, title='', description='', host='', 
+def manage_addCPSChat(self, id, title='', description='', host='',
                       REQUEST=None):
     """
     Constructor method for the type CPSChat.
