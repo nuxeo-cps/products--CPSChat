@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: default\n"
-"POT-Creation-Date: 2004-03-08 15:16default\n"
+"POT-Creation-Date: 2004-04-22 15:38default\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Your Name <your@email>\n"
 "Language-Team: Name <email>\n"
@@ -19,371 +19,218 @@ msgstr ""
 "Preferred-encodings: utf-8 latin1\n"
 "Domain: default\n"
 
-#.   <h1>
-#.           Chat
-#.           <strong>
-#.             ${chat_id (tal content="here/Title")}
-#.           </strong>
-#.           with :
-#.           <strong>
-#.             ${chat_host (tal content="here/host")}
-#.           </strong>
-#.       </h1>
-#: from ../skins/cps_chat/Chat_questions.pt
-msgid ""
-"Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
-msgstr ""
-
-#.   <h1>
-#.           Chat History of
-#.           <strong>
-#.             ${chat_id (tal content="here/Title")}
-#.           </strong>
-#.           with :
-#.           <strong>
-#.             ${chat_host (tal content="here/host")}
-#.           </strong>
-#.       </h1>
-#: from ../skins/cps_chat/Chat_history.pt
-msgid ""
-"Chat History of <strong> ${chat_id} </strong> with : <strong> ${chat_host} </"
-"strong>"
-msgstr ""
-
-#.   <span>
-#.                   Modify the question &nbsp;:&nbsp;
-#.                     ${id_question (tal content="question/id")}
-#.                 </span>
-#: from ../skins/cps_chat/Chat_modify_question_form.pt
-msgid "Modify the question &nbsp;:&nbsp; ${id_question}"
-msgstr ""
-
-#.   <span>
-#.                   Modify the reply &nbsp;:&nbsp;
-#.                     ${id_question (tal content="question/id")}
-#.                 </span>
-#: from ../skins/cps_chat/Chat_modify_reply_form.pt
-msgid "Modify the reply &nbsp;:&nbsp; ${id_question}"
-msgstr ""
-
-#.   <input value="button_change" type="submit" />
-#: from ../skins/cps_chat/Chat_edit_form.pt
-#: ../skins/cps_chat/Chat_modify_question_form.pt
-#: ../skins/cps_chat/Chat_modify_reply_form.pt
+#.   <input value="button_change" class="standalone" type="submit" />
+#.   <input value="button_change" class="standAlone" type="submit" />
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
+#: ../skins/cps_chat/cps_chat_item_edit_form.pt
+#: ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "button_change"
 msgstr ""
 
-#.   <input value="button_moderate" type="submit" />
-#: from ../skins/cps_chat/Chat_moderateForm.pt
+#.   <input value="button_moderate" class="standalone" type="submit" />
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_moderate"
 msgstr ""
 
-#.   <input value="button_publish" type="submit" />
-#: from ../skins/cps_chat/Chat_moderateForm.pt
-msgid "button_publish"
+#.   <input value="button_post" class="standalone" type="submit" />
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "button_post"
 msgstr ""
 
-#.   <input value="button_submit" type="submit" />
-#.   <input value="button_submit" name="submit" type="submit" />
-#: from ../skins/cps_chat/Chat_addAnswerForm.pt
-#: ../skins/cps_chat/Chat_addQuestionForm.pt
-#: ../skins/cps_chat/Chat_addSingleAnswerForm.pt
-#: ../skins/cps_chat/Chat_quickPostForm.pt
-msgid "button_submit"
+#.   <input value="button_remove" class="standalone" type="submit" />
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "button_remove"
 msgstr ""
 
 #.   <h1>
-#.           Answer this question.
+#.           Answer to chat messages
 #.       </h1>
-#: from ../skins/cps_chat/Chat_addSingleAnswerForm.pt
-msgid "chat_add_answer_heading"
-msgstr ""
-
-#.   <h1>
-#.           Answers the questions.
-#.       </h1>
-#: from ../skins/cps_chat/Chat_addAnswerForm.pt
-msgid "chat_add_answers_heading"
-msgstr ""
-
-#.   <span>
-#.       Please, remember your post won't be visible straight within the chat
-#.       board. A moderator will check it out.
-#.     </span>
-#: from ../skins/cps_chat/Chat_addQuestionForm.pt
-#: ../skins/cps_chat/Chat_quickPostForm.pt
-msgid "chat_ass_post_warning"
-msgstr ""
-
-#.   <h1>
-#.           Edit Chat Property
-#.       </h1>
-#: from ../skins/cps_chat/Chat_edit_form.pt
-msgid "chat_edit_heading"
-msgstr ""
-
-#.   <span>The chat is currently empty.</span>
-#: from ../skins/cps_chat/Chat_history.pt ../skins/cps_chat/Chat_questions.pt
-msgid "chat_empty_history"
-msgstr ""
-
-#.   <h1>
-#.     Post a question
-#.     </h1>
-#.   <h1>
-#.          Post a question
-#.        </h1>
-#: from ../skins/cps_chat/Chat_addQuestionForm.pt
-#: ../skins/cps_chat/Chat_quickPostForm.pt
-msgid "chat_enter_a_message"
-msgstr ""
-
-#.   <span>
-#.                 Your nick name
-#.               </span>
-#: from ../skins/cps_chat/Chat_addQuestionForm.pt
-#: ../skins/cps_chat/Chat_quickPostForm.pt
-msgid "chat_enter_your_nickname"
+#: from ../skins/cps_chat/cps_chat_answer_form.pt
+msgid "chat_answer_heading"
 msgstr ""
 
 #.   <h1>
 #.           Moderate the chat
 #.       </h1>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
-#: ../skins/cps_chat/Chat_modify_question_form.pt
-#: ../skins/cps_chat/Chat_modify_reply_form.pt
+#: from ../skins/cps_chat/cps_chat_moderate_form.pt
 msgid "chat_moderate_heading"
 msgstr ""
 
-#.   <span>
-#.                   Your question
-#.                 </span>
-#: from ../skins/cps_chat/Chat_addQuestionForm.pt
-#: ../skins/cps_chat/Chat_quickPostForm.pt
-msgid "chat_your_question"
+#.   <h1>
+#.         Reply to a message
+#.       </h1>
+#: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
+msgid "heading_chat_add_reply"
+msgstr ""
+
+#.   <h1>
+#.           Edit Chat Property
+#.       </h1>
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
+msgid "heading_chat_edit"
+msgstr ""
+
+#.   <h1>
+#.         Modify chat message
+#.       </h1>
+#: from ../skins/cps_chat/cps_chat_item_edit_form.pt
+msgid "heading_chat_item_modify"
 msgstr ""
 
 #.   <span>Accept</span>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_accept"
 msgstr ""
 
 #.   <span>
 #.                  Accept/reject
 #.                </span>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_accept_reject"
 msgstr ""
 
-#.   <span>Answer the pending questions</span>
-#: from ../skins/cps_chat/Chat_addAnswerForm.pt
-#: ../skins/cps_chat/Chat_addSingleAnswerForm.pt
-#: ../skins/cps_chat/Chat_moderateForm.pt
-msgid "label_answer"
-msgstr ""
-
-#.   <span>Answer</span>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
-msgid "label_answer_one_question"
+#.   <span>Add an answer</span>
+#: from ../skins/cps_chat/cps_chat_answer_form.pt
+msgid "label_add_answer"
 msgstr ""
 
 #.   <h3>
 #.       Answers waiting to be accepted.
 #.     </h3>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
-msgid "label_answers_to_be_accepted"
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_chat_answer_waiting"
 msgstr ""
 
 #.   <h3>
-#.       Answers waiting to be published.
+#.       You way remove some messages
 #.     </h3>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
-msgid "label_answers_to_be_published"
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_chat_delete_messages"
 msgstr ""
 
-#.   <span>
-#.                     Answer
-#.                   </span>
-#: from ../skins/cps_chat/Chat_history.pt ../skins/cps_chat/Chat_questions.pt
-msgid "label_chat_answer"
+#.   <span>Description</span>
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
+msgid "label_chat_description"
 msgstr ""
 
-#.   <span>
-#.    Online discussion with a personnality.
-#.   </span>
-#: from ../skins/cps_chat/Chat_edit_form.pt
-msgid "label_chat_discussions_online"
+#.   <span>Host</span>
+#.   <span class="itemCreator">
+#.             Chat Guest
+#.           </span>
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
+#: ../skins/cps_chat/cps_chat_main_frame.pt
+msgid "label_chat_guest"
 msgstr ""
 
+#.   <span>Is the chat
+#.                     moderated ?</span>
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
+msgid "label_chat_is_moderated"
+msgstr ""
+
+#.   <span>Message</span>
 #.   <span>
-#.       You can moderate the questions submited from here.
-#.       Since you accept a question you can give an answer to this question
-#.     straight after.
-#.     </span>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
-msgid "label_chat_moderate_question"
+#.               Message
+#.             </span>
+#: from ../skins/cps_chat/cps_chat_item_edit_form.pt
+#: ../skins/cps_chat/cps_chat_item_reply_to_form.pt
+msgid "label_chat_message"
+msgstr ""
+
+#.   <h3>
+#.       Messages waiting to be accepted.
+#.     </h3>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_chat_messages_waiting"
+msgstr ""
+
+#.   <span class="itemCreator">
+#.             Chat moderators :
+#.           </span>
+#: from ../skins/cps_chat/cps_chat_main_frame.pt
+msgid "label_chat_moderator_lists"
+msgstr ""
+
+#.   <span>Pseudo</span>
+#: from ../skins/cps_chat/cps_chat_item_edit_form.pt
+msgid "label_chat_pseudo"
 msgstr ""
 
 #.   <span>Question</span>
-#: from ../skins/cps_chat/Chat_history.pt
-#: ../skins/cps_chat/Chat_moderateForm.pt ../skins/cps_chat/Chat_questions.pt
+#: from ../skins/cps_chat/cps_chat_answer_form.pt
+#: ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_question"
 msgstr ""
 
 #.   <span>Modify</span>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_question_modify"
 msgstr ""
 
 #.   <span>Reply</span>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
-msgid "label_chat_reply_question"
+#: from ../skins/cps_chat/cps_chat_answer_form.pt
+msgid "label_chat_question_reply"
 msgstr ""
 
-#.   <span>Date</span>
-#: from ../skins/cps_chat/Chat_history.pt ../skins/cps_chat/Chat_questions.pt
-msgid "label_date"
+#.   <span>
+#.                     Chat refresh rate</span>
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
+msgid "label_chat_refresh_rate"
 msgstr ""
 
-#.   <th align="right">Description</th>
-#: from ../skins/cps_chat/Chat_edit_form.pt
-msgid "label_description"
+#.   <span>Reply</span>
+#: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
+msgid "label_chat_reply"
+msgstr ""
+
+#.   <span>Title</span>
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
+msgid "label_chat_title"
+msgstr ""
+
+#.   <span class="itemDate">
+#.         Users
+#.       </span>
+#: from ../skins/cps_chat/cps_chat_user_frame.pt
+msgid "label_chat_users"
+msgstr ""
+
+#.   <span>
+#.                 Message
+#.               </span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_cps_chat_enter_message"
+msgstr ""
+
+#.   <span>
+#.                 Pseudo
+#.               </span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_cps_chat_enter_pseudo"
 msgstr ""
 
 #.   <span>From</span>
-#.   <span>from</span>
-#.   <span>From :</span>
-#: from ../skins/cps_chat/Chat_history.pt
-#: ../skins/cps_chat/Chat_moderateForm.pt
-#: ../skins/cps_chat/Chat_modify_question_form.pt
-#: ../skins/cps_chat/Chat_modify_reply_form.pt
-#: ../skins/cps_chat/Chat_questions.pt
+#: from ../skins/cps_chat/cps_chat_answer_form.pt
+#: ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_from"
 msgstr ""
 
-#.   <th align="right">Host</th>
-#: from ../skins/cps_chat/Chat_edit_form.pt
-msgid "label_host"
-msgstr ""
-
-#.   <span>
-#.       You can answer the question by choosing one in the array below.
-#.       You can as well anwser to all at the same time by clicking the link
-#.       "Reply to pending questions" on the right.
-#.     </span>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
-msgid "label_moderate_answer_questions"
-msgstr ""
-
-#.   <span>
-#.       It will give the possiblity to reply to the question.
-#.       You can still modify the question.
-#.     </span>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
-msgid "label_moderate_phase1"
-msgstr ""
-
-#.   <span>
-#.       This is the last step. You can still modify the answer if you need to.
-#.       After this step the answer will be available to the public.
-#.     </span>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
-msgid "label_moderate_phase2"
-msgstr ""
-
 #.   <span>modify</span>
-#.   <span>Modify</span>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_modify"
-msgstr ""
-
-#.   <span>
-#.            No new question to publish.
-#.          </span>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
-msgid "label_no_answered_questions"
-msgstr ""
-
-#.   <span>
-#.         No question with a pending state.
-#.       </span>
-#.   <span>
-#.           There's no news questions you need to answer.
-#.         </span>
-#: from ../skins/cps_chat/Chat_addAnswerForm.pt
-#: ../skins/cps_chat/Chat_addSingleAnswerForm.pt
-#: ../skins/cps_chat/Chat_moderateForm.pt
-msgid "label_no_pending_questions"
 msgstr ""
 
 #.   <span>
 #.             No new question to moderate
 #.           </span>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
+#: from ../skins/cps_chat/cps_chat_answer_form.pt
+#: ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_no_questions_to_moderate"
 msgstr ""
 
-#.   <span>
-#.                  Published
-#.                </span>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
-msgid "label_published"
-msgstr ""
-
-#.   <span>Answer</span>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
-msgid "label_question_answer"
-msgstr ""
-
-#.   <span>Question from :</span>
-#: from ../skins/cps_chat/Chat_addAnswerForm.pt
-#: ../skins/cps_chat/Chat_addSingleAnswerForm.pt
-msgid "label_question_form"
-msgstr ""
-
-#.   <span>Refresh for the latest ones</span>
-#: from ../skins/cps_chat/Chat_addAnswerForm.pt
-#: ../skins/cps_chat/Chat_addSingleAnswerForm.pt
-#: ../skins/cps_chat/Chat_moderateForm.pt
-msgid "label_refresh"
-msgstr ""
-
 #.   <span>Reject</span>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_reject"
-msgstr ""
-
-#.   <h3>
-#.       Questions waiting for a reply.
-#.     </h3>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
-msgid "label_reply_to_pending questions"
-msgstr ""
-
-#.   <span>
-#.       Think about performing some refresh to see the latest posted questions.
-#.     </span>
-#: from ../skins/cps_chat/Chat_moderateForm.pt
-msgid "label_think_about_refresh"
-msgstr ""
-
-#.   <th align="right">Title</th>
-#: from ../skins/cps_chat/Chat_edit_form.pt
-msgid "label_title"
-msgstr ""
-
-#.   <span>To :</span>
-#: from ../skins/cps_chat/Chat_modify_question_form.pt
-#: ../skins/cps_chat/Chat_modify_reply_form.pt
-msgid "label_to"
-msgstr ""
-
-#.   <span>
-#.         Your answer :
-#.       </span>
-#: from ../skins/cps_chat/Chat_addAnswerForm.pt
-#: ../skins/cps_chat/Chat_addSingleAnswerForm.pt
-msgid "label_your_answer"
 msgstr ""
 
 msgid "ChatPoster"
@@ -393,4 +240,22 @@ msgid "ChatModerator"
 msgstr ""
 
 msgid "ChatGuest"
+msgstr ""
+
+msgid "psm_cps_chat_properties_modified"
+msgstr ""
+
+msgid "psm_messages_removed"
+msgstr ""
+
+msgid "psm_chat_item_properties_updated"
+msgstr ""
+
+msgid "psm_chat_item_reply"
+msgstr ""
+
+msgid "action_chat_item_reply"
+msgstr ""
+
+msgid "action_chat_reply_to_questions"
 msgstr ""

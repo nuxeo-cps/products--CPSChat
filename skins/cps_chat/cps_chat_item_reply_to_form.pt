@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitionnal.dtd">
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal">
+<body>
+<metal:block use-macro="here/content_lib/macros/master">
+  <metal:block fill-slot="header">
+    <h1 i18n:translate="heading_chat_add_reply">
+      Reply to a message
+    </h1>
+  </metal:block>
+  <metal:block fill-slot="main">
+    <div class="group">
+      <div class="row">
+        <div class="label">
+          <span i18n:translate="label_chat_message">
+            Message
+          </span>
+        </div>
+        <div class="field">
+          &nbsp;&nbsp;
+          <span tal:replace="here/message" />
+        </div>
+      </div>
+    </div>
+    <div class="group">
+    <form action="cps_chat_item_reply_to" method="post">
+      <table>
+        <tr>
+          <td colspan="1">
+            <div class="row">
+              <div class="label">
+                <span i18n:translate="label_chat_reply">Reply</span>
+              </div>
+              <div class="field">
+                <textarea cols="60" rows="8" name="message"></textarea>
+              </div>
+            </div>
+          <input type="submit" value="button_change" class="standalone"
+                 i18n:attributes="value" />
+        </td>
+        </tr>
+      </table>
+    </form>
+    </div>
+  </metal:block>
+</metal:block>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitionnal.dtd">
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal">
+<body>
+
+<pre>---------------------------------------------</pre>
+<pre>               Add message                   </pre>
+<pre>---------------------------------------------</pre>
+
+<metal:block define-macro="cps_chat_add_message_form">
+   <script type="text/javascript">
+     function resetText(){
+      document.form.message.value = document.form.tmp_message.value;
+      document.form.tmp_message.value = '';
+      return true;
+    }
+   </script>
+   <div class="group">
+       <form method="POST" name="form" action="cps_chat_post_message"
+             target="CHAT_MAIN_FRAME" onsubmit="javascript:resetText()"
+              tal:attributes="action
+             string:${here/absolute_url}/cps_chat_post_message">
+        <tal:block condition="python:here.portal_membership.isAnonymousUser()">
+        <div class="row">
+          <div class="label">
+            <span i18n:translate="label_cps_chat_enter_pseudo">
+              Pseudo
+            </span>
+          </div>
+          <div class="field">
+            &nbsp;&nbsp;
+            <input type="text" name="pseudo" value="" />
+          </div>
+        </div>
+        </tal:block>
+        <div class="row">
+          <div class="label">
+            <span i18n:translate="label_cps_chat_enter_message">
+              Message
+            </span>
+          </div>
+          <div class="field">
+            &nbsp;&nbsp;
+            <textarea name="tmp_message" rows="1" cols="60"></textarea>
+            <input type="hidden" name="message" value="" />
+          </div>
+        </div>
+        <input type="submit" value="button_post" class="standalone"
+                 i18n:attributes="value" />
+       </form>
+  </div>
+</metal:block>
+
+<pre>---------------------------------------------</pre>
+<pre>   Moderator may delete messages from here   </pre>
+<pre>---------------------------------------------</pre>
+
+<metal:block define-macro="moderate_remove_messages">
+<div class="group">
+  <h3 i18n:translate="label_chat_delete_messages">
+    You way remove some messages
+  </h3>
+  <br />
+
+  <tal:block define="questions python:here.getPublicMessages()">
+    <tal:block condition="python:questions != []">
+    <form action="cps_chat_delete_messages" method="POST"
+          tal:attributes="action string:${here/absolute_url}/cps_chat_delete_messages">
+      <table border="0" align="center" width="100%" cellspacing="2" cellpadding="2">
+      <tr>
+        <th>
+          <span i18n:translate="label_from">From</span>
+        </th>
+        <th>
+          <span i18n:translate="label_chat_question">Question</span>
+        </th>
+        <th>
+          &nbsp;
+        </th>
+      </tr>
+      <tr>
+        <td colspan="3">&nbsp;</td>
+      </tr>
+      <tal:block tal:repeat="question questions">
+        <tr tal:attributes="class
+             python:test(repeat['question'].even(), 'even', 'odd')">
+
+          <td align="center">
+             <tal:block tal:replace="question/getCreator|default" />
+          </td>
+          <td>
+             <tal:block tal:replace="question/message|default" />
+          </td>
+          <td align="center">
+             <tal:block define="id_question question/id">
+               <input type="checkbox" name="ids:list" value=""
+                      tal:attributes="value id_question" />
+             </tal:block>
+          </td>
+        </tr>
+      </tal:block>
+       </table>
+       <br />
+       <input type="submit" value="button_remove" class="standalone"
+                 i18n:attributes="value" />
+    </form>
+    <p>&nbsp;</p>
+    </tal:block>
+
+    <tal:block condition="python:questions == []">
+      <br /><br />
+      <strong>
+        <span i18n:translate="label_no_questions_to_moderate">
+          No new question to moderate
+        </span>
+      </strong>
+      <br />
+    </tal:block>
+  </tal:block>
+  </div>
+</metal:block>
+
+
+<pre>---------------------------------------------</pre>
+<pre>   Moderator may accept / drop messages      </pre>
+<pre>---------------------------------------------</pre>
+
+<metal:block define-macro="moderate_waiting_messages">
+<div class="group">
+  <h3 i18n:translate="label_chat_messages_waiting">
+    Messages waiting to be accepted.
+  </h3>
+  <br />
+  <tal:block define="questions python:here.getPendingMessages()">
+    <tal:block condition="python:questions != []">
+    <form action="cps_chat_moderate" method="POST"
+          tal:attributes="action string:${here/absolute_url}/cps_chat_moderate">
+      <table border="0" align="center" width="100%" cellspacing="2" cellpadding="2">
+      <tr>
+        <th>
+             <span i18n:translate="label_accept_reject">
+               Accept/reject
+             </span>
+        </th>
+        <th>
+          <span i18n:translate="label_from">From</span>
+        </th>
+        <th>
+          <span i18n:translate="label_chat_question">Question</span>
+        </th>
+        <th>
+           <span i18n:translate="label_chat_question_modify">Modify</span>
+        </th>
+      </tr>
+      <tr>
+        <td colspan="4">&nbsp;</td>
+      </tr>
+      <tal:block tal:repeat="question questions">
+        <tr tal:attributes="class
+             python:test(repeat['question'].even(), 'even', 'odd')">
+
+          <td align="center">
+            <span i18n:translate="label_accept">Accept</span>
+            <input type="radio" tal:attributes="name question/id" value="1" />
+            <br />
+            <span i18n:translate="label_reject">Reject</span>
+            <input type="radio" tal:attributes="name question/id" value="0"
+    />
+          </td>
+          <td align="center">
+             <tal:block tal:replace="question/getCreator|default" />
+          </td>
+          <td>
+             <tal:block tal:replace="question/message|default" />
+          </td>
+          <td align="center">
+             <tal:block define="id_question question/id">
+               <a href=""
+                  tal:attributes="href string:${here/absolute_url}/${id_question}/cps_chat_item_edit_form">
+               <span i18n:translate="label_modify">modify</span>
+               </a>
+            </tal:block>
+          </td>
+        </tr>
+      </tal:block>
+       </table>
+       <br />
+       <input type="submit" value="button_moderate" class="standalone"
+                 i18n:attributes="value" />
+    </form>
+    <p>&nbsp;</p>
+    </tal:block>
+
+    <tal:block condition="python:questions == []">
+      <br /><br />
+      <strong>
+        <span i18n:translate="label_no_questions_to_moderate">
+          No new question to moderate
+        </span>
+      </strong>
+      <br />
+    </tal:block>
+  </tal:block>
+  </div>
+</metal:block>
+
+<pre>---------------------------------------------</pre>
+<pre>   Moderator may accept / drop answer        </pre>
+<pre>---------------------------------------------</pre>
+
+<metal:block define-macro="moderate_guest_answers">
+<div class="group">
+  <h3 i18n:translate="label_chat_answer_waiting">
+    Answers waiting to be accepted.
+  </h3>
+  <br />
+  <tal:block define="questions python:here.getPendingAnswerMessages()">
+    <tal:block condition="python:questions != []">
+    <form action="cps_chat_moderate_answers" method="POST"
+          tal:attributes="action string:${here/absolute_url}/cps_chat_moderate_answers">
+      <table border="0" align="center" width="100%" cellspacing="2" cellpadding="2">
+      <tr>
+        <th>
+             <span i18n:translate="label_accept_reject">
+               Accept/reject
+             </span>
+        </th>
+        <th>
+          <span i18n:translate="label_from">From</span>
+        </th>
+        <th>
+          <span i18n:translate="label_chat_question">Question</span>
+        </th>
+        <th>
+           <span i18n:translate="label_chat_question_modify">Modify</span>
+        </th>
+      </tr>
+      <tr>
+        <td colspan="4">&nbsp;</td>
+      </tr>
+      <tal:block tal:repeat="question questions">
+        <tr tal:attributes="class
+             python:test(repeat['question'].even(), 'even', 'odd')">
+
+          <td align="center">
+            <span i18n:translate="label_accept">Accept</span>
+            <input type="radio" tal:attributes="name question/id" value="1" />
+            <br />
+            <span i18n:translate="label_reject">Reject</span>
+            <input type="radio" tal:attributes="name question/id" value="0"
+    />
+          </td>
+          <td align="center">
+             <tal:block tal:replace="question/getCreator|default" />
+          </td>
+          <td>
+             <tal:block tal:replace="question/message|default" />
+          </td>
+          <td align="center">
+             <tal:block define="id_question question/id">
+               <a href=""
+                  tal:attributes="href string:${question/absolute_url}/cps_chat_item_edit_form">
+               <span i18n:translate="label_modify">modify</span>
+               </a>
+            </tal:block>
+          </td>
+        </tr>
+      </tal:block>
+       </table>
+       <br />
+       <input type="submit" value="button_moderate" class="standalone"
+                 i18n:attributes="value" />
+    </form>
+    <p>&nbsp;</p>
+    </tal:block>
+
+    <tal:block condition="python:questions == []">
+      <br /><br />
+      <strong>
+        <span i18n:translate="label_no_questions_to_moderate">
+          No new question to moderate
+        </span>
+      </strong>
+      <br />
+    </tal:block>
+  </tal:block>
+  </div>
+</metal:block>
+
+</body>
+</html>

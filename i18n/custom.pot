@@ -24,3 +24,21 @@ msgstr ""
 
 msgid "ChatGuest"
 msgstr ""
+
+msgid "psm_cps_chat_properties_modified"
+msgstr ""
+
+msgid "psm_messages_removed"
+msgstr ""
+
+msgid "psm_chat_item_properties_updated"
+msgstr ""
+
+msgid "psm_chat_item_reply"
+msgstr ""
+
+msgid "action_chat_item_reply"
+msgstr ""
+
+msgid "action_chat_reply_to_questions"
+msgstr ""

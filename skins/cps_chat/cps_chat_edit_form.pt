@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitionnal.dtd">
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal">
+<body>
+<metal:block use-macro="here/content_lib/macros/master">
+  <metal:header metal:fill-slot="header">
+    <h1 i18n:translate="heading_chat_edit">
+        Edit Chat Property
+    </h1>
+  </metal:header>
+  <metal:block fill-slot="main">
+<div class="group">
+<form action="cps_chat_edit" method="post">
+  <table>
+    <tr>
+      <td colspan="1">
+        <div class="row">
+          <div class="label">
+            <span i18n:translate="label_chat_title">Title</span>
+          </div>
+          <div class="field">
+            <input type="text" name="title"
+                   tal:attributes="value here/title|nothing" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="label">
+            <span i18n:translate="label_chat_description">Description</span>
+          </div>
+          <div class="field">
+            <textarea cols="60" rows="8" name="description"
+                      tal:content="here/Description|nothing"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="label">
+            <span i18n:translate="label_chat_guest">Host</span>
+          </div>
+          <div class="field">
+            <input type="text" name="cps_chat_guest"
+                   tal:attributes="value here/cps_chat_guest|nothing" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="label">
+                  <span i18n:translate="label_chat_is_moderated">Is the chat
+                  moderated ?</span>
+          </div>
+          <div class="field">
+            <input type="checkbox" name="is_moderated"
+                   tal:attributes="checked  here/is_moderated|nothing" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="label">
+                  <span i18n:translate="label_chat_refresh_rate">
+                  Chat refresh rate</span>
+          </div>
+          <div class="field">
+            <select name="cps_chat_refresh_rate">
+            <tal:block repeat="x python:range(1, 51)">
+              <option tal:attributes="value x;
+                                     selected
+             python:here.cps_chat_refresh_rate==x">
+              <span tal:replace="x" />
+             </option>
+            </tal:block>
+            </select>
+          </div>
+        </div>
+<!--
+        <div class="row">
+          <div class="label">
+            <span i18n:translate="label_chat_effective_date">
+              Effective date
+            </span>
+          </div>
+          <div class="field">
+            <input type="text" size="11" maxlength="22"
+                   tal:define="value here/effective_date|here/Date"
+                   tal:attributes="name string:effective_date;
+                                   id string:effective_date;
+                                   value python:here.getDateStr(value, fmt='short')" />
+            <button id="trigger"
+                    tal:attributes="id string:trigger_effective_date">...</button>
+            <tal:block define="fmt python:here.Localizer.default('jscalendar_date_fmt');"
+                      replace="structure string:<script type='text/javascript'>
+                              Calendar.setup(
+                      {
+                        inputField  : 'effective_date',
+                        ifFormat    : '${fmt}',
+                        button      : 'trigger_effective_date',
+                        mondayFirst : true,
+                        range       : [1970, 2037]
+                      }
+                    );
+                    </script>" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="label">
+            <span i18n:translate="label_chat_expiration_date">
+              Effective date
+            </span>
+          </div>
+          <div class="field">
+            <input type="text" size="11" maxlength="22"
+                   tal:define="value here/espiration_date|here/Date"
+                   tal:attributes="name string:effective_date;
+                                   id string:effective_date;
+                                   value python:here.getDateStr(value, fmt='short')" />
+            <button id="trigger"
+                    tal:attributes="id string:trigger_effective_date">...</button>
+            <tal:block define="fmt python:here.Localizer.default('jscalendar_date_fmt');"
+                      replace="structure string:<script type='text/javascript'>
+                              Calendar.setup(
+                      {
+                        inputField  : 'effective_date',
+                        ifFormat    : '${fmt}',
+                        button      : 'trigger_effective_date',
+                        mondayFirst : true,
+                        range       : [1970, 2037]
+                      }
+                    );
+                    </script>" />
+          </div>
+        </div>
+-->
+      <input type="submit" value="button_change" class="standalone"
+             i18n:attributes="value" />
+    </td>
+    </tr>
+  </table>
+</form>
+</div>
+</metal:block>
+</metal:block>
+</body>
+</html>

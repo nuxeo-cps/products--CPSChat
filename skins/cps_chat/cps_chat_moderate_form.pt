@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitionnal.dtd">
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal">
+<body>
+<metal:block use-macro="here/content_lib/macros/master">
+  <metal:block metal:fill-slot="header">
+    <h1 i18n:translate="chat_moderate_heading">
+        Moderate the chat
+    </h1>
+  </metal:block>
+  <metal:block fill-slot="main">
+  <!-- List of messages waiting for acceptance -->
+  <metal:block use-macro="here/cps_chat_lib/macros/moderate_waiting_messages" />
+  <!-- List of messages for removal -->
+  <metal:block use-macro="here/cps_chat_lib/macros/moderate_remove_messages"/>
+  <!-- List of answers from the guest waiting to be moderated  -->
+  <metal:block use-macro="here/cps_chat_lib/macros/moderate_guest_answers" />
+ </metal:block>
+</metal:block>
+</body>
+</html>

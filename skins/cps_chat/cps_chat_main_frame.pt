@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitionnal.dtd">
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal">
+<head>
+  <META HTTP-EQUIV="Refresh"
+        tal:attributes="CONTENT here/cps_chat_refresh_rate" />
+  <link rel="Stylesheet" type="text/css"
+        href="/cps_chat_style.css" />
+</head>
+<script type="text/javascript">
+     function refreshFrame() {
+     parent.frames['CHAT_MAIN_FRAME'].window.location.reload();
+     return 1;
+     }
+</script>
+<body>
+    <div class="group">
+    <span class="itemDate">##########################################</span>
+    <h2 class="itemDate">C P S / C H AT</h2>
+    <div class="row">
+      <div class="label">
+        <span class="itemCreator" i18n:translate="label_chat_moderator_lists">
+          Chat moderators :
+        </span>
+      </div>
+      <div class="field">
+        <tal:block repeat="member_id here/getModeratorMemberIds">
+          <span class="itemDate" tal:content="member_id" /><br />
+        </tal:block>
+        <tal:block repeat="group_id here/getModeratorGroupIds">
+          <span class="itemDate" tal:content="group_id" /><br />
+        </tal:block>
+      </div>
+    </div>
+    <div class="row">
+      <div class="label">
+        <span class="itemCreator" i18n:translate="label_chat_guest">
+          Chat Guest
+        </span>
+      </div>
+      <div class="field">
+        <span class="itemDate" tal:content="here/cps_chat_guest|string:" />
+      </div>
+      <br />
+      <span class="itemCreator" tal:content="python:here.getDateStr(here.PrincipiaTime())" />
+    </div>
+    <span class="itemDate">##########################################</span>
+  </div>
+  <tal:block repeat="item here/getPublicMessages">
+    <span class="itemDate">
+    [&nbsp;
+     <span tal:replace="python:item.Date()" />
+     &nbsp;]&nbsp;
+    </span>
+     <span class="itemCreator" tal:content="item/getCreator" />&nbsp;
+     <span class="itemMessage" tal:content="item/message" /><br />
+     <tal:block repeat="reply item/getPublicReplies">
+       &nbsp;&nbsp;(&nbsp;<span
+       tal:replace="here/cps_chat_guest|string:guest" />)
+       <span class="itemDate">
+         [&nbsp;
+           <span tal:replace="python:here.getDateStr(reply.modification_date)" />
+          &nbsp;]&nbsp;
+        </span>
+        <span class="itemCreator" tal:content="reply/getCreator" />&nbsp;
+        <span class="itemMessage" tal:content="reply/message" /><br />
+    </tal:block>
+  </tal:block>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitionnal.dtd">
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal">
+<body>
+<metal:block use-macro="here/content_lib/macros/master">
+  <metal:block metal:fill-slot="header">
+    <h1 i18n:translate="chat_answer_heading">
+        Answer to chat messages
+    </h1>
+  </metal:block>
+  <metal:block fill-slot="main">
+  <div class="group">
+  <tal:block define="questions python:[x for x in here.getPublicMessages()
+             if not x.hasReply()]">
+    <tal:block condition="python:questions != []">
+      <table border="0" align="center" width="100%" cellspacing="2" cellpadding="2">
+      <tr>
+        <th>
+          <span i18n:translate="label_from">From</span>
+        </th>
+        <th>
+          <span i18n:translate="label_chat_question">Question</span>
+        </th>
+        <th>
+           <span i18n:translate="label_chat_question_reply">Reply</span>
+        </th>
+      </tr>
+      <tr>
+        <td colspan="4">&nbsp;</td>
+      </tr>
+      <tal:block tal:repeat="question questions">
+        <tr tal:attributes="class
+             python:test(repeat['question'].even(), 'even', 'odd')">
+
+          <td align="center">
+             <tal:block tal:replace="question/getCreator|default" />
+          </td>
+          <td>
+             <tal:block tal:replace="question/message|default" />
+          </td>
+          <td align="center">
+             <tal:block define="id_question question/id">
+               <a href=""
+                  tal:attributes="href string:${here/absolute_url}/${id_question}/cps_chat_item_reply_to_form?message_id=${id_question}">
+               <span i18n:translate="label_add_answer">Add an answer</span>
+               </a>
+            </tal:block>
+          </td>
+        </tr>
+      </tal:block>
+       </table>
+    </tal:block>
+    <tal:block condition="python:questions == []">
+      <br /><br />
+      <strong>
+        <span i18n:translate="label_no_questions_to_moderate">
+          No new question to moderate
+        </span>
+      </strong>
+      <br />
+    </tal:block>
+  </tal:block>
+  </div>
+ </metal:block>
+</metal:block>
+</body>
+</html>

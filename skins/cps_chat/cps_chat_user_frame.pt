@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitionnal.dtd">
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal">
+<head>
+  <META HTTP-EQUIV="Refresh"
+        tal:attributes="CONTENT here/cps_chat_refresh_rate" />
+  <link rel="Stylesheet" type="text/css"
+        href="/cps_chat_style.css" />
+</head>
+<body>
+  <tal:block define="dummy python:here.trackChatUser(pseudo='Anonymous', REQUEST=request);
+                     user_ids here/getChatUsers">
+  <div align="center">
+    <img src="chat_icon.gif" />
+    <span class="itemDate" i18n:translate="label_chat_users">
+      Users
+    </span>(<strong><span tal:replace="python:len(user_ids)" /></strong>)
+  </div>
+  <div align="center">
+    <tal:block repeat="user_id user_ids">
+    <div align="left">
+        <img width="12" height="12" src="chat_user.gif" />
+        <span class="itemCreator" tal:content="user_id" />
+    </div>
+    </tal:block>
+  </div>
+  </tal:block>
+</body>
+</html>

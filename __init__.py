@@ -1,4 +1,4 @@
-# Copyright (C) 2003  Nuxeo SARL <http://nuxeo.com>
+# Copyright (C) 2004  Nuxeo SARL <http://nuxeo.com>
 # Author : Julien Anguenot <ja@nuxeo.com>
 
 # This program is free software; you can redistribute it and/or
@@ -16,26 +16,29 @@
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 # $Id$
 
-"""
-CPSChat is chat product for CPS.
+"""CPSChat is chat product for CPS3.
 """
 
 from Products.CMFCore import utils
 from Products.CMFCore.DirectoryView import registerDirectory
 from Products.CMFCore.CMFCorePermissions import AddPortalContent
 
-import CPSChat
+import Chat
+import ChatItem
 
-contentClasses = ( CPSChat.CPSChat, )
-contentConstructors = ( CPSChat.manage_addCPSChat, )
+contentClasses = ( Chat.Chat,
+                   ChatItem.ChatItem, )
 
-fti = ()
-fti += ( CPSChat.factory_type_information + () )
+contentConstructors = ( Chat.addChat,
+                        ChatItem.addChatItem, )
 
-registerDirectory('skins/cps_chat', globals())
+fti = (Chat.factory_type_information +
+       ChatItem.factory_type_information)
+
+registerDirectory('skins', globals())
 
 def initialize(registrar):
-    utils.ContentInit('CPS Chat Content',
+    utils.ContentInit('Chat Content',
                       content_types=contentClasses,
                       permission=AddPortalContent,
                       extra_constructors=contentConstructors,
