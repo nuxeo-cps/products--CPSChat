@@ -27,16 +27,11 @@ be used as a kind of FAQ where you can filter the anwsers.
 
 from zLOG import LOG, DEBUG
 
-import DateTime
 from Globals import InitializeClass, DTMLFile
 from AccessControl import ClassSecurityInfo
-from OFS.SimpleItem import SimpleItem
-from OFS.PropertyManager import PropertyManager
 from BTrees import IOBTree
 
-from Products.CMFCore.CMFCorePermissions import View, \
-     ManageProperties, ModifyPortalContent
-
+from Products.CMFCore.CMFCorePermissions import View
 from Products.CPSCore.CPSBase import CPSBaseFolder, CPSBase_adder
 
 from CPSChatPermissions import chatModerate, chatReply, chatPost
@@ -117,7 +112,6 @@ factory_type_information = (
 class CPSChat(CPSBaseFolder):
     """CPSChat object
     """
-
     meta_type = 'CPSChat'
     portal_type = meta_type
 
@@ -268,7 +262,8 @@ InitializeClass(CPSChat)
 
 manage_addCPSChatForm = DTMLFile('skins/Chat_addForm', globals())
 
-def manage_addCPSChat(self, id, title='', description='', host='', REQUEST=None):
+def manage_addCPSChat(self, id, title='', description='', host='',
+                      REQUEST=None):
     """Constructor method for the CPSChat content type.
     """
     chat = CPSChat(id, title, description, host)
