@@ -1,3 +1,18 @@
 *******************************************
+** CPSChat V0.0.3 [R1 build 2003-09/23-18:19 by anguenot]
+
+ZODB Requires:
+~~~~~~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Removing old Utils import from MI
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+*******************************************
 ** CPSChat V0.0.2 [R1 build 2003-09/23-18:15 by anguenot]
 
