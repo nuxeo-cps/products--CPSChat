@@ -1,0 +1,296 @@
+# translation of CPSChat_en.po to Euskara
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to
+# translation of en.po to francais
+# translation of en.po to Français
+# Gettext Message File for default.
+# Your Name <your@email>, Year
+# Julien Anguenot <ja@nuxeo.com>, 2003.
+# emmanuel <epietriga@nuxeo.com>, 2003.
+# Julien Anguenot <anguenot@nuxeo.com>, 2004.
+# Aitzol Naberan Burgaña <anaberan@codesyntax.com>, 2004.
+msgid ""
+msgstr ""
+"Project-Id-Version: CPSChat_en\n"
+"POT-Creation-Date: 2004-07-22 14:22default\n"
+"PO-Revision-Date: 2004-09-24 09:39+0200\n"
+"Last-Translator: Aitzol Naberan Burgaña <anaberan@codesyntax.com>\n"
+"Language-Team: Euskara <eu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-code: eu\n"
+"Language-name: Euskara\n"
+"Preferred-encodings: utf-8 latin1\n"
+"Domain: default\n"
+"X-Generator: KBabel 1.3\n"
+
+#.   <input type="submit" class="standalone" value="button_moderate" />
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "button_moderate"
+msgstr "Moderate"
+
+#.   <input type="submit" class="standalone" value="button_post" />
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "button_post"
+msgstr "Submit "
+
+#.   <input type="submit" class="standalone" value="button_remove" />
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "button_remove"
+msgstr "Remove"
+
+#.   <h1>
+#.           Answer to chat messages
+#.       </h1>
+#: from ../skins/cps_chat/cps_chat_answer_form.pt
+msgid "chat_answer_heading"
+msgstr "Add answer to messages"
+
+#.   <h1>
+#.           Moderate the chat
+#.       </h1>
+#: from ../skins/cps_chat/cps_chat_moderate_form.pt
+msgid "chat_moderate_heading"
+msgstr "Moderate the chat"
+
+#.   <h1>
+#.         Reply to a message
+#.       </h1>
+#: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
+msgid "heading_chat_add_reply"
+msgstr "Reply to a message"
+
+#.   <h1>
+#.           Edit Chat Property
+#.       </h1>
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
+msgid "heading_chat_edit"
+msgstr "Edit chat properties"
+
+#.   <h1>
+#.         Modify chat message
+#.       </h1>
+#: from ../skins/cps_chat/cps_chat_item_edit_form.pt
+msgid "heading_chat_item_modify"
+msgstr "Modify chat message"
+
+#.   <span>Accept</span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_accept"
+msgstr "Accept"
+
+#.   <span>
+#.                  Accept/reject
+#.                </span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_accept_reject"
+msgstr "Accept/reject"
+
+#.   <span>Add an answer</span>
+#: from ../skins/cps_chat/cps_chat_answer_form.pt
+msgid "label_add_answer"
+msgstr "Add an answer"
+
+#.   <h3>
+#.       Answers waiting to be accepted.
+#.     </h3>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_chat_answer_waiting"
+msgstr "Answers waiting for moderation"
+
+#.   <h3>
+#.       You way remove some messages
+#.     </h3>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_chat_delete_messages"
+msgstr "You way remove some of the messages"
+
+#.   <span>Description</span>
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
+msgid "label_chat_description"
+msgstr "Description "
+
+#.   <span>Host</span>
+#.   <span class="itemCreator">
+#.             Chat Guest
+#.           </span>
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
+#: ../skins/cps_chat/cps_chat_main_frame.pt
+msgid "label_chat_guest"
+msgstr "Guest"
+
+#.   <span>
+#.           This chat is closed
+#.         </span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_chat_is_closed"
+msgstr "This chat is closed"
+
+#.   <span>Is the chat
+#.                     moderated ?</span>
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
+msgid "label_chat_is_moderated"
+msgstr "Is the chat moderated ?"
+
+#.   <span>Message</span>
+#.   <span>
+#.               Message
+#.             </span>
+#: from ../skins/cps_chat/cps_chat_item_edit_form.pt
+#: ../skins/cps_chat/cps_chat_item_reply_to_form.pt
+msgid "label_chat_message"
+msgstr "Message"
+
+#.   <h3>
+#.       Messages waiting to be accepted.
+#.     </h3>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_chat_messages_waiting"
+msgstr "Messages waiting for moderation"
+
+#.   <span class="itemCreator">
+#.             Chat moderators :
+#.           </span>
+#: from ../skins/cps_chat/cps_chat_main_frame.pt
+msgid "label_chat_moderator_lists"
+msgstr "Chat moderators"
+
+#.   <span>
+#.           You are not allowed to post on this chat
+#.         </span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_chat_not_allowed_to_post"
+msgstr "You are not allowed to post on this chat"
+
+#.   <span>Pseudo</span>
+#: from ../skins/cps_chat/cps_chat_item_edit_form.pt
+msgid "label_chat_pseudo"
+msgstr "Nickname"
+
+#.   <span>Question</span>
+#: from ../skins/cps_chat/cps_chat_answer_form.pt
+#: ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_chat_question"
+msgstr "Question"
+
+#.   <span>Modify</span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_chat_question_modify"
+msgstr "Modify"
+
+#.   <span>Reply</span>
+#: from ../skins/cps_chat/cps_chat_answer_form.pt
+msgid "label_chat_question_reply"
+msgstr "Reply"
+
+#.   <span>
+#.                     Chat refresh rate</span>
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
+msgid "label_chat_refresh_rate"
+msgstr "Refresh rate (seconds)"
+
+#.   <span>Reply</span>
+#: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
+msgid "label_chat_reply"
+msgstr "Reply"
+
+#.   <span>Title</span>
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
+msgid "label_chat_title"
+msgstr "Title"
+
+#.   <span class="itemDate">
+#.         Users
+#.       </span>
+#: from ../skins/cps_chat/cps_chat_user_frame.pt
+msgid "label_chat_users"
+msgstr "Users"
+
+#.   <span>
+#.                 Message
+#.               </span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_cps_chat_enter_message"
+msgstr "Message"
+
+#.   <span>
+#.                 Pseudo
+#.               </span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_cps_chat_enter_pseudo"
+msgstr "Nickname"
+
+#.   <span>modify</span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_modify"
+msgstr "modify"
+
+#.   <span>
+#.             No new question to moderate
+#.           </span>
+#: from ../skins/cps_chat/cps_chat_answer_form.pt
+#: ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_no_questions_to_moderate"
+msgstr "No new question to moderate"
+
+#.   <span>Reject</span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_reject"
+msgstr "Reject"
+
+msgid "ChatPoster"
+msgstr "Chat Poster "
+
+msgid "ChatModerator"
+msgstr "Chat Moderator "
+
+msgid "ChatGuest"
+msgstr "Chat Guest "
+
+msgid "psm_cps_chat_properties_modified"
+msgstr "Chat properties updated"
+
+msgid "psm_messages_removed"
+msgstr "Messages removed"
+
+msgid "psm_chat_item_properties_updated"
+msgstr "Chat item properties updated"
+
+msgid "psm_chat_item_reply"
+msgstr "Reply done"
+
+msgid "psm_cps_chat_closed_done"
+msgstr "This chat is closed now"
+
+msgid "psm_cps_chat_closed_not_possible"
+msgstr "Problem : this chat has not been closed"
+
+msgid "psm_cps_chat_unclosed_done"
+msgstr "This chat is be reopen"
+
+msgid "psm_cps_chat_unclosed_not_possible"
+msgstr "Problem : reopening of the chat failed"
+
+msgid "action_chat_item_reply"
+msgstr "Reply to this message"
+
+msgid "action_chat_reply_to_questions"
+msgstr "Reply to messages"
+
