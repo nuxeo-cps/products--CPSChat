@@ -3,7 +3,9 @@ Requires:
 -
 New features:
 ~~~~~~~~~~~~~
--
+- Scrool the main chat frame at the bottom
+- Fullname are displayed instead of login
+- dates are consistent
 Bug fixes:
 ~~~~~~~~~~
 -
