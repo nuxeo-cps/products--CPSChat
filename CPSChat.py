@@ -47,9 +47,9 @@ from Question import Question
 factory_type_information = (
     { 'id': 'Chat',
       'meta_type': 'CPSChat',
-      'description': "CPSChat is a chat Product used within CPS",
+      'description': 'portal_type_CPSChat_description',
       'icon': 'chat_icon.gif',
-      'title': "portal_type_chat",
+      'title': "portal_type_CPSChat_title",
       'product': 'CPSChat',
       'factory': 'manage_addCPSChat',
       'immediate_view': 'Chat_edit_form',
