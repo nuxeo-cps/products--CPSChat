@@ -172,6 +172,9 @@
              python:test(repeat['question'].even(), 'even', 'odd')">
 
           <td align="center">
+            <span i18n:translate="action_submit">Submit to guest</span>
+            <input type="radio" tal:attributes="name question/id" value="2" />
+            <br />
             <span i18n:translate="label_accept">Accept</span>
             <input type="radio" tal:attributes="name question/id" value="1" />
             <br />
