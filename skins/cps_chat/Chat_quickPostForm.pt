@@ -1,0 +1,69 @@
+<metal:block use-macro="here/content_lib/macros/master"
+             i18n:domain="cpschat">
+  <metal:block metal:fill-slot="header">
+    <h1 i18n:translate="chat_enter_a_message">
+       Post a question
+     </h1>
+  </metal:block>
+  <metal:block fill-slot="main">
+    <script language="javascript">
+  <!--
+    function open_external_window() {
+      window.open('Chat_index', 'Chat', 'toolbar=0, scrollbars=0, location=0, statusb a
+r=0, menubar=0, resizable=1, dependent=1, width=800, height=800')
+     }
+  //->
+  </script>
+  <br />
+  <form action="addQuestion" method="POST" target="_top">
+    <table align="center" cellspacing="2" cellpadding="1" width="75%">
+      <tr>
+        <td align="right" bgcolor="#EEEEEE">
+          <strong>
+            <span i18n:translate="chat_enter_your_nickname">
+              Your nick name
+            </span>
+          </strong>
+        </td>
+        <td>
+           <tal:block define="member
+           here/portal_membership/getAuthenticatedMember;
+                              isAno python:here.portal_membership.isAnonymousUser()">
+
+             <tal:block condition="isAno">
+               <input TYPE="text" NAME="pseudo" SIZE="18" />
+             </tal:block>
+             <tal:block condition ="not:isAno">
+               <input TYPE="text" NAME="pseudo" SIZE="18" readonly
+                      tal:attributes="value member"/>
+             </tal:block>
+           </tal:block>
+        </td>
+      </tr>
+      <tr>
+          <td align="right" bgcolor="#EEEEEE">
+            <strong>
+              <span i18n:translate="chat_your_question">
+                Your question
+              </span>
+            </strong>
+          </td>
+      	<td>
+            <textarea COLS="50" ROWS="5" NAME="question" WRAP="hard"></textarea>
+         </td>
+      </tr>
+      <tr>
+      	<td align="right" colspan="2">
+            <input type="submit" name="submit" value="button_submit"
+                   i18n:attributes="value" />
+          </td>
+      </tr>
+    </table>
+    <br />
+    <span i18n:translate="chat_ass_post_warning">
+    Please, remember your post won't be visible straight within the chat
+    board. A moderator will check it out.
+  </span>
+  </form>
+ </metal:block>
+</metal:block>
