@@ -10,7 +10,7 @@ import DateTime
 
 class TestChat(CPSChatTestCase.CPSChatTestCase):
     def afterSetUp(self):
-        self.login('root')
+        self.login('manager')
         self.ws = self.portal.workspaces
         self.ws.manage_addProduct['CPSChat'].manage_addCPSChat('chat')
         self.chat = self.ws.chat
