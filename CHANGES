@@ -6,7 +6,7 @@ New features:
 -
 Bug fixes:
 ~~~~~~~~~~
--
+- Removing old Utils import from MI
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 -
