@@ -170,6 +170,15 @@ class ChatItem(CPSBaseDocument):
 
             # Revert to original user.
             newSecurityManager(None, user)
+    
+    def publishInitialPost(self):
+        wftool = self.portal_workflow
+        parent = self.aq_inner.aq_parent
+        if wftool.getInfoFor(parent, 'review_state') == 'pending':
+            wftool.doActionFor(parent,
+                       'publish_post',
+                       comment='Publish question along with answer',
+                       workflow_id='chat_item_wf')
 
 InitializeClass(ChatItem)
 
