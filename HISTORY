@@ -1,4 +1,23 @@
 *******************************************
+** CPSChat V0.0.10 [R1 build 2004/01/15-14:42 by regebro]
+
+ZODB Requires:
+~~~~~~~~~~~~~~
+-
+
+New features:
+~~~~~~~~~~~~~
+-
+
+Bug fixes:
+~~~~~~~~~~
+- The skins now works on Internet Explorer.
+
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
 ** CPSChat V0.0.9 [R1 build 2003/12/23-11:35 by ben]
 
 ZODB Requires:
