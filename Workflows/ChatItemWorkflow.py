@@ -300,18 +300,12 @@ def chatItemWorkflowsInstall(self):
                 '_owner': None,
                 'script': """\
 ##parameters=state_change
-from Products.CMFCore.utils import getToolByName
-wftool = getToolByName(context, 'portal_workflow')
 obj = state_change.object
-parent = obj.aq_inner.aq_parent
-if wftool.getInfoFor(parent, 'review_state') == 'pending':
-    wftool.doActionFor(parent,
-                       'publish_post',
-                       comment='Publish question along with answer',
-                       workflow_id='chat_item_wf')
+obj.publishInitialPost()
 """
             },
-        }
+        }    
+    
     for scriptid, scriptdef in wfscripts.items():
         wf.scripts._setObject(scriptid, PythonScript(scriptid))
         script = wf.scripts[scriptid]
@@ -576,15 +570,8 @@ if wftool.getInfoFor(parent, 'review_state') == 'pending':
                 '_owner': None,
                 'script': """\
 ##parameters=state_change
-from Products.CMFCore.utils import getToolByName
-wftool = getToolByName(context, 'portal_workflow')
 obj = state_change.object
-parent = obj.aq_inner.aq_parent
-if wftool.getInfoFor(parent, 'review_state') == 'pending':
-    wftool.doActionFor(parent,
-                       'publish_post',
-                       comment='Publish question along with answer',
-                       workflow_id='chat_item_wf')
+obj.publishInitialPost()
 """
             },
         }
