@@ -12,7 +12,7 @@
     function open_external_window() {
       window.open('Chat_index', 'Chat', 'toolbar=0, scrollbars=0, location=0, statusb ar=0, menubar=0, resizable=1, dependent=1, width=800, height=800')
      }
-  //->
+  //-->
   </script>
   <br />
   <div align="center">

@@ -12,7 +12,7 @@
       window.open('Chat_index', 'Chat', 'toolbar=0, scrollbars=0, location=0, statusb a
 r=0, menubar=0, resizable=1, dependent=1, width=800, height=800')
      }
-  //->
+  //-->
   </script>
   <br />
   <form action="addQuestion" method="POST" target="_top">
@@ -48,12 +48,12 @@ r=0, menubar=0, resizable=1, dependent=1, width=800, height=800')
               </span>
             </strong>
           </td>
-      	<td>
+        <td>
             <textarea COLS="50" ROWS="5" NAME="question" WRAP="hard"></textarea>
          </td>
       </tr>
       <tr>
-      	<td align="right" colspan="2">
+        <td align="right" colspan="2">
             <input type="submit" name="submit" value="button_submit"
                    i18n:attributes="value" />
           </td>
