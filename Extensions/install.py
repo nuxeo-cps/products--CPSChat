@@ -216,12 +216,12 @@ def install(self):
         pr("  Adding workflow configuration to %s" % workspaces_id)
         portal[workspaces_id].manage_addProduct['CPSCore'].addCPSWorkflowConfiguration()
 
-    pr("  Add %s chain to portal type %s in %s of %s" %('workspace_content_wf',
+    pr("  Add %s chain to portal type %s in %s of %s" %('workspace_folder_wf',
                                                         'CPSChat',
                                                         '.cps_workflow_configuration',
                                                         workspaces_id))
     wfc = getattr(portal[workspaces_id], '.cps_workflow_configuration')
-    wfc.manage_addChain(portal_type='CPSChat', chain='workspace_content_wf')
+    wfc.manage_addChain(portal_type='CPSChat', chain='workspace_folder_wf')
 
     if not '.cps_workflow_configuration' in portal[sections_id].objectIds():
         pr("  Adding workflow configuration to %s" % sections_id)
