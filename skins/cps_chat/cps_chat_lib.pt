@@ -14,7 +14,7 @@
       return true;
     }
    </script>
-   <div class="group">
+   <div class="group" tal:condition="python:checkPerm('Chat Post', here)">
        <form method="POST" name="form" action="cps_chat_post_message"
              target="CHAT_MAIN_FRAME" onsubmit="javascript:resetText()"
               tal:attributes="action
@@ -47,6 +47,12 @@
         <input type="submit" value="button_post" class="standalone"
                  i18n:attributes="value" />
        </form>
+  </div>
+  <div class="group" align="center"
+       tal:condition="python:not checkPerm('Chat Post', here)">
+      <span i18n:translate="label_chat_not_allowed_to_post">
+        You are not allowed to post on this chat
+      </span>
   </div>
 </metal:block>
 
