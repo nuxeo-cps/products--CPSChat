@@ -2,7 +2,6 @@
 #$Id :$
 """Close the chat
 """
-
 #from Products.CMFCore.WorkflowCore import WorkflowException
 
 wftool = context.portal_workflow
