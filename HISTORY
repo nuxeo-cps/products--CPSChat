@@ -1,4 +1,20 @@
 *******************************************
+** CPSChat V0.0.8 [R1 build 2003/11/17-14:54 by ben]
+
+ZODB Requires:
+~~~~~~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- fix: creation into section result in wf error
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
 ** CPSChat V0.0.7 [R1 build 2003-10/08-15:01 by ben]
 
 ZODB Requires:

@@ -1,12 +1,15 @@
 ZODB Requires:
 ~~~~~~~~~~~~~~
 -
+
 New features:
 ~~~~~~~~~~~~~
 -
+
 Bug fixes:
 ~~~~~~~~~~
-- fix: creation into section result in wf error
+-
+
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 -
