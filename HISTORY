@@ -1,4 +1,19 @@
 *******************************************
+** CPSChat V0.0.6 [R1 build 2003-10/06-07:20 by ben]
+
+ZODB Requires:
+~~~~~~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Fix install external method trying to add cps_forum skin
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+*******************************************
 ** CPSChat V0.0.5 [R1 build 2003-10/01-09:20 by anguenot]
 
 ZODB Requires:
