@@ -29,7 +29,7 @@ from Products.CMFCore.permissions import View, ModifyPortalContent
 from Products.CPSChat.CPSChatPermissions import chatModerate, \
      chatReply, chatPost
 
-from Products.CPSCore.CPSWorkflow import \
+from Products.CPSWorkflow.transitions import \
      TRANSITION_INITIAL_CREATE, \
      TRANSITION_ALLOWSUB_CHECKOUT, \
      TRANSITION_ALLOWSUB_CREATE
