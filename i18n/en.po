@@ -13,6 +13,7 @@
 # translation of en.po to
 # translation of en.po to
 # translation of en.po to
+# translation of en.po to
 # translation of en.po to francais
 # translation of en.po to Français
 # Gettext Message File for default.
@@ -23,8 +24,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: en\n"
-"POT-Creation-Date: 2004-04-23 11:29default\n"
-"PO-Revision-Date: 2004-04-22 15:39+0200\n"
+"POT-Creation-Date: 2004-04-26 17:09default\n"
+"PO-Revision-Date: 2004-04-26 17:10+0200\n"
 "Last-Translator: Julien Anguenot <anguenot@nuxeo.com>\n"
 "Language-Team:  <janguenot@nuxeo.com>\n"
 "MIME-Version: 1.0\n"
@@ -168,6 +169,13 @@ msgstr "Messages waiting for moderation"
 #: from ../skins/cps_chat/cps_chat_main_frame.pt
 msgid "label_chat_moderator_lists"
 msgstr "Chat moderators"
+
+#.   <span>
+#.           You are not allowed to post on this chat
+#.         </span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_chat_not_allowed_to_post"
+msgstr "You are not allowed to post on this chat"
 
 #.   <span>Pseudo</span>
 #: from ../skins/cps_chat/cps_chat_item_edit_form.pt
@@ -406,3 +414,4 @@ msgstr "Reply to messages"
 
 #~ msgid "Role1"
 #~ msgstr "XXX"
+

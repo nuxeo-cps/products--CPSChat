@@ -6,7 +6,7 @@ New features:
 -
 Bug fixes:
 ~~~~~~~~~~
--
+- Block anonymous when they are only readers from posting. They need to be at least chatPoster"
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 - Entirely rewritten (Types / Workflows / skins)
