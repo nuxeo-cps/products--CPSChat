@@ -272,7 +272,7 @@ def manage_addCPSChat(self, id, title='', description='', host='',
     """
     Constructor method for the type CPSChat.
     """
-    self._setObject(id, CPSChat(id, title, description, host=''))
+    self._setObject(id, CPSChat(id, title, description, host))
     if REQUEST is not None:
         REQUEST.RESPONSE.redirect(self.absolute_url() + '/manage_main')
 
