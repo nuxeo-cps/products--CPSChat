@@ -9,7 +9,7 @@
   </metal:block>
   <metal:block fill-slot="main">
   <div class="group">
-  <tal:block define="questions python:[x for x in here.getPublicMessages()
+  <tal:block define="questions python:[x for x in here.getPublicMessages(include_pending=1)
              if not x.hasReply()]">
     <tal:block condition="python:questions != []">
       <table border="0" align="center" width="100%" cellspacing="2" cellpadding="2">
