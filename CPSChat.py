@@ -28,19 +28,20 @@ be used as a kind of FAQ where you can filter the anwsers.
 # Zope
 from zLOG import LOG, DEBUG
 import DateTime
-from Globals import InitializeClass, DTMLFile, Persistent
+from Globals import InitializeClass, DTMLFile
 from AccessControl import ClassSecurityInfo
 from OFS.SimpleItem import SimpleItem
 from OFS.PropertyManager import PropertyManager
 from BTrees import IOBTree
-import time
 
 # CMF
-from Products.CMFCore.CMFCorePermissions import View, AddPortalContent, \
-     ManageProperties, ChangePermissions, ModifyPortalContent
+from Products.CMFCore.CMFCorePermissions import View, \
+     ManageProperties, ModifyPortalContent
 
 # CPS
 from Products.CPSCore.CPSBase import CPSBaseDocument
+
+# This product
 from Question import Question
 
 factory_type_information = (
@@ -141,12 +142,10 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
             REQUEST.RESPONSE.redirect(self.absolute_url() + '/Chat_history')
 
     security.declareProtected('Moderate Chat', 'addQuestion')
-    def editProperties(self, title='',
-                       description='',
-                       host='',
+    def editProperties(self, title='', description='', host='',
                        REQUEST=None):
         """
-        Constructor method for the type CPSChat.
+        Edit chat object properties.
         """
         self.title = title
         self.description = description
@@ -196,7 +195,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
 
 
     def selectQuestions(self, status=None, num=None, reverse=0,
-      sort_by_answer_time=0):
+                        sort_by_answer_time=0):
         """
         Return list of questions
         """
@@ -238,7 +237,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
     security.declareProtected('Moderate Chat', 'publish')
     def publish(self, REQUEST):
         """
-        Moderate a batch of questions
+        Publish a batch of questions
         """
         form = REQUEST.form
         for k, v in form.items():
@@ -268,7 +267,8 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
                 self.absolute_url() + '/Chat_moderateForm')
 
 
-def manage_addCPSChat(self, id, title='', description='', host='', REQUEST=None):
+def manage_addCPSChat(self, id, title='', description='', host='', 
+                      REQUEST=None):
     """
     Constructor method for the type CPSChat.
     """
