@@ -21,7 +21,7 @@
     //->
     </script>
     <br />
-    <tal:block define="questions python:here.selectQuestions(status='ANSWERED')">
+    <tal:block define="questions python:here.selectQuestions(status='PUBLISHED')">
       <tal:block condition="questions">
         <table align="center" width="100%" cellspacing="2" cellpadding="1">
           <tr bgcolor="#FF0000">
