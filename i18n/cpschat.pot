@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: default\n"
-"POT-Creation-Date: 2003-09-23 21:31default\n"
+"POT-Creation-Date: 2003-09-30 20:08default\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Your Name <your@email>\n"
 "Language-Team: Name <email>\n"
@@ -78,11 +78,25 @@ msgstr ""
 msgid "button_moderate"
 msgstr ""
 
+#.   <input value="button_publish" type="submit" />
+#: from ../skins/cps_chat/Chat_moderateForm.pt
+msgid "button_publish"
+msgstr ""
+
 #.   <input value="button_submit" type="submit" />
 #.   <input value="button_submit" name="submit" type="submit" />
 #: from ../skins/cps_chat/Chat_addAnswerForm.pt
 #: ../skins/cps_chat/Chat_addQuestionForm.pt
+#: ../skins/cps_chat/Chat_addSingleAnswerForm.pt
+#: ../skins/cps_chat/Chat_quickPostForm.pt
 msgid "button_submit"
+msgstr ""
+
+#.   <h1>
+#.           Answer this question.
+#.       </h1>
+#: from ../skins/cps_chat/Chat_addSingleAnswerForm.pt
+msgid "chat_add_answer_heading"
 msgstr ""
 
 #.   <h1>
@@ -97,6 +111,7 @@ msgstr ""
 #.       board. A moderator will check it out.
 #.     </span>
 #: from ../skins/cps_chat/Chat_addQuestionForm.pt
+#: ../skins/cps_chat/Chat_quickPostForm.pt
 msgid "chat_ass_post_warning"
 msgstr ""
 
@@ -115,7 +130,11 @@ msgstr ""
 #.   <h1>
 #.     Post a question
 #.     </h1>
+#.   <h1>
+#.          Post a question
+#.        </h1>
 #: from ../skins/cps_chat/Chat_addQuestionForm.pt
+#: ../skins/cps_chat/Chat_quickPostForm.pt
 msgid "chat_enter_a_message"
 msgstr ""
 
@@ -123,6 +142,7 @@ msgstr ""
 #.                 Your nick name
 #.               </span>
 #: from ../skins/cps_chat/Chat_addQuestionForm.pt
+#: ../skins/cps_chat/Chat_quickPostForm.pt
 msgid "chat_enter_your_nickname"
 msgstr ""
 
@@ -139,6 +159,7 @@ msgstr ""
 #.                   Your question
 #.                 </span>
 #: from ../skins/cps_chat/Chat_addQuestionForm.pt
+#: ../skins/cps_chat/Chat_quickPostForm.pt
 msgid "chat_your_question"
 msgstr ""
 
@@ -148,16 +169,22 @@ msgid "label_accept"
 msgstr ""
 
 #.   <span>
-#.                Accept/reject
-#.              </span>
+#.                  Accept/reject
+#.                </span>
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_accept_reject"
 msgstr ""
 
 #.   <span>Answer the pending questions</span>
 #: from ../skins/cps_chat/Chat_addAnswerForm.pt
+#: ../skins/cps_chat/Chat_addSingleAnswerForm.pt
 #: ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_answer"
+msgstr ""
+
+#.   <span>Answer</span>
+#: from ../skins/cps_chat/Chat_moderateForm.pt
+msgid "label_answer_one_question"
 msgstr ""
 
 #.   <h3>
@@ -208,6 +235,11 @@ msgstr ""
 msgid "label_chat_question_modify"
 msgstr ""
 
+#.   <span>Reply</span>
+#: from ../skins/cps_chat/Chat_moderateForm.pt
+msgid "label_chat_reply_question"
+msgstr ""
+
 #.   <span>Date</span>
 #: from ../skins/cps_chat/Chat_history.pt ../skins/cps_chat/Chat_questions.pt
 msgid "label_date"
@@ -219,6 +251,7 @@ msgid "label_description"
 msgstr ""
 
 #.   <span>From</span>
+#.   <span>from</span>
 #.   <span>From :</span>
 #: from ../skins/cps_chat/Chat_history.pt
 #: ../skins/cps_chat/Chat_moderateForm.pt
@@ -231,6 +264,15 @@ msgstr ""
 #.   <th align="right">Host</th>
 #: from ../skins/cps_chat/Chat_edit_form.pt
 msgid "label_host"
+msgstr ""
+
+#.   <span>
+#.       You can answer the question by choosing one in the array below.
+#.       You can as well anwser to all at the same time by clicking the link
+#.       "Reply to pending questions" on the right.
+#.     </span>
+#: from ../skins/cps_chat/Chat_moderateForm.pt
+msgid "label_moderate_answer_questions"
 msgstr ""
 
 #.   <span>
@@ -250,21 +292,40 @@ msgid "label_moderate_phase2"
 msgstr ""
 
 #.   <span>modify</span>
+#.   <span>Modify</span>
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_modify"
 msgstr ""
 
 #.   <span>
+#.            No new question to publish.
+#.          </span>
+#: from ../skins/cps_chat/Chat_moderateForm.pt
+msgid "label_no_answered_questions"
+msgstr ""
+
+#.   <span>
 #.         No question with a pending state.
 #.       </span>
+#.   <span>
+#.           There's no news questions you need to answer.
+#.         </span>
 #: from ../skins/cps_chat/Chat_addAnswerForm.pt
+#: ../skins/cps_chat/Chat_addSingleAnswerForm.pt
+#: ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_no_pending_questions"
 msgstr ""
 
 #.   <span>
-#.                Published
-#.              </span>
-#.   <span>Published</span>
+#.             No new question to moderate
+#.           </span>
+#: from ../skins/cps_chat/Chat_moderateForm.pt
+msgid "label_no_questions_to_moderate"
+msgstr ""
+
+#.   <span>
+#.                  Published
+#.                </span>
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_published"
 msgstr ""
@@ -276,11 +337,13 @@ msgstr ""
 
 #.   <span>Question from :</span>
 #: from ../skins/cps_chat/Chat_addAnswerForm.pt
+#: ../skins/cps_chat/Chat_addSingleAnswerForm.pt
 msgid "label_question_form"
 msgstr ""
 
 #.   <span>Refresh for the latest ones</span>
 #: from ../skins/cps_chat/Chat_addAnswerForm.pt
+#: ../skins/cps_chat/Chat_addSingleAnswerForm.pt
 #: ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_refresh"
 msgstr ""
@@ -288,6 +351,13 @@ msgstr ""
 #.   <span>Reject</span>
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_reject"
+msgstr ""
+
+#.   <h3>
+#.       Questions waiting for a reply.
+#.     </h3>
+#: from ../skins/cps_chat/Chat_moderateForm.pt
+msgid "label_reply_to_pending questions"
 msgstr ""
 
 #.   <span>
@@ -312,5 +382,6 @@ msgstr ""
 #.         Your answer :
 #.       </span>
 #: from ../skins/cps_chat/Chat_addAnswerForm.pt
+#: ../skins/cps_chat/Chat_addSingleAnswerForm.pt
 msgid "label_your_answer"
 msgstr ""
