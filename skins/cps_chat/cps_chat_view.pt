@@ -1,7 +1,7 @@
 <html xmlns:tal="http://xml.zope.org/namespaces/tal"
       xmlns:metal="http://xml.zope.org/namespaces/metal">
 <body>
-<metal:block use-macro="here/content_lib/macros/master">
+<metal:block use-macro="here/content_lib_master/macros/master">
   <metal:block fill-slot="main">
   <tal:block define="dummy python:here.trackChatUser(pseudo='Anonymous', REQUEST=request)" />
   <div class="group">
