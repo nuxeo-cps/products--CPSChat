@@ -31,7 +31,7 @@ from AccessControl import ClassSecurityInfo
 from AccessControl.SecurityManagement import newSecurityManager
 from Acquisition import aq_inner, aq_parent
 
-from Products.CMFCore.CMFCorePermissions import View
+from Products.CMFCore.permissions import View
 
 from Products.CPSCore.CPSBase import CPSBase_adder, CPSBaseDocument
 from Products.CPSCore.CPSMembershipTool import CPSUnrestrictedUser

@@ -31,7 +31,7 @@ from AccessControl.SecurityManagement import newSecurityManager
 
 from Products.BTreeFolder2.BTreeFolder2 import BTreeFolder2Base
 
-from Products.CMFCore.CMFCorePermissions import View
+from Products.CMFCore.permissions import View
 
 from Products.CPSCore.CPSBase import CPSBaseFolder, CPSBase_adder
 from Products.CPSCore.CPSMembershipTool import CPSUnrestrictedUser

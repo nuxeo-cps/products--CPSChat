@@ -28,7 +28,7 @@ __author__ = "Julien Anguenot <ja@nuxeo.com>"
   - 'Chat Post'     : Permission you need to post question
 """
 
-from Products.CMFCore.CMFCorePermissions import setDefaultRoles
+from Products.CMFCore.permissions import setDefaultRoles
 
 chatModerate = 'Chat Moderate'
 setDefaultRoles(chatModerate, ('Manager', 'Owner'))

@@ -25,7 +25,7 @@ __author__ = "Julien Anguenot <ja@nuxeo.com>"
 import os, sys
 from zLOG import LOG, INFO, DEBUG
 
-from Products.CMFCore.CMFCorePermissions import View, ModifyPortalContent
+from Products.CMFCore.permissions import View, ModifyPortalContent
 from Products.CPSChat.CPSChatPermissions import chatModerate, \
      chatReply, chatPost
 
