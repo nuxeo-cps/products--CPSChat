@@ -19,6 +19,8 @@
 """CPSChat is chat product for CPS3.
 """
 
+import CPSMemberShipPatch
+
 from Products.CMFCore import utils
 from Products.CMFCore.DirectoryView import registerDirectory
 from Products.CMFCore.CMFCorePermissions import AddPortalContent
