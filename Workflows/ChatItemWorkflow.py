@@ -37,6 +37,8 @@ from Products.CPSCore.CPSWorkflow import \
 from Products.DCWorkflow.Transitions import \
      TRIGGER_USER_ACTION
 
+from Products.PythonScripts.PythonScript import PythonScript
+
 def chatItemWorkflowsInstall(self):
     """Installs the workflow for the ChatItem Type
     """
@@ -71,6 +73,7 @@ def chatItemWorkflowsInstall(self):
     ###########################################################################
 
     for s in ('waiting',
+              'pending',
               'published',):
         wf.states.addState(s)
 
@@ -91,6 +94,24 @@ def chatItemWorkflowsInstall(self):
     s.setProperties(title='Waiting',
                     description='',
                     transitions=('create_content',
+                                 'publish_post',
+                                 'submit_question',))
+                                 
+    ##########################################################################
+    #                                  PENDING
+    ##########################################################################
+
+    s = wf.states.get('pending')
+
+    s.setPermission(View, 1, ('ChatModerator','ChatGuest'))
+    s.setPermission(ModifyPortalContent, 1, ('ChatModerator','ChatGuest'))
+    s.setPermission(chatReply, 1, ('ChatModerator','ChatGuest'))
+    s.setPermission(chatPost, 1, ('ChatModerator','ChatGuest'))
+    s.setPermission(chatModerate, 1, ('ChatModerator',))
+
+    s.setProperties(title='Submitted to guest',
+                    description='',
+                    transitions=('unsubmit',
                                  'publish_post',))
 
     ###########################################################################
@@ -121,7 +142,9 @@ def chatItemWorkflowsInstall(self):
     for t in ('create',
               'create_content',
               'publish_post',
-              'unpublish_post'):
+              'unpublish_post',
+              'submit_question',
+              'unsubmit',):
         wf.transitions.addTransition(t)
 
     ###########################################################################
@@ -167,6 +190,7 @@ def chatItemWorkflowsInstall(self):
                     new_state_id='published',
                     transition_behavior=(),
                     trigger_type=TRIGGER_USER_ACTION,
+                    after_script_name='publish_question',
                     actbox_name='New',
                     actbox_category='',
                     actbox_url='',
@@ -190,6 +214,35 @@ def chatItemWorkflowsInstall(self):
                     props={'guard_permissions':'',
                            'guard_roles':'Manager;WorkspaceManager;ChatModerator',
                            'guard_expr':''},)
+
+    ###########################################################################
+    #                                  SUBMIT_QUESTION
+    ###########################################################################
+
+    t = wf.transitions.get('submit_question')
+    t.setProperties(title='The moderator submits a question to the guest',
+                    description='',
+                    new_state_id='pending',
+                    transition_behavior=(),
+                    trigger_type=TRIGGER_USER_ACTION,
+                    props={'guard_permissions':'',
+                           'guard_roles':'Manager;WorkspaceManager;ChatModerator',
+                           'guard_expr':''},)
+
+    ###########################################################################
+    #                                 UNSUBMIT
+    ###########################################################################
+
+    t = wf.transitions.get('unsubmit')
+    t.setProperties(title='Move back question to waiting status',
+                    description='',
+                    new_state_id='waiting',
+                    transition_behavior=(),
+                    trigger_type=TRIGGER_USER_ACTION,
+                    props={'guard_permissions':'',
+                           'guard_roles':'Manager;WorkspaceManager;ChatModerator',
+                           'guard_expr':''},)
+
 
     ###########################################################################
     ###########################################################################
@@ -239,6 +292,33 @@ def chatItemWorkflowsInstall(self):
     vdef.setProperties(description='Time of the last transition',
                        default_expr="state_change/getDateTime",
                        for_status=1, update_always=1)
+    
+    ################ Scripts #################
+    
+    wfscripts = {
+            'publish_question': {
+                '_owner': None,
+                'script': """\
+##parameters=state_change
+from Products.CMFCore.utils import getToolByName
+wftool = getToolByName(context, 'portal_workflow')
+obj = state_change.object
+parent = obj.aq_inner.aq_parent
+if wftool.getInfoFor(parent, 'review_state') == 'pending':
+    wftool.doActionFor(parent,
+                       'publish_post',
+                       comment='Publish question along with answer',
+                       workflow_id='chat_item_wf')
+"""
+            },
+        }
+    for scriptid, scriptdef in wfscripts.items():
+        wf.scripts._setObject(scriptid, PythonScript(scriptid))
+        script = wf.scripts[scriptid]
+        script.write(scriptdef['script'])
+        for attribute in ('title', '_proxy_roles', '_owner'):
+            if scriptdef.has_key(attribute):
+                setattr(script, attribute, scriptdef[attribute])
 
     ###########################################################################
     ###########################################################################
@@ -269,6 +349,7 @@ def chatItemWorkflowsInstall(self):
     ###########################################################################
 
     for s in ('waiting',
+              'pending',
               'published',):
         wf.states.addState(s)
 
@@ -289,6 +370,24 @@ def chatItemWorkflowsInstall(self):
     s.setProperties(title='Waiting',
                     description='',
                     transitions=('create_content',
+                                 'publish_post',
+                                 'submit_question'))
+
+    ##########################################################################
+    #                                  PENDING
+    ##########################################################################
+
+    s = wf.states.get('pending')
+
+    s.setPermission(View, 1, ('ChatModerator','ChatGuest'))
+    s.setPermission(ModifyPortalContent, 1, ('ChatModerator','ChatGuest'))
+    s.setPermission(chatReply, 1, ('ChatModerator','ChatGuest'))
+    s.setPermission(chatPost, 1, ('ChatModerator','ChatGuest'))
+    s.setPermission(chatModerate, 1, ('ChatModerator',))
+
+    s.setProperties(title='Submitted to guest',
+                    description='',
+                    transitions=('unsubmit',
                                  'publish_post',))
 
     ###########################################################################
@@ -319,7 +418,9 @@ def chatItemWorkflowsInstall(self):
     for t in ('create',
               'create_content',
               'publish_post',
-              'unpublish_post'):
+              'unpublish_post',
+              'submit_question',
+              'unsubmit'):
         wf.transitions.addTransition(t)
 
     ###########################################################################
@@ -365,6 +466,7 @@ def chatItemWorkflowsInstall(self):
                     new_state_id='published',
                     transition_behavior=(),
                     trigger_type=TRIGGER_USER_ACTION,
+                    after_script_name='publish_question',
                     actbox_name='New',
                     actbox_category='',
                     actbox_url='',
@@ -388,6 +490,35 @@ def chatItemWorkflowsInstall(self):
                     props={'guard_permissions':'',
                            'guard_roles':'Manager;SectionManager;ChatModerator',
                            'guard_expr':''},)
+
+    ###########################################################################
+    #                                  SUBMIT_QUESTION
+    ###########################################################################
+
+    t = wf.transitions.get('submit_question')
+    t.setProperties(title='The moderator submits a question to the guest',
+                    description='',
+                    new_state_id='pending',
+                    transition_behavior=(),
+                    trigger_type=TRIGGER_USER_ACTION,
+                    props={'guard_permissions':'',
+                           'guard_roles':'Manager;SectionManager;ChatModerator',
+                           'guard_expr':''},)
+
+    ###########################################################################
+    #                                 UNSUBMIT
+    ###########################################################################
+
+    t = wf.transitions.get('unsubmit')
+    t.setProperties(title='Move back question to waiting status',
+                    description='',
+                    new_state_id='waiting',
+                    transition_behavior=(),
+                    trigger_type=TRIGGER_USER_ACTION,
+                    props={'guard_permissions':'',
+                           'guard_roles':'Manager;SectionManager;ChatModerator',
+                           'guard_expr':''},)
+
 
     ###########################################################################
     ###########################################################################
@@ -437,3 +568,30 @@ def chatItemWorkflowsInstall(self):
     vdef.setProperties(description='Time of the last transition',
                        default_expr="state_change/getDateTime",
                        for_status=1, update_always=1)
+
+    ################ Scripts #################
+    
+    wfscripts = {
+            'publish_question': {
+                '_owner': None,
+                'script': """\
+##parameters=state_change
+from Products.CMFCore.utils import getToolByName
+wftool = getToolByName(context, 'portal_workflow')
+obj = state_change.object
+parent = obj.aq_inner.aq_parent
+if wftool.getInfoFor(parent, 'review_state') == 'pending':
+    wftool.doActionFor(parent,
+                       'publish_post',
+                       comment='Publish question along with answer',
+                       workflow_id='chat_item_wf')
+"""
+            },
+        }
+    for scriptid, scriptdef in wfscripts.items():
+        wf.scripts._setObject(scriptid, PythonScript(scriptid))
+        script = wf.scripts[scriptid]
+        script.write(scriptdef['script'])
+        for attribute in ('title', '_proxy_roles', '_owner'):
+            if scriptdef.has_key(attribute):
+                setattr(script, attribute, scriptdef[attribute])
