@@ -74,7 +74,8 @@ def chatWorkflowsInstall(self):
     ###########################################################################
     ###########################################################################
 
-    for s in ('work',):
+    for s in ('work',
+              'closed'):
         wf.states.addState(s)
 
     ##########################################################################
@@ -93,7 +94,25 @@ def chatWorkflowsInstall(self):
     s.setProperties(title='Work',
                     description='',
                     transitions=('create_content',
-                                 'cut_copy_paste', ),)
+                                 'cut_copy_paste',
+                                 'close',),)
+
+    ##########################################################################
+    #                                  CLOSED
+    ##########################################################################
+
+    s = wf.states.get('closed')
+
+    s.setPermission(View, 1, ('ChatPoster',))
+    s.setPermission(ModifyPortalContent, 1, ('ChatModerator',))
+    s.setPermission(chatReply, 1, ('ChatModerator',))
+    s.setPermission(chatPost, 1, ('ChatModerator',))
+    s.setPermission(chatModerate, 1, ('ChatModerator',))
+
+    s.setProperties(title='Closed',
+                    description='',
+                    transitions=('unclose',
+                                 'cut_copy_paste',),)
 
     ###########################################################################
     ###########################################################################
@@ -105,7 +124,9 @@ def chatWorkflowsInstall(self):
 
     for t in ('create',
               'create_content',
-              'cut_copy_paste',):
+              'cut_copy_paste',
+              'close',
+              'unclose',):
         wf.transitions.addTransition(t)
 
 
@@ -161,7 +182,92 @@ def chatWorkflowsInstall(self):
                            'guard_roles':'Manager; SectionManager',
                            'guard_expr':''},)
 
+    ##########################################################################
+    #                                  CLOSE
+    ##########################################################################
 
+    t = wf.transitions.get('close')
+    t.setProperties(title='close',
+                    new_state_id='closed',
+                    transition_behavior=(),
+                    clone_allowed_transitions=None,
+                    trigger_type=TRIGGER_USER_ACTION,
+                    actbox_name='Close',
+                    actbox_category='workflow',
+                    actbox_url='%(content_url)s/cps_chat_close',
+                    props={'guard_permissions':'',
+                           'guard_roles':'Manager; SectionManager; SectionReviewer; ChatModerator',
+                           'guard_expr':''},)
+
+    ##########################################################################
+    #                                  UNCLOSE
+    ##########################################################################
+
+    t = wf.transitions.get('unclose')
+    t.setProperties(title='unclose',
+                    new_state_id='work',
+                    transition_behavior=(),
+                    clone_allowed_transitions=None,
+                    trigger_type=TRIGGER_USER_ACTION,
+                    actbox_name='Unclose',
+                    actbox_category='workflow',
+                    actbox_url='%(content_url)s/cps_chat_unclose',
+                    props={'guard_permissions':'',
+                           'guard_roles':'Manager; SectionManager; SectionReviewer; ChatModerator',
+                           'guard_expr':''},)
+
+    ################################################################
+    #                 VARIABLES
+    ################################################################
+
+    for v in ('action',
+              'actor',
+              'comments',
+              'review_history',
+              'time',
+              'dest_container',
+              ):
+        wf.variables.addVariable(v)
+
+
+    wf.variables.setStateVar('review_state')
+
+    vdef = wf.variables['action']
+    vdef.setProperties(description='The last transition',
+                       default_expr='transition/getId|nothing',
+                       for_status=1, update_always=1)
+
+    vdef = wf.variables['actor']
+    vdef.setProperties(description='The ID of the user who performed '
+                       'the last transition',
+                       default_expr='user/getId',
+                       for_status=1, update_always=1)
+
+    vdef = wf.variables['comments']
+    vdef.setProperties(description='Comments about the last transition',
+                       default_expr="python:state_change.kwargs.get('comment', '')",
+                       for_status=1, update_always=1)
+
+    vdef = wf.variables['review_history']
+    vdef.setProperties(description='Provides access to workflow history',
+                       default_expr="state_change/getHistory",
+                       props={'guard_permissions':'',
+                              'guard_roles':'Manager; WorkspaceManager; WorkspaceMember; WorkspaceReader; Member',
+                              'guard_expr':''})
+
+    vdef = wf.variables['time']
+    vdef.setProperties(description='Time of the last transition',
+                       default_expr="state_change/getDateTime",
+                       for_status=1, update_always=1)
+
+    vdef = wf.variables['dest_container']
+    vdef.setProperties(description='Destination container for the last paste/publish',
+                       default_expr="python:state_change.kwargs.get('dest_container', '')",
+                       for_status=1, update_always=1)
+
+
+    ######################################################################################
+    ######################################################################################
     wfid = 'chat_workspace_wf'
 
     if wfid in wfids:
@@ -187,7 +293,8 @@ def chatWorkflowsInstall(self):
     ###########################################################################
     ###########################################################################
 
-    for s in ('work',):
+    for s in ('work',
+              'closed'):
         wf.states.addState(s)
 
     ##########################################################################
@@ -206,7 +313,26 @@ def chatWorkflowsInstall(self):
     s.setProperties(title='Work',
                     description='',
                     transitions=('create_content',
-                                 'cut_copy_paste', ),)
+                                 'cut_copy_paste',
+                                 'close',),)
+
+
+    ##########################################################################
+    #                                  CLOSED
+    ##########################################################################
+
+    s = wf.states.get('closed')
+
+    s.setPermission(View, 1, ('ChatPoster',))
+    s.setPermission(ModifyPortalContent, 1, ('ChatModerator',))
+    s.setPermission(chatReply, 1, ('ChatModerator',))
+    s.setPermission(chatPost, 1, ('ChatModerator',))
+    s.setPermission(chatModerate, 1, ('ChatModerator',))
+
+    s.setProperties(title='Closed',
+                    description='',
+                    transitions=('unclose',
+                                 'cut_copy_paste',),)
 
     ###########################################################################
     ###########################################################################
@@ -218,7 +344,9 @@ def chatWorkflowsInstall(self):
 
     for t in ('create',
               'create_content',
-              'cut_copy_paste',):
+              'cut_copy_paste',
+              'close',
+              'unclose',):
         wf.transitions.addTransition(t)
 
 
@@ -274,3 +402,85 @@ def chatWorkflowsInstall(self):
                            'guard_roles':'Manager; WorkspaceManager; WorkspaceMember',
                            'guard_expr':''},)
 
+    ##########################################################################
+    #                                  CLOSE
+    ##########################################################################
+
+    t = wf.transitions.get('close')
+    t.setProperties(title='close',
+                    new_state_id='closed',
+                    transition_behavior=(),
+                    clone_allowed_transitions=None,
+                    trigger_type=TRIGGER_USER_ACTION,
+                    actbox_name='Close',
+                    actbox_category='workflow',
+                    actbox_url='%(content_url)s/cps_chat_close',
+                    props={'guard_permissions':'',
+                           'guard_roles':'Manager; WorkspaceManager; ChatModerator',
+                           'guard_expr':''},)
+
+    ##########################################################################
+    #                                  UNCLOSE
+    ##########################################################################
+
+    t = wf.transitions.get('unclose')
+    t.setProperties(title='unclose',
+                    new_state_id='work',
+                    transition_behavior=(),
+                    clone_allowed_transitions=None,
+                    trigger_type=TRIGGER_USER_ACTION,
+                    actbox_name='Unclose',
+                    actbox_category='workflow',
+                    actbox_url='%(content_url)s/cps_chat_unclose',
+                    props={'guard_permissions':'',
+                           'guard_roles':'Manager; WorkspaceManager; ChatModerator',
+                           'guard_expr':''},)
+
+    ################################################################
+    #                 VARIABLES
+    ################################################################
+
+    for v in ('action',
+              'actor',
+              'comments',
+              'review_history',
+              'time',
+              'dest_container',
+              ):
+        wf.variables.addVariable(v)
+
+
+    wf.variables.setStateVar('review_state')
+
+    vdef = wf.variables['action']
+    vdef.setProperties(description='The last transition',
+                       default_expr='transition/getId|nothing',
+                       for_status=1, update_always=1)
+
+    vdef = wf.variables['actor']
+    vdef.setProperties(description='The ID of the user who performed '
+                       'the last transition',
+                       default_expr='user/getId',
+                       for_status=1, update_always=1)
+
+    vdef = wf.variables['comments']
+    vdef.setProperties(description='Comments about the last transition',
+                       default_expr="python:state_change.kwargs.get('comment', '')",
+                       for_status=1, update_always=1)
+
+    vdef = wf.variables['review_history']
+    vdef.setProperties(description='Provides access to workflow history',
+                       default_expr="state_change/getHistory",
+                       props={'guard_permissions':'',
+                              'guard_roles':'Manager; WorkspaceManager; WorkspaceMember; WorkspaceReader; Member',
+                              'guard_expr':''})
+
+    vdef = wf.variables['time']
+    vdef.setProperties(description='Time of the last transition',
+                       default_expr="state_change/getDateTime",
+                       for_status=1, update_always=1)
+
+    vdef = wf.variables['dest_container']
+    vdef.setProperties(description='Destination container for the last paste/publish',
+                       default_expr="python:state_change.kwargs.get('dest_container', '')",
+                       for_status=1, update_always=1)
