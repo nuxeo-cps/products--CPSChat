@@ -3,12 +3,10 @@ Requires:
 -
 New features:
 ~~~~~~~~~~~~~
-- Permissions dedicated to CPSChat.
-- Allowing creation in sections
-- Removing useless popup
+-
 Bug fixes:
 ~~~~~~~~~~
-- Removed the useless chat popup.
+-
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 -

@@ -1,4 +1,22 @@
 *******************************************
+** CPSChat V0.2.0 [R1 build 2004/03/08-14:56 by anguenot]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Permissions dedicated to CPSChat.
+- Allowing creation in sections
+- Removing useless popup
+Bug fixes:
+~~~~~~~~~~
+- Removed the useless chat popup.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
 ** CPSChat V0.1.0 [R1 build 2004/03/08-14:17 by ben]
 
 Requires:
