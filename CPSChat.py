@@ -152,8 +152,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
             REQUEST.RESPONSE.redirect(self.absolute_url() + '/Chat_history')
 
     security.declareProtected('Moderate Chat', 'editProperties')
-    def editProperties(self, title='', description='', host='',
-                       REQUEST=None):
+    def editProperties(self, title='', description='', host=''):
         """
         Edit chat object properties.
         """
@@ -173,8 +172,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
         self.counter += 1
 
         if REQUEST is not None:
-            REQUEST.RESPONSE.redirect(
-                self.absolute_url() )
+            REQUEST.RESPONSE.redirect(self.absolute_url())
 
     #
     # Moderation methods
