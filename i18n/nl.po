@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: en\n"
-"POT-Creation-Date: 2004-04-26 17:09default\n"
+"POT-Creation-Date: 2004-04-27 02:01default\n"
 "PO-Revision-Date: 2003-10-30 10:40+0100\n"
 "Last-Translator: emmanuel <epietriga@nuxeo.com>\n"
 "Language-Team: francais <fr@li.org>\n"
@@ -20,14 +20,6 @@ msgstr ""
 "Preferred-encodings: utf-8 latin1\n"
 "Domain: default\n"
 "X-Generator: KBabel 1.0.2\n"
-
-#.   <input type="submit" class="standalone" value="button_change" />
-#.   <input type="submit" class="standAlone" value="button_change" />
-#: from ../skins/cps_chat/cps_chat_edit_form.pt
-#: ../skins/cps_chat/cps_chat_item_edit_form.pt
-#: ../skins/cps_chat/cps_chat_item_reply_to_form.pt
-msgid "button_change"
-msgstr "Save Changes"
 
 #.   <input type="submit" class="standalone" value="button_moderate" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
@@ -132,6 +124,16 @@ msgstr "Description"
 #, fuzzy
 msgid "label_chat_guest"
 msgstr "Question"
+
+#.   <span>
+#.           This chat is closed
+#.         </span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+#, fuzzy
+msgid "label_chat_is_closed"
+msgstr ""
+"You can moderate the questions submited from here. Since you accept a "
+"question you can give an answer to this question straight after."
 
 #.   <span>Is the chat
 #.                     moderated ?</span>
@@ -246,12 +248,6 @@ msgstr "Post a question"
 msgid "label_cps_chat_enter_pseudo"
 msgstr "Post a question"
 
-#.   <span>From</span>
-#: from ../skins/cps_chat/cps_chat_answer_form.pt
-#: ../skins/cps_chat/cps_chat_lib.pt
-msgid "label_from"
-msgstr "From"
-
 #.   <span>modify</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_modify"
@@ -292,6 +288,18 @@ msgstr ""
 msgid "psm_chat_item_reply"
 msgstr "Modify"
 
+msgid "psm_cps_chat_closed_done"
+msgstr ""
+
+msgid "psm_cps_chat_closed_not_possible"
+msgstr ""
+
+msgid "psm_cps_chat_unclosed_done"
+msgstr ""
+
+msgid "psm_cps_chat_unclosed_not_possible"
+msgstr ""
+
 #, fuzzy
 msgid "action_chat_item_reply"
 msgstr "Modify"
@@ -300,6 +308,63 @@ msgstr "Modify"
 msgid "action_chat_reply_to_questions"
 msgstr "Reply"
 
+#~ msgid "Role1"
+#~ msgstr "XXX"
+
+#, fuzzy
+#~ msgid "button_assign_roles"
+#~ msgstr "Save Changes"
+
+#~ msgid "button_change"
+#~ msgstr "Save Changes"
+
+#, fuzzy
+#~ msgid "button_delete"
+#~ msgstr "Moderate"
+
+#, fuzzy
+#~ msgid "button_search"
+#~ msgstr "Save Changes"
+
+#, fuzzy
+#~ msgid "label_email"
+#~ msgstr "modify"
+
+#~ msgid "label_from"
+#~ msgstr "From"
+
+#, fuzzy
+#~ msgid "label_group"
+#~ msgstr "From"
+
+#, fuzzy
+#~ msgid "label_group_name"
+#~ msgstr "From"
+
+#, fuzzy
+#~ msgid "label_in"
+#~ msgstr "To :"
+
+#, fuzzy
+#~ msgid "label_local_roles_search_term"
+#~ msgstr "Refresh for the latest ones"
+
+#, fuzzy
+#~ msgid "label_roles"
+#~ msgstr "Host"
+
+#, fuzzy
+#~ msgid "label_user"
+#~ msgstr "Question"
+
+#, fuzzy
+#~ msgid "label_user_email"
+#~ msgstr "Answer the questions"
+
+#, fuzzy
+#~ msgid "label_user_fullname"
+#~ msgstr "Your answer :"
+
 #~ msgid "label_moderate_phase1"
 #~ msgstr ""
 #~ "It will give the possiblity to reply to the question. You can still "
@@ -307,9 +372,6 @@ msgstr "Reply"
 
 #~ msgid "chat_edit_heading"
 #~ msgstr "Edit Chat Property"
-
-#~ msgid "label_host"
-#~ msgstr "Host"
 
 #~ msgid ""
 #~ "Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
@@ -357,10 +419,6 @@ msgstr "Reply"
 
 #~ msgid "chat_your_question"
 #~ msgstr "Your question"
-
-#, fuzzy
-#~ msgid "label_answer_messages"
-#~ msgstr "Answer the questions"
 
 #~ msgid "label_answer_one_question"
 #~ msgstr "Answer"
@@ -419,12 +477,3 @@ msgstr "Reply"
 #~ msgid "label_think_about_refresh"
 #~ msgstr ""
 #~ "Think about performing some refresh to see the latest posted questions."
-
-#~ msgid "label_to"
-#~ msgstr "To :"
-
-#~ msgid "label_your_answer"
-#~ msgstr "Your answer :"
-
-#~ msgid "Role1"
-#~ msgstr "XXX"

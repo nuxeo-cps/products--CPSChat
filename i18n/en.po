@@ -14,6 +14,7 @@
 # translation of en.po to
 # translation of en.po to
 # translation of en.po to
+# translation of en.po to
 # translation of en.po to francais
 # translation of en.po to Français
 # Gettext Message File for default.
@@ -24,8 +25,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: en\n"
-"POT-Creation-Date: 2004-04-26 17:09default\n"
-"PO-Revision-Date: 2004-04-26 17:10+0200\n"
+"POT-Creation-Date: 2004-04-27 02:01default\n"
+"PO-Revision-Date: 2004-04-27 02:04+0200\n"
 "Last-Translator: Julien Anguenot <anguenot@nuxeo.com>\n"
 "Language-Team:  <janguenot@nuxeo.com>\n"
 "MIME-Version: 1.0\n"
@@ -37,14 +38,6 @@ msgstr ""
 "Preferred-encodings: utf-8 latin1\n"
 "Domain: default\n"
 "X-Generator: KBabel 1.3.1\n"
-
-#.   <input type="submit" class="standalone" value="button_change" />
-#.   <input type="submit" class="standAlone" value="button_change" />
-#: from ../skins/cps_chat/cps_chat_edit_form.pt
-#: ../skins/cps_chat/cps_chat_item_edit_form.pt
-#: ../skins/cps_chat/cps_chat_item_reply_to_form.pt
-msgid "button_change"
-msgstr "Save Changes"
 
 #.   <input type="submit" class="standalone" value="button_moderate" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
@@ -141,6 +134,13 @@ msgstr "Description "
 msgid "label_chat_guest"
 msgstr "Guest"
 
+#.   <span>
+#.           This chat is closed
+#.         </span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
+msgid "label_chat_is_closed"
+msgstr "This chat is closed"
+
 #.   <span>Is the chat
 #.                     moderated ?</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
@@ -235,12 +235,6 @@ msgstr "Message"
 msgid "label_cps_chat_enter_pseudo"
 msgstr "Nickname"
 
-#.   <span>From</span>
-#: from ../skins/cps_chat/cps_chat_answer_form.pt
-#: ../skins/cps_chat/cps_chat_lib.pt
-msgid "label_from"
-msgstr "From"
-
 #.   <span>modify</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_modify"
@@ -280,11 +274,80 @@ msgstr "Chat item properties updated"
 msgid "psm_chat_item_reply"
 msgstr "Reply done"
 
+msgid "psm_cps_chat_closed_done"
+msgstr "This chat is closed now"
+
+msgid "psm_cps_chat_closed_not_possible"
+msgstr "Problem : this chat has not been closed"
+
+msgid "psm_cps_chat_unclosed_done"
+msgstr "This chat is be reopen"
+
+msgid "psm_cps_chat_unclosed_not_possible"
+msgstr "Problem : reopening of the chat failed"
+
 msgid "action_chat_item_reply"
 msgstr "Reply to this message"
 
 msgid "action_chat_reply_to_questions"
 msgstr "Reply to messages"
+
+#~ msgid "Role1"
+#~ msgstr "XXX"
+
+#, fuzzy
+#~ msgid "button_assign_roles"
+#~ msgstr "Save Changes"
+
+#~ msgid "button_change"
+#~ msgstr "Save Changes"
+
+#, fuzzy
+#~ msgid "button_delete"
+#~ msgstr "Moderate"
+
+#, fuzzy
+#~ msgid "button_search"
+#~ msgstr "Save Changes"
+
+#, fuzzy
+#~ msgid "label_email"
+#~ msgstr "modify"
+
+#~ msgid "label_from"
+#~ msgstr "From"
+
+#, fuzzy
+#~ msgid "label_group"
+#~ msgstr "From"
+
+#, fuzzy
+#~ msgid "label_group_name"
+#~ msgstr "From"
+
+#, fuzzy
+#~ msgid "label_in"
+#~ msgstr "To :"
+
+#, fuzzy
+#~ msgid "label_local_roles_search_term"
+#~ msgstr "Refresh rate (seconds)"
+
+#, fuzzy
+#~ msgid "label_roles"
+#~ msgstr "Host"
+
+#, fuzzy
+#~ msgid "label_user"
+#~ msgstr "Users"
+
+#, fuzzy
+#~ msgid "label_user_email"
+#~ msgstr "Answer the questions"
+
+#, fuzzy
+#~ msgid "label_user_fullname"
+#~ msgstr "Your answer :"
 
 #~ msgid "label_moderate_phase1"
 #~ msgstr ""
@@ -293,9 +356,6 @@ msgstr "Reply to messages"
 
 #~ msgid "chat_edit_heading"
 #~ msgstr "Edit Chat Property"
-
-#~ msgid "label_host"
-#~ msgstr "Host"
 
 #~ msgid ""
 #~ "Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
@@ -343,10 +403,6 @@ msgstr "Reply to messages"
 
 #~ msgid "chat_your_question"
 #~ msgstr "Your question"
-
-#, fuzzy
-#~ msgid "label_answer_messages"
-#~ msgstr "Answer the questions"
 
 #~ msgid "label_answer_one_question"
 #~ msgstr "Answer"
@@ -405,13 +461,4 @@ msgstr "Reply to messages"
 #~ msgid "label_think_about_refresh"
 #~ msgstr ""
 #~ "Think about performing some refresh to see the latest posted questions."
-
-#~ msgid "label_to"
-#~ msgstr "To :"
-
-#~ msgid "label_your_answer"
-#~ msgstr "Your answer :"
-
-#~ msgid "Role1"
-#~ msgstr "XXX"
 

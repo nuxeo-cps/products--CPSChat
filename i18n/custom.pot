@@ -37,6 +37,18 @@ msgstr ""
 msgid "psm_chat_item_reply"
 msgstr ""
 
+msgid "psm_cps_chat_closed_done"
+msgstr ""
+
+msgid "psm_cps_chat_closed_not_possible"
+msgstr ""
+
+msgid "psm_cps_chat_unclosed_done"
+msgstr ""
+
+msgid "psm_cps_chat_unclosed_not_possible"
+msgstr ""
+
 msgid "action_chat_item_reply"
 msgstr ""
 
