@@ -1,4 +1,20 @@
 *******************************************
+** CPSChat V0.0.11 [R1 build 2004/02/19-15:51 by ben]
+
+ZODB Requires:
+~~~~~~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- small fix in fr.po msgstr
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
 ** CPSChat V0.0.10 [R1 build 2004/01/15-14:42 by regebro]
 
 ZODB Requires:

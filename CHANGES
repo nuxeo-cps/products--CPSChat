@@ -1,12 +1,12 @@
-ZODB Requires:
-~~~~~~~~~~~~~~
+Requires:
+~~~~~~~~~
 -
 New features:
 ~~~~~~~~~~~~~
 -
 Bug fixes:
 ~~~~~~~~~~
-- small fix in fr.po msgstr
+-
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 -
