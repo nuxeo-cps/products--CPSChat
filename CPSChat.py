@@ -35,9 +35,6 @@ from OFS.PropertyManager import PropertyManager
 from BTrees import IOBTree
 import time
 
-# MI Utils
-from Utils import get_id_from_title, get_body_from_all, remove_accents
-
 # CMF
 from Products.CMFCore.CMFCorePermissions import View, AddPortalContent, \
      ManageProperties, ChangePermissions, ModifyPortalContent
