@@ -1,4 +1,21 @@
 *******************************************
+** CPSChat V0.7.0 [R1 build 2004/12/21-10:23 by ben]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-New workflow elements: possibility of submitting questions to the chat guest - these questions are
+automatically published along with the answers when the latters are accepted.
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
 ** CPSChat V0.6.0 [R1 build 2004/08/23-05:40 by fermigier]
 
 Requires:
