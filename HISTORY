@@ -1,4 +1,22 @@
 *******************************************
+** CPSChat V0.4.0 [R1 build 2004/04/27-00:18 by anguenot]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Moderators can now handle local roles.
+- Proper local role management
+Bug fixes:
+~~~~~~~~~~
+- Block anonymous when they are only readers from posting. They need to be at least chatPoster"
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Entirely rewritten CPSChat(Types / Workflows / skins)
+- Monkey patch the Membership tool to let the Chat Moderatos to manage local roles
+
+*******************************************
 ** CPSChat V0.3.0 [R1 build 2004/03/25-11:49 by ben]
 
 Requires:
