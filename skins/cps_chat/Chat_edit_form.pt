@@ -1,0 +1,56 @@
+<metal:block use-macro="here/content_lib/macros/master"
+             i18n:domain="cpschat">
+  <metal:header metal:fill-slot="header">
+    <h1 i18n:translate="chat_edit_heading">
+        Edit Chat Property
+    </h1>
+  </metal:header>
+  <metal:block fill-slot="main">
+    <script language="javascript">
+    <!--
+      function open_external_window() {
+        window.open('Chat_index', 'Chat', 'toolbar=0, scrollbars=0, location=0, statusb ar=0, menubar=0, resizable=1, dependent=1, width=800, height=500')
+       }
+    //->
+    </script>
+    <br />
+
+<span i18n:translate="label_chat_discussions_online">
+ Online discussion with a personnality.
+</span>
+
+<form action="Chat_edit" method="post">
+  <table>
+    <tr>
+      <th align="right" i18n:translate="label_title">Title</th>
+      <td>
+        <input type="text" name="title"
+               tal:attributes="value here/title|nothing" />
+      </td>
+    </tr>
+    <tr>
+      <th align="right" i18n:translate="label_host">Host</th>
+      <td>
+        <input type="text" name="host"
+               tal:attributes="value here/host|nothing" />
+      </td>
+    </tr>
+    <tr>
+      <th align="right" i18n:translate="label_description">Description</th>
+      <td>
+        <textarea cols="60" rows="8" name="description"
+         tal:content="here/Description|nothing"
+        ></textarea>
+      </td>
+    </tr>
+    <tr>
+      <th></th>
+      <td>
+        <input type="submit" value="button_change"
+               i18n:attributes="value" />
+      </td>
+    </tr>
+  </table>
+</form>
+</metal:block>
+</metal:block>

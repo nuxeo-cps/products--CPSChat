@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1" />
+    <title tal:content="here/title" />
+  </head>
+<frameset rows="50%%,50%%">
+  <frame name="messages" src="Chat_questions" />
+  <frame name="form" src="Chat_addQuestionForm" />
+</frameset>
+<noframes>
+  <body>Your browser doesn't support any frames.</body>
+</noframes>
+</html>
+

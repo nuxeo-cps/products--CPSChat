@@ -1,0 +1,179 @@
+<metal:block use-macro="here/content_lib/macros/master"
+             i18n:domain="cpschat">
+  <metal:block metal:fill-slot="header">
+    <h1 i18n:translate="chat_moderate_heading">
+        Moderate the chat
+    </h1>
+  </metal:block>
+  <metal:block fill-slot="main">
+    <script language="javascript">
+  <!--
+    function open_external_window() {
+      window.open('Chat_index', 'Chat', 'toolbar=0, scrollbars=0, location=0, statusb ar=0, menubar=0, resizable=1, dependent=1, width=800, height=500')
+     }
+  //->
+  </script>
+  <br />
+  <span i18n:translate="label_chat_moderate_question">
+    You can moderate the questions submited from here.
+    Since you accept a question you can give an answer to this question
+  straight after.
+  </span>
+  <br />
+  <span i18n:translate="label_think_about_refresh">
+    Think about performing some refresh to see the latest posted questions.
+  </span>
+  <br />
+  <br />
+
+  <div align="center">
+     [
+     <a tal:attributes="href
+       string:${here/absolute_url}/Chat_moderateForm">
+       <span i18n:translate="label_refresh">Refresh for the latest ones</span>
+     </a>
+     |
+     <a tal:attributes="href
+       string:${here/absolute_url}/Chat_addAnswerForm">
+       <span i18n:translate="label_answer">Answer the pending questions</span>
+     </a>
+     ]
+  </div>
+  <br />
+  <h3 i18n:translate="label_answers_to_be_accepted">
+    Answers waiting to be accepted.
+  </h3>
+  <br />
+  <span i18n:translate="label_moderate_phase1">
+    It will give the possiblity to reply to the question.
+    You can still modify the question.
+  </span>
+  <form action="moderate" method="post">
+    <table border="0" align="center" width="100%" cellspacing="2" cellpadding="2">
+    <tr bgcolor="#FF0000">
+      <td align="center">
+         <strong>
+           <span i18n:translate="label_accept_reject">
+             Accept/reject
+           </span>
+         </strong>
+      </td>
+      <td align="center"><strong><span i18n:translate="label_from">From</span></strong></td>
+      <td align="center">
+         <strong>
+          <span i18n:translate="label_chat_question">Question</span>
+         </strong>
+      </td>
+      <td align="center">
+        <strong>
+          <span i18n:translate="label_chat_question_modify">Modify</span>
+        <strong>
+      </td>
+    </tr>
+    <tal:block tal:repeat="question python:here.selectQuestions(status='PENDING', reverse=1)">
+      <tr bgcolor="#EEEEEE">
+        <td align="right">
+          <span i18n:translate="label_accept">Accept</span>
+          <input type="radio" tal:attributes="name question/id" value="go" />
+          <br />
+          <span i18n:translate="label_reject">Reject</span>
+          <input type="radio" tal:attributes="name question/id" value="nogo"
+  />
+        </td>
+        <td>
+           <tal:block tal:replace="question/pseudo|default" />
+        </td>
+        <td>
+           <tal:block tal:replace="question/question|default" />
+        </td>
+        <td>
+           <tal:block define="id_question question/id">
+             <a href=""
+                tal:attributes="href
+  string:${here/absolute_url}/Chat_modify_question_form?id_question=${id_question}">
+             <span i18n:translate="label_modify">modify</span>
+             </a>
+          </tal:block>
+        </td>
+      </tr>
+    </tal:block>
+    <tr>
+      <td colspan="3" align="right">
+        <input type="submit" value="button_moderate"
+               i18n:attributes="value" />
+      </td>
+    </tr>
+    </table>
+  </form>
+  <h3 i18n:translate="label_answers_to_be_published">
+    Answers waiting to be published.
+  </h3>
+  <br />
+  <span i18n:translate="label_moderate_phase2">
+    This is the last step. You can still modify the answer if you need to.
+    After this step the answer will be available to the public.
+  </span>
+  <br />
+  <form action="publish" method="post">
+    <table border="0" align="center" width="100%" cellspacing="2" cellpadding="2">
+    <tr bgcolor="#FF0000">
+      <td align="center">
+         <strong>
+           <span i18n:translate="label_published">
+             Published
+           </span>
+         </strong>
+      </td>
+      <td align="center"><strong><span i18n:translate="label_from">From</span></strong></td>
+      <td align="center">
+         <strong>
+          <span i18n:translate="label_chat_question">Question</span>
+         </strong>
+      </td>
+      <td align="center">
+         <strong>
+          <span i18n:translate="label_question_answer">Answer</span>
+         </strong>
+      </td>
+      <td align="center">
+        <strong>
+          <span i18n:translate="label_chat_question_modify">Modify</span>
+        <strong>
+      </td>
+    </tr>
+    <tal:block tal:repeat="question python:here.selectQuestions(status='ANSWERED', reverse=1)">
+      <tr bgcolor="#EEEEEE">
+        <td align="right">
+          <span i18n:translate="label_published">Published</span>
+          <input type="radio" tal:attributes="name question/id" value="go" />
+        </td>
+        <td>
+           <tal:block tal:replace="question/pseudo|default" />
+        </td>
+        <td>
+           <tal:block tal:replace="question/question|default" />
+        </td>
+        <td>
+           <tal:block tal:replace="question/answer|default" />
+        </td>
+        <td>
+           <tal:block define="id_question question/id">
+             <a href=""
+                tal:attributes="href
+  string:${here/absolute_url}/Chat_modify_reply_form?id_question=${id_question}">
+             <span i18n:translate="label_modify">modify</span>
+             </a>
+          </tal:block>
+        </td>
+      </tr>
+    </tal:block>
+    <tr>
+      <td colspan="3" align="right">
+        <input type="submit" value="button_moderate"
+               i18n:attributes="value" />
+      </td>
+    </tr>
+    </table>
+  </form>
+  </metal:block>
+</metal:block>
