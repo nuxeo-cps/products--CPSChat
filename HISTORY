@@ -1,4 +1,20 @@
 *******************************************
+** CPSChat V0.0.5 [R1 build 2003-10/01-09:20 by anguenot]
+
+ZODB Requires:
+~~~~~~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- Adding action : action_reply_questions and action_post in the object actions.
+- New view of the pending questions within a third array within the moderate chat form. 
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Cleanup of the skins.
+*******************************************
 ** CPSChat V0.0.4 [R1 build 2003-09/23-19:33 by anguenot]
 
 ZODB Requires:

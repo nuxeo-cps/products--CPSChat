@@ -3,11 +3,10 @@ ZODB Requires:
 -
 New features:
 ~~~~~~~~~~~~~
-- Adding action : action_reply_questions and action_post in the object actions.
-- New view of the pending questions within a third array within the moderate chat form. 
+-
 Bug fixes:
 ~~~~~~~~~~
 -
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
-- Cleanup of the skins.
+-
