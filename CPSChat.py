@@ -19,14 +19,14 @@
 
 __author__ = "Julien Anguenot <ja@nuxeo.com>"
 
-"""
-Chat module for CPS.
+"""Chat module for CPS.
+
 This is *NOT* a real time chat. It's moderated and designed to
 be used as a kind of FAQ where you can filter the anwsers.
 """
 
-# Zope
 from zLOG import LOG, DEBUG
+
 import DateTime
 from Globals import InitializeClass, DTMLFile
 from AccessControl import ClassSecurityInfo
@@ -34,14 +34,11 @@ from OFS.SimpleItem import SimpleItem
 from OFS.PropertyManager import PropertyManager
 from BTrees import IOBTree
 
-# CMF
 from Products.CMFCore.CMFCorePermissions import View, \
      ManageProperties, ModifyPortalContent
 
-# CPS
-from Products.CPSCore.CPSBase import CPSBaseDocument
+from Products.CPSCore.CPSBase import CPSBaseFolder, CPSBase_adder
 
-# This product
 from CPSChatPermissions import chatModerate, chatReply, chatPost
 from Question import Question
 
@@ -96,25 +93,36 @@ factory_type_information = (
                    'action': 'folder_localrole_form',
                    'permissions': (chatModerate,)
                    },
-                  ),
+                  {'id': 'isfunctionalobject',
+                   'name': 'isfunctionalobject',
+                   'action': 'isfunctionalobject',
+                   'visible': 0,
+                   'permissions': ('',),
+                   },
+                  {'id': 'isproxytype',
+                   'name': 'isproxytype',
+                   'action': 'document',
+                   'visible': 0,
+                   'permissions': ('',),
+                   },
+                  {'id': 'issearchabledocument',
+                   'name': 'issearchabledocument',
+                   'action': 'issearchabledocument',
+                   'visible': 0,
+                   'permissions': ('',),
+                   },),
       },
     )
 
-class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
-    """CPSChat object"""
+class CPSChat(CPSBaseFolder):
+    """CPSChat object
+    """
 
-    # Zope stuff
     meta_type = 'CPSChat'
     portal_type = meta_type
 
     security = ClassSecurityInfo()
 
-    # XXX
-    manage_options = (
-        PropertyManager.manage_options + SimpleItem.manage_options
-    )
-
-    # Properties (ZMI)
     _properties = (
         {'id': 'title', 'type': 'string'},
         {'id': 'description', 'type': 'text'},
@@ -124,39 +132,30 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
         {'id': 'chat_host', 'type': 'string'},
     )
 
-    # Sensible default values
     num_replies = 5
     question_max_length = 500
     pseudo_max_length = 100
 
     def __init__(self, id, title='', description='', host=''):
-        """
-        Default constructor
+        """Default constructor
         """
         self.id = id
         self.title = title
         self.description = description
         self.host = host
 
-        # Content
         self.questions = IOBTree.IOBTree()
         self.counter = 0
 
-    #
-    # Publicly available methods
-    #
-
     def index_html(self, REQUEST=None):
-        """
-        Default view -> redirect to Chat_history
+        """Default view -> redirect to Chat_history
         """
         if REQUEST:
             REQUEST.RESPONSE.redirect(self.absolute_url() + '/Chat_history')
 
     security.declareProtected(chatModerate, 'editProperties')
     def editProperties(self, title='', description='', host=''):
-        """
-        Edit chat object properties.
+        """Edit chat object properties.
         """
         self.title = title
         self.description = description
@@ -164,8 +163,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
 
     security.declareProtected(chatPost, 'addQuestion')
     def addQuestion(self, question, pseudo='', REQUEST=None):
-        """
-        Add a new (hence unmoderated) question
+        """Add a new (hence unmoderated) question
         """
         question = question[0:self.question_max_length]
         pseudo = pseudo[0:self.pseudo_max_length]
@@ -176,13 +174,9 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
         if REQUEST is not None:
             REQUEST.RESPONSE.redirect(self.absolute_url())
 
-    #
-    # Moderation methods
-    #
     security.declareProtected(chatReply, 'addAnswer')
     def addAnswer(self, question_id, answer, REQUEST=None):
-        """
-        Add an answer to a question
+        """Add an answer to a question
         """
         question = self.getQuestion(int(question_id))
         question.addAnswer(answer)
@@ -192,22 +186,19 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
                 self.absolute_url() + '/Chat_addAnswerForm')
 
     def getQuestion(self, question_id):
-        """
-        Return the question
+        """Return the question given an id
         """
         return self.questions[question_id]
 
     def delQuestion(self, question_id):
-        """
-        Delete the question
+        """Delete a question given an id
         """
         del self.questions[question_id]
 
 
     def selectQuestions(self, status=None, num=None, reverse=0,
                         sort_by_answer_time=0):
-        """
-        Return list of questions
+        """Return the list of questions
         """
         l = self.questions.values()
         if status is not None:
@@ -223,8 +214,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
 
     security.declareProtected(chatModerate, 'moderate')
     def moderate(self, REQUEST):
-        """
-        Moderate a batch of questions
+        """Moderate a batch of questions
         """
         form = REQUEST.form
         for k, v in form.items():
@@ -246,8 +236,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
 
     security.declareProtected(chatModerate, 'publish')
     def publish(self, REQUEST):
-        """
-        Publish a batch of questions
+        """Publish a batch of questions
         """
         form = REQUEST.form
         for k, v in form.items():
@@ -266,8 +255,7 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
 
     security.declareProtected(chatReply, 'answerQuestion')
     def answerQuestion(self, question_id, answer, REQUEST=None):
-        """
-        Answer a question
+        """Answer a question given an id
         """
         question = self.questions[id(question_id)]
         question.addAnswer(answer)
@@ -276,16 +264,12 @@ class CPSChat(SimpleItem, PropertyManager, CPSBaseDocument):
             REQUEST.RESPONSE.redirect(
                 self.absolute_url() + '/Chat_moderateForm')
 
-
-def manage_addCPSChat(self, id, title='', description='', host='',
-                      REQUEST=None):
-    """
-    Constructor method for the type CPSChat.
-    """
-    self._setObject(id, CPSChat(id, title, description, host))
-    if REQUEST is not None:
-        REQUEST.RESPONSE.redirect(self.absolute_url() + '/manage_main')
+InitializeClass(CPSChat)
 
 manage_addCPSChatForm = DTMLFile('skins/Chat_addForm', globals())
 
-InitializeClass(CPSChat)
+def manage_addCPSChat(self, id, title='', description='', host='', REQUEST=None):
+    """Constructor method for the CPSChat content type.
+    """
+    chat = CPSChat(id, title, description, host)
+    CPSBase_adder(self, chat)
