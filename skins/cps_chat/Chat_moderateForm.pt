@@ -48,63 +48,140 @@
     It will give the possiblity to reply to the question.
     You can still modify the question.
   </span>
-  <form action="moderate" method="post">
-    <table border="0" align="center" width="100%" cellspacing="2" cellpadding="2">
-    <tr bgcolor="#FF0000">
-      <td align="center">
-         <strong>
-           <span i18n:translate="label_accept_reject">
-             Accept/reject
-           </span>
-         </strong>
-      </td>
-      <td align="center"><strong><span i18n:translate="label_from">From</span></strong></td>
-      <td align="center">
-         <strong>
-          <span i18n:translate="label_chat_question">Question</span>
-         </strong>
-      </td>
-      <td align="center">
-        <strong>
-          <span i18n:translate="label_chat_question_modify">Modify</span>
-        <strong>
-      </td>
-    </tr>
-    <tal:block tal:repeat="question python:here.selectQuestions(status='PENDING', reverse=1)">
-      <tr bgcolor="#EEEEEE">
-        <td align="right">
-          <span i18n:translate="label_accept">Accept</span>
-          <input type="radio" tal:attributes="name question/id" value="go" />
-          <br />
-          <span i18n:translate="label_reject">Reject</span>
-          <input type="radio" tal:attributes="name question/id" value="nogo"
-  />
+
+  <tal:block define="questions python:here.selectQuestions(status='PENDING',reverse=1)">
+    <tal:block condition="python:questions != []">
+    <p>&nbsp;</p>
+    <form action="moderate" method="post">
+      <table border="0" align="center" width="100%" cellspacing="2" cellpadding="2">
+      <tr bgcolor="#FF0000">
+        <td align="center">
+           <strong>
+             <span i18n:translate="label_accept_reject">
+               Accept/reject
+             </span>
+           </strong>
         </td>
-        <td>
-           <tal:block tal:replace="question/pseudo|default" />
+        <td align="center"><strong><span i18n:translate="label_from">From</span></strong></td>
+        <td align="center">
+           <strong>
+            <span i18n:translate="label_chat_question">Question</span>
+           </strong>
         </td>
-        <td>
-           <tal:block tal:replace="question/question|default" />
-        </td>
-        <td>
-           <tal:block define="id_question question/id">
-             <a href=""
-                tal:attributes="href
-  string:${here/absolute_url}/Chat_modify_question_form?id_question=${id_question}">
-             <span i18n:translate="label_modify">modify</span>
-             </a>
-          </tal:block>
+        <td align="center">
+          <strong>
+            <span i18n:translate="label_chat_question_modify">Modify</span>
+          <strong>
         </td>
       </tr>
+      <tal:block tal:repeat="question questions">
+        <tr bgcolor="#EEEEEE">
+          <td align="center">
+            <span i18n:translate="label_accept">Accept</span>
+            <input type="radio" tal:attributes="name question/id" value="go" />
+            <br />
+            <span i18n:translate="label_reject">Reject</span>
+            <input type="radio" tal:attributes="name question/id" value="nogo"
+    />
+          </td>
+          <td align="center">
+             <tal:block tal:replace="question/pseudo|default" />
+          </td>
+          <td>
+             <tal:block tal:replace="question/question|default" />
+          </td>
+          <td align="center">
+             <tal:block define="id_question question/id">
+               <a href=""
+                  tal:attributes="href
+    string:${here/absolute_url}/Chat_modify_question_form?id_question=${id_question}">
+               <span i18n:translate="label_modify">modify</span>
+               </a>
+            </tal:block>
+          </td>
+        </tr>
+      </tal:block>
+      <tr>
+        <td colspan="4" align="right">
+          <input type="submit" value="button_moderate"
+                 i18n:attributes="value" />
+        </td>
+      </tr>
+      </table>
+    </form>
+    <p>&nbsp;</p>
     </tal:block>
-    <tr>
-      <td colspan="3" align="right">
-        <input type="submit" value="button_moderate"
-               i18n:attributes="value" />
+
+    <tal:block condition="python:questions == []">
+      <br /><br />
+      <strong>
+        <span i18n:translate="label_no_questions_to_moderate">
+          No new question to moderate
+        </span>
+      </strong>
+      <br />
+    </tal:block>
+
+  </tal:block>
+  <h3 i18n:translate="label_reply_to_pending questions">
+    Questions waiting for a reply.
+  </h3>
+  <br />
+  <span i18n:translate="label_moderate_answer_questions">
+    You can answer the question by choosing one in the array below.
+    You can as well anwser to all at the same time by clicking the link
+    "Reply to pending questions" on the right.
+  </span>
+
+  <tal:block define="questions python:here.selectQuestions(status='WAITING',reverse=1)">
+  <tal:block condition="python:questions != []">
+  <p>&nbsp;</p>
+  <table border="0" align="center" width="100%" cellspacing="2" cellpadding="2">
+  <tr bgcolor="#FF0000">
+    <td align="center"><strong><span i18n:translate="label_from">From</span></strong></td>
+    <td align="center">
+       <strong>
+        <span i18n:translate="label_chat_question">Question</span>
+       </strong>
+    </td>
+    <td align="center">
+      <strong>
+        <span i18n:translate="label_chat_reply_question">Reply</span>
+      <strong>
+    </td>
+  </tr>
+  <tal:block tal:repeat="question questions">
+    <tr bgcolor="#EEEEEE">
+      <td align="center">
+         <tal:block tal:replace="question/pseudo|default" />
+      </td>
+      <td>
+         <tal:block tal:replace="question/question|default" />
+      </td>
+      <td align="center">
+         <tal:block define="id_question question/id">
+           <a href=""
+              tal:attributes="href string:${here/absolute_url}/Chat_addSingleAnswerForm?id_question=${id_question}">
+           <span i18n:translate="label_answer_one_question">Answer</span>
+           </a>
+        </tal:block>
       </td>
     </tr>
-    </table>
-  </form>
+  </tal:block>
+  </table>
+  <p>&nbsp;</p>
+  </tal:block>
+
+  <tal:block condition="python:questions == []">
+    <br /><br />
+    <strong>
+      <span i18n:translate="label_no_pending_questions">
+        There's no news questions you need to answer.
+      </span>
+    </strong>
+    <br />
+  </tal:block>
+  </tal:block>
   <h3 i18n:translate="label_answers_to_be_published">
     Answers waiting to be published.
   </h3>
@@ -113,67 +190,80 @@
     This is the last step. You can still modify the answer if you need to.
     After this step the answer will be available to the public.
   </span>
-  <br />
-  <form action="publish" method="post">
-    <table border="0" align="center" width="100%" cellspacing="2" cellpadding="2">
-    <tr bgcolor="#FF0000">
-      <td align="center">
-         <strong>
-           <span i18n:translate="label_published">
-             Published
-           </span>
-         </strong>
-      </td>
-      <td align="center"><strong><span i18n:translate="label_from">From</span></strong></td>
-      <td align="center">
-         <strong>
-          <span i18n:translate="label_chat_question">Question</span>
-         </strong>
-      </td>
-      <td align="center">
-         <strong>
-          <span i18n:translate="label_question_answer">Answer</span>
-         </strong>
-      </td>
-      <td align="center">
-        <strong>
-          <span i18n:translate="label_chat_question_modify">Modify</span>
-        <strong>
-      </td>
-    </tr>
-    <tal:block tal:repeat="question python:here.selectQuestions(status='ANSWERED', reverse=1)">
-      <tr bgcolor="#EEEEEE">
-        <td align="right">
-          <span i18n:translate="label_published">Published</span>
-          <input type="radio" tal:attributes="name question/id" value="go" />
+
+  <tal:block define="questions python:here.selectQuestions(status='ANSWERED',reverse=1)">
+  <tal:block condition="python:questions != []">
+    <form action="publish" method="post">
+      <p>&nbsp;</p>
+      <table border="0" align="center" width="100%" cellspacing="2" cellpadding="2">
+      <tr bgcolor="#FF0000">
+        <td align="center">
+           <strong>
+             <span i18n:translate="label_published">
+               Published
+             </span>
+           </strong>
         </td>
-        <td>
-           <tal:block tal:replace="question/pseudo|default" />
+        <td align="center"><strong><span i18n:translate="label_from">From</span></strong></td>
+        <td align="center">
+           <strong>
+            <span i18n:translate="label_chat_question">Question</span>
+           </strong>
         </td>
-        <td>
-           <tal:block tal:replace="question/question|default" />
+        <td align="center">
+           <strong>
+            <span i18n:translate="label_question_answer">Answer</span>
+           </strong>
         </td>
-        <td>
-           <tal:block tal:replace="question/answer|default" />
-        </td>
-        <td>
-           <tal:block define="id_question question/id">
-             <a href=""
-                tal:attributes="href
-  string:${here/absolute_url}/Chat_modify_reply_form?id_question=${id_question}">
-             <span i18n:translate="label_modify">modify</span>
-             </a>
-          </tal:block>
+        <td align="center">
+          <strong>
+            <span i18n:translate="label_chat_question_modify">Modify</span>
+          <strong>
         </td>
       </tr>
-    </tal:block>
-    <tr>
-      <td colspan="3" align="right">
-        <input type="submit" value="button_moderate"
-               i18n:attributes="value" />
-      </td>
-    </tr>
-    </table>
-  </form>
-  </metal:block>
+      <tal:block tal:repeat="question questions">
+        <tr bgcolor="#EEEEEE">
+          <td align="center">
+            <input type="radio" tal:attributes="name question/id" value="go" />
+          </td>
+          <td align="center">
+             <tal:block tal:replace="question/pseudo|default" />
+          </td>
+          <td>
+             <tal:block tal:replace="question/question|default" />
+          </td>
+          <td>
+             <tal:block tal:replace="question/answer|default" />
+          </td>
+          <td align="center">
+             <tal:block define="id_question question/id">
+               <a href=""
+                  tal:attributes="href
+    string:${here/absolute_url}/Chat_modify_reply_form?id_question=${id_question}">
+               <span i18n:translate="label_modify">Modify</span>
+               </a>
+            </tal:block>
+          </td>
+        </tr>
+      </tal:block>
+      <tr>
+        <td colspan="5" align="right">
+          <input type="submit" value="button_publish"
+                 i18n:attributes="value" />
+        </td>
+      </tr>
+      </table>
+    </form>
+   </tal:block>
+   <tal:block condition="python:questions == []">
+     <br /><br />
+     <strong>
+       <span i18n:translate="label_no_answered_questions">
+         No new question to publish.
+       </span>
+     </strong>
+     <br />
+   </tal:block>
+  </tal:block>
+ </metal:block>
 </metal:block>
