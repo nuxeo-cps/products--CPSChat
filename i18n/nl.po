@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: en\n"
-"POT-Creation-Date: 2003-09-30 20:08default\n"
+"POT-Creation-Date: 2004-03-04 16:42default\n"
 "PO-Revision-Date: 2003-10-30 10:40+0100\n"
 "Last-Translator: emmanuel <epietriga@nuxeo.com>\n"
 "Language-Team: francais <fr@li.org>\n"
@@ -32,8 +32,10 @@ msgstr ""
 #.           </strong>
 #.       </h1>
 #: from ../skins/cps_chat/Chat_questions.pt
-msgid "Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
-msgstr "Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
+msgid ""
+"Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
+msgstr ""
+"Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
 
 #.   <h1>
 #.           Chat History of
@@ -281,9 +283,9 @@ msgstr "Host"
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_moderate_answer_questions"
 msgstr ""
-"You can answer the question by choosing one in the array below. "
-" You can as well anwser to all at the same time by clicking the link "
-"Reply to pending questions on the right. "
+"You can answer the question by choosing one in the array below.  You can as "
+"well anwser to all at the same time by clicking the link Reply to pending "
+"questions on the right. "
 
 #.   <span>
 #.       It will give the possiblity to reply to the question.
@@ -292,8 +294,7 @@ msgstr ""
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_moderate_phase1"
 msgstr ""
-"It will give the possiblity to reply to the question. "
-"You can still modify "
+"It will give the possiblity to reply to the question. You can still modify "
 "the question."
 
 #.   <span>
@@ -303,9 +304,8 @@ msgstr ""
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_moderate_phase2"
 msgstr ""
-"This is the last step. "
-"You can still modify the answer if you need to. "
-"After this step the answer will be available to the public."
+"This is the last step. You can still modify the answer if you need to. After "
+"this step the answer will be available to the public."
 
 #.   <span>modify</span>
 #.   <span>Modify</span>
@@ -381,7 +381,8 @@ msgstr "Questions waiting for a reply."
 #.     </span>
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_think_about_refresh"
-msgstr "Think about performing some refresh to see the latest posted questions."
+msgstr ""
+"Think about performing some refresh to see the latest posted questions."
 
 #.   <th align="right">Title</th>
 #: from ../skins/cps_chat/Chat_edit_form.pt
@@ -404,4 +405,3 @@ msgstr "Your answer :"
 
 #~ msgid "Role1"
 #~ msgstr "XXX"
-
