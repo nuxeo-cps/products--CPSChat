@@ -99,7 +99,7 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
 
     cps_chat_guest = ''
     is_moderated = 0
-    cps_chat_refresh_rate = 3
+    cps_chat_refresh_rate = 10
 
     def __init__(self, id, **kw):
         """ Constructor
@@ -296,7 +296,7 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
     def _getTimeToLeave(self):
         """Return the time to leave for a user
         """
-        return self.cps_chat_refresh_rate + 15
+        return self.cps_chat_refresh_rate * 2
 
     security.declareProtected(View, 'getChatUsers')
     def getChatUsers(self):
