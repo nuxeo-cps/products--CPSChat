@@ -1,4 +1,20 @@
 *******************************************
+** CPSChat V0.1.0 [R1 build 2004/03/08-14:17 by ben]
+
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- update l10n
+
+*******************************************
 ** CPSChat V0.0.11 [R1 build 2004/02/19-15:51 by ben]
 
 ZODB Requires:
