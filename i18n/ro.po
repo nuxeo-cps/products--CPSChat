@@ -1,109 +1,177 @@
+# translation of ro.po to 
 # ##########################################################
 # ################# DON'T EDIT THIS FILE! ##################
 # ##########################################################
 # Gettext Message File for default.
 # Your Name <your@email>, Year
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
+# , 2005.
 msgid ""
 msgstr ""
-"Project-Id-Version: default\n"
+"Project-Id-Version: ro\n"
 "POT-Creation-Date: 2004-07-22 14:22default\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Your Name <your@email>\n"
-"Language-Team: Name <email>\n"
+"PO-Revision-Date: 2005-03-29 12:02+0300\n"
+"Last-Translator: \n"
+"Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-2\n"
+"Content-Type: text/plain; charset=ISO-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language-code: ro\n"
 "Language-name: Romanian\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Preferred-encodings: utf-8 latin1\n"
 "Domain: default\n"
+"X-Generator: KBabel 1.9.1\n"
 
 #.   <input type="submit" class="standalone" value="button_moderate" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_moderate"
-msgstr ""
+msgstr "Modereaza"
 
 #.   <input type="submit" class="standalone" value="button_post" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_post"
-msgstr ""
+msgstr "Trimite"
 
 #.   <input type="submit" class="standalone" value="button_remove" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_remove"
-msgstr ""
+msgstr "Sterge"
 
 #.   <h1>
 #.           Answer to chat messages
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 msgid "chat_answer_heading"
-msgstr ""
+msgstr "Raspunde la mesaje"
 
 #.   <h1>
 #.           Moderate the chat
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_moderate_form.pt
 msgid "chat_moderate_heading"
-msgstr ""
+msgstr "Modereaza chat-ul"
 
 #.   <h1>
 #.         Reply to a message
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "heading_chat_add_reply"
-msgstr ""
+msgstr "Raspunde la un mesaj"
 
 #.   <h1>
 #.           Edit Chat Property
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "heading_chat_edit"
-msgstr ""
+msgstr "Modifica proprietatile chat-ului"
 
 #.   <h1>
 #.         Modify chat message
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_item_edit_form.pt
 msgid "heading_chat_item_modify"
-msgstr ""
+msgstr "Modifica mesajul"
 
 #.   <span>Accept</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_accept"
-msgstr ""
+msgstr "Accepta"
 
 #.   <span>
 #.                  Accept/reject
 #.                </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_accept_reject"
-msgstr ""
+msgstr "Accepta/respinge"
 
 #.   <span>Add an answer</span>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 msgid "label_add_answer"
-msgstr ""
+msgstr "Adauga un raspuns"
 
 #.   <h3>
 #.       Answers waiting to be accepted.
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_answer_waiting"
-msgstr ""
+msgstr "Raspuns in asteptare de a fi validat"
 
 #.   <h3>
 #.       You way remove some messages
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_delete_messages"
-msgstr ""
+msgstr "Poti sa stergi mesaje"
 
 #.   <span>Description</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_description"
-msgstr ""
+msgstr "Descriere"
 
 #.   <span>Host</span>
 #.   <span class="itemCreator">
@@ -112,20 +180,20 @@ msgstr ""
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 #: ../skins/cps_chat/cps_chat_main_frame.pt
 msgid "label_chat_guest"
-msgstr ""
+msgstr "Invitat"
 
 #.   <span>
 #.           This chat is closed
 #.         </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_is_closed"
-msgstr ""
+msgstr "Chat-ul este inchis"
 
 #.   <span>Is the chat
 #.                     moderated ?</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_is_moderated"
-msgstr ""
+msgstr "Chat-ul este moderat?"
 
 #.   <span>Message</span>
 #.   <span>
@@ -134,91 +202,91 @@ msgstr ""
 #: from ../skins/cps_chat/cps_chat_item_edit_form.pt
 #: ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "label_chat_message"
-msgstr ""
+msgstr "Mesaj"
 
 #.   <h3>
 #.       Messages waiting to be accepted.
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_messages_waiting"
-msgstr ""
+msgstr "Mesaje in asteptare de a fi validate"
 
 #.   <span class="itemCreator">
 #.             Chat moderators :
 #.           </span>
 #: from ../skins/cps_chat/cps_chat_main_frame.pt
 msgid "label_chat_moderator_lists"
-msgstr ""
+msgstr "Moderatorul(Moderatorii) chat-ului"
 
 #.   <span>
 #.           You are not allowed to post on this chat
 #.         </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_not_allowed_to_post"
-msgstr ""
+msgstr "Nu esti autorizat sa scrii mesaje pe acest chat"
 
 #.   <span>Pseudo</span>
 #: from ../skins/cps_chat/cps_chat_item_edit_form.pt
 msgid "label_chat_pseudo"
-msgstr ""
+msgstr "Porecla"
 
 #.   <span>Question</span>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 #: ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_question"
-msgstr ""
+msgstr "Intrebare"
 
 #.   <span>Modify</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_question_modify"
-msgstr ""
+msgstr "Modifica"
 
 #.   <span>Reply</span>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 msgid "label_chat_question_reply"
-msgstr ""
+msgstr "Raspunde"
 
 #.   <span>
 #.                     Chat refresh rate</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_refresh_rate"
-msgstr ""
+msgstr "Rata de reincarcare(secunde)"
 
 #.   <span>Reply</span>
 #: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "label_chat_reply"
-msgstr ""
+msgstr "Raspuns"
 
 #.   <span>Title</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_title"
-msgstr ""
+msgstr "Titlu"
 
 #.   <span class="itemDate">
 #.         Users
 #.       </span>
 #: from ../skins/cps_chat/cps_chat_user_frame.pt
 msgid "label_chat_users"
-msgstr ""
+msgstr "Utilizatori"
 
 #.   <span>
 #.                 Message
 #.               </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_cps_chat_enter_message"
-msgstr ""
+msgstr "Mesaj"
 
 #.   <span>
 #.                 Pseudo
 #.               </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_cps_chat_enter_pseudo"
-msgstr ""
+msgstr "Porecla"
 
 #.   <span>modify</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_modify"
-msgstr ""
+msgstr "Modifica"
 
 #.   <span>
 #.             No new question to moderate
@@ -226,48 +294,49 @@ msgstr ""
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 #: ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_no_questions_to_moderate"
-msgstr ""
+msgstr "Nici o intrebare noua care sa fie moderata"
 
 #.   <span>Reject</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_reject"
-msgstr ""
+msgstr "Respinge"
 
 msgid "ChatPoster"
-msgstr ""
+msgstr "Persoana care scrie mesaje pe chat"
 
 msgid "ChatModerator"
-msgstr ""
+msgstr "Moderatorul chat-ului"
 
 msgid "ChatGuest"
-msgstr ""
+msgstr "Invitat pe chat"
 
 msgid "psm_cps_chat_properties_modified"
-msgstr ""
+msgstr "Proprietati ale chat-ului aduse la zi"
 
 msgid "psm_messages_removed"
-msgstr ""
+msgstr "Mesaje respinse"
 
 msgid "psm_chat_item_properties_updated"
-msgstr ""
+msgstr "Proprietatile chat-ului modificate"
 
 msgid "psm_chat_item_reply"
-msgstr ""
+msgstr "Raspuns inregistrat"
 
 msgid "psm_cps_chat_closed_done"
-msgstr ""
+msgstr "Chat-ul a fost inchis cu succes"
 
 msgid "psm_cps_chat_closed_not_possible"
-msgstr ""
+msgstr "Inchiderea chat-ului a esuat"
 
 msgid "psm_cps_chat_unclosed_done"
-msgstr ""
+msgstr "Chat-ul este momentan redeschis"
 
 msgid "psm_cps_chat_unclosed_not_possible"
-msgstr ""
+msgstr "Redeschiderea chat-ului a esuat"
 
 msgid "action_chat_item_reply"
-msgstr ""
+msgstr "Raspunde la acest mesaj"
 
 msgid "action_chat_reply_to_questions"
-msgstr ""
+msgstr "Raspunde la mesaje"
+
