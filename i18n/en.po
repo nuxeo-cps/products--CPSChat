@@ -23,7 +23,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: en\n"
-"POT-Creation-Date: 2004-04-22 15:38default\n"
+"POT-Creation-Date: 2004-04-23 11:29default\n"
 "PO-Revision-Date: 2004-04-22 15:39+0200\n"
 "Last-Translator: Julien Anguenot <anguenot@nuxeo.com>\n"
 "Language-Team:  <janguenot@nuxeo.com>\n"
@@ -37,25 +37,25 @@ msgstr ""
 "Domain: default\n"
 "X-Generator: KBabel 1.3.1\n"
 
-#.   <input value="button_change" class="standalone" type="submit" />
-#.   <input value="button_change" class="standAlone" type="submit" />
+#.   <input type="submit" class="standalone" value="button_change" />
+#.   <input type="submit" class="standAlone" value="button_change" />
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 #: ../skins/cps_chat/cps_chat_item_edit_form.pt
 #: ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "button_change"
 msgstr "Save Changes"
 
-#.   <input value="button_moderate" class="standalone" type="submit" />
+#.   <input type="submit" class="standalone" value="button_moderate" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_moderate"
 msgstr "Moderate"
 
-#.   <input value="button_post" class="standalone" type="submit" />
+#.   <input type="submit" class="standalone" value="button_post" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_post"
 msgstr "Submit "
 
-#.   <input value="button_remove" class="standalone" type="submit" />
+#.   <input type="submit" class="standalone" value="button_remove" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_remove"
 msgstr "Remove"
@@ -406,4 +406,3 @@ msgstr "Reply to messages"
 
 #~ msgid "Role1"
 #~ msgstr "XXX"
-

@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: default\n"
-"POT-Creation-Date: 2004-04-22 15:38default\n"
+"POT-Creation-Date: 2004-04-23 11:29default\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Your Name <your@email>\n"
 "Language-Team: Name <email>\n"
@@ -19,25 +19,25 @@ msgstr ""
 "Preferred-encodings: utf-8 latin1\n"
 "Domain: default\n"
 
-#.   <input value="button_change" class="standalone" type="submit" />
-#.   <input value="button_change" class="standAlone" type="submit" />
+#.   <input type="submit" class="standalone" value="button_change" />
+#.   <input type="submit" class="standAlone" value="button_change" />
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 #: ../skins/cps_chat/cps_chat_item_edit_form.pt
 #: ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "button_change"
 msgstr ""
 
-#.   <input value="button_moderate" class="standalone" type="submit" />
+#.   <input type="submit" class="standalone" value="button_moderate" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_moderate"
 msgstr ""
 
-#.   <input value="button_post" class="standalone" type="submit" />
+#.   <input type="submit" class="standalone" value="button_post" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_post"
 msgstr ""
 
-#.   <input value="button_remove" class="standalone" type="submit" />
+#.   <input type="submit" class="standalone" value="button_remove" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_remove"
 msgstr ""
