@@ -19,7 +19,7 @@
     <tal:block repeat="user_id user_ids">
     <div align="left">
         <img width="12" height="12" src="chat_user.gif" />
-        <span class="itemCreator" tal:content="user_id" />
+        <span class="itemCreator" tal:content="python:here.getMemberFullNameFromId(user_id)" />
     </div>
     </tal:block>
   </div>
