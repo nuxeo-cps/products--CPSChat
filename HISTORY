@@ -1,4 +1,20 @@
 *******************************************
+** CPSChat V0.3.0 [R1 build 2004/03/25-11:49 by ben]
+
+Requires:
+~~~~~~~~~
+- CPSInstaller
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- use CPSInstaller
+
+*******************************************
 ** CPSChat V0.2.1 [R1 build 2004/03/08-16:54 by anguenot]
 
 Requires:
