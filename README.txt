@@ -3,18 +3,19 @@ $Id$
 CPSChat is a Chat product for CPS3
 
 What is it doing ? 
+------------------
 
  - CPSChat provides a new content type (Chat) that you can create within
    Workspaces or Sections. 
 
- - It can be moderated "a posteriori" (real time) or 'a priori'. Chat
+ - It can be moderated "a posteriori" (real time) or "a priori". Chat
    moderators are taking care of that.
 
- - You can invit a guest that may reply to chat user posts.
+ - You can invite a guest that may reply to chat user posts.
 
- - ChatPoster are allowed to post messages
+ - ChatPosters are allowed to post messages.
  
- - ChatGuest can, as ChatPoster, post messages and as well decide to reply to
+ - ChatGuests can, as ChatPosters, post messages and as well decide to reply to
    some posts.
  
  - ChatModerators can moderate the chat and manage local roles. 
@@ -34,7 +35,8 @@ What is it doing ?
     - SectionReviewer / SectionManager can moderate the chat.
     - SectionReader can view the chat.
 
-Technical overview : 
+Technical overview
+------------------
 
 Chat content type : 
 
@@ -46,8 +48,8 @@ Workflows :
 
  - Dedicated chat / chatItem workflows (Sections / Workspaces) 
 
-   They are different to take into consideration where you created the chat
-and the specific local roles of the context.
+   They are different to take into consideration where you created the chat and
+   the specific local roles of the context.
 
  - Dedicated Permissions (chatPost, chatReply, chatModerate)
 
@@ -55,5 +57,5 @@ Roles / permissions :
 
  - Dedicated Roles (ChatPoster, ChatGuest, ChatModerator)
    Notice you may use the standard CPS local roles in sections / workspaces
-though)
+   though)
 
