@@ -12,15 +12,15 @@
 # GNU General Public License for more details.
 
 # You should have received a copy of the GNU General Public License
-# along with this program; if not, write to the Free Software
 # Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #
 # $Id$
 
 __author__ = "Julien Anguenot <ja@nuxeo.com>"
 
-"""
-Class Question declarations Used within a CPSChat type.
+""" Simple Question class declaration
+
+Used within a CPSChat content type.
 """
 
 import DateTime
@@ -28,32 +28,31 @@ import DateTime
 from Globals import Persistent
 from AccessControl import ClassSecurityInfo
 
-
-
 class Question(Persistent):
-    """
-    A question, including possibly its answer
+    """A question, including possibly its answers
     """
 
     security = ClassSecurityInfo()
 
     _id = _question = _answer = _pseudo = _answer_time = _submit_time = ''
+
     status = 'PENDING'
 
     def __init__(self, id, question='', pseudo=''):
-        """
-        Default constructor
+        """Constructor
         """
         self._id = id
         self._question = question
         self._pseudo = pseudo
         self._submit_time = DateTime.DateTime()
 
-    #
-    # Public accessors
-    #
     security.declarePublic('id', 'question', 'answer', 'pseudo',
-        'submit_time', 'answer_time', 'setQuestion', 'setStatus', 'setAnswer')
+                           'submit_time', 'answer_time', 'setQuestion',
+                           'setStatus', 'setAnswer')
+
+    #
+    # Accessors
+    #
 
     def id(self):
         return self._id
