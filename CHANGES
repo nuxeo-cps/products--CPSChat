@@ -1,9 +1,10 @@
 Requires:
 ~~~~~~~~~
--
+- Update CPSDefault / CPSInstaller
 New features:
 ~~~~~~~~~~~~~
--
+- Closing / unclosing the chat
+- 
 Bug fixes:
 ~~~~~~~~~~
 -
