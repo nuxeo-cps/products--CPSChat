@@ -163,20 +163,12 @@ def install(self):
     else:
         workspaceACT = []
 
-    if 'Section' in ttool.objectIds():
-        sectionACT = list(ttool['Section'].allowed_content_types)
-    else:
-        sectionACT = []
-
     if 'CPSChat' not in  workspaceACT:
         workspaceACT.append('CPSChat')
-    if 'CPSChat' not in  sectionACT:
-        sectionACT.append('CPSChat')
 
     allowed_content_type = {
-                            'Section' : sectionACT,
-                            'Workspace' : workspaceACT,
-                            }
+        'Workspace' : workspaceACT,
+        }
 
     ptypes_installed = ttool.objectIds()
 
