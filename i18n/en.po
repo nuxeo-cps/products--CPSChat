@@ -1,16 +1,19 @@
+# translation of en.po to 
+# translation of en.po to
 # translation of en.po to francais
 # translation of en.po to Français
 # Gettext Message File for default.
 # Your Name <your@email>, Year
 # Julien Anguenot <ja@nuxeo.com>, 2003.
 # emmanuel <epietriga@nuxeo.com>, 2003.
+# Julien Anguenot <anguenot@nuxeo.com>, 2004.
 msgid ""
 msgstr ""
 "Project-Id-Version: en\n"
-"POT-Creation-Date: 2004-03-04 16:42default\n"
-"PO-Revision-Date: 2003-10-30 10:40+0100\n"
-"Last-Translator: emmanuel <epietriga@nuxeo.com>\n"
-"Language-Team: francais <fr@li.org>\n"
+"POT-Creation-Date: 2004-03-08 15:16default\n"
+"PO-Revision-Date: 2004-03-08 15:17+0100\n"
+"Last-Translator: Julien Anguenot <anguenot@nuxeo.com>\n"
+"Language-Team:  <janguenot@nuxeo.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -32,10 +35,8 @@ msgstr ""
 #.           </strong>
 #.       </h1>
 #: from ../skins/cps_chat/Chat_questions.pt
-msgid ""
-"Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
-msgstr ""
-"Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
+msgid "Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
+msgstr "Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
 
 #.   <h1>
 #.           Chat History of
@@ -381,8 +382,7 @@ msgstr "Questions waiting for a reply."
 #.     </span>
 #: from ../skins/cps_chat/Chat_moderateForm.pt
 msgid "label_think_about_refresh"
-msgstr ""
-"Think about performing some refresh to see the latest posted questions."
+msgstr "Think about performing some refresh to see the latest posted questions."
 
 #.   <th align="right">Title</th>
 #: from ../skins/cps_chat/Chat_edit_form.pt
@@ -403,5 +403,15 @@ msgstr "To :"
 msgid "label_your_answer"
 msgstr "Your answer :"
 
+msgid "ChatPoster"
+msgstr "Chat Poster "
+
+msgid "ChatModerator"
+msgstr "Chat Moderator "
+
+msgid "ChatGuest"
+msgstr "Chat Guest "
+
 #~ msgid "Role1"
 #~ msgstr "XXX"
+

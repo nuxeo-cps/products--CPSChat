@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: default\n"
-"POT-Creation-Date: 2004-03-04 16:42default\n"
+"POT-Creation-Date: 2004-03-08 15:16default\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Your Name <your@email>\n"
 "Language-Team: Name <email>\n"
@@ -384,4 +384,13 @@ msgstr ""
 #: from ../skins/cps_chat/Chat_addAnswerForm.pt
 #: ../skins/cps_chat/Chat_addSingleAnswerForm.pt
 msgid "label_your_answer"
+msgstr ""
+
+msgid "ChatPoster"
+msgstr ""
+
+msgid "ChatModerator"
+msgstr ""
+
+msgid "ChatGuest"
 msgstr ""

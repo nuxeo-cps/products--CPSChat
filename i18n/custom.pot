@@ -16,3 +16,11 @@ msgstr ""
 "Preferred-encodings: utf-8 latin1\n"
 "Domain: default\n"
 
+msgid "ChatPoster"
+msgstr ""
+
+msgid "ChatModerator"
+msgstr ""
+
+msgid "ChatGuest"
+msgstr ""
