@@ -1,10 +1,10 @@
 Some words about the product : 
 
-This product is chat product base on the software requierment specifications of
+This product is chat product base on the software requirement specifications of
 MCI and the city of LYON.  
 
-This is *NOT* a real time Chat product like the ones you're able to find on
-yahoo or likes. 
+This is *NOT* a real time chat product like the ones you're able to find on
+Yahoo or likes. 
 
 The goal is to have a kind of discussion in between users (authenticated or
 not) and a personnality. But you want to perform censorship....: ( 
