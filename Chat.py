@@ -36,7 +36,7 @@ from Products.CMFCore.CMFCorePermissions import View
 from Products.CPSCore.CPSBase import CPSBaseFolder, CPSBase_adder
 from Products.CPSCore.CPSMembershipTool import CPSUnrestrictedUser
 
-from CPSChatPermissions import chatModerate, chatReply
+from CPSChatPermissions import chatModerate, chatReply, chatPost
 
 factory_type_information = (
     { 'id': 'Chat',
@@ -203,7 +203,7 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
     ##############################################
     ##############################################
 
-    security.declareProtected(View, 'addChatItem')
+    security.declareProtected(chatPost, 'addChatItem')
     def addChatItem(self, message='', pseudo=''):
         """Add a Chat Item
         """
@@ -213,7 +213,7 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
         self.invokeFactory('ChatItem', new_id)
         ob = self.get(new_id)
 
-        # Chat Items properties
+        # Chat item properties
         kw = {}
         kw['message'] = message
         kw['pseudo'] = pseudo
@@ -231,7 +231,18 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
             else:
                 member_id = 'pseudo'
 
+            #
             # Create a tmp_user to create the post
+            # The method is protected with
+            # chatPost permissions which is given at least to the role
+            # ChatPoster.  But, I don't want all the chatPoster to have the
+            # modifyPortalContent permission to do whatever they want within
+            # the chat.  So I'm just opening here permissions with a tmp
+            # SecutiryManager just the time to create the post.  As well,
+            # only the moderator is able to change the workflow state of the
+            # chat item for security purpose when the moderation is off
+            #
+
             tmp_user = CPSUnrestrictedUser(member_id, '',
                                            ['ChatModerator'], '')
             tmp_user = tmp_user.__of__(self.acl_users)
