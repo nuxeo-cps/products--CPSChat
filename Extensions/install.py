@@ -17,8 +17,7 @@
 #
 # $Id$
 
-"""
-CPSChat Installer
+"""CPSChat Installer
 
 HOWTO USE THAT ?
 
@@ -38,6 +37,9 @@ HOWTO USE THAT ?
 """
 
 import os, sys
+
+from Products.CPSChat.CPSChatPermissions import chatModerate, chatPost, chatReply
+
 from zLOG import LOG, INFO, DEBUG
 
 def cps_chat_i18n_update(self):
@@ -158,6 +160,7 @@ def install(self):
     # AUTHORIZATING PORTAL TYPES (ws and sections)
     #################################################
 
+    # Workspaces
     if 'Workspace' in ttool.objectIds():
         workspaceACT = list(ttool['Workspace'].allowed_content_types)
     else:
@@ -166,8 +169,18 @@ def install(self):
     if 'CPSChat' not in  workspaceACT:
         workspaceACT.append('CPSChat')
 
+    # Sections
+    if 'Section' in ttool.objectIds():
+        sectionACT = list(ttool['Section'].allowed_content_types)
+    else:
+        sectionACT = []
+
+    if 'CPSChat' not in sectionACT:
+        sectionACT.append('CPSChat')
+
     allowed_content_type = {
         'Workspace' : workspaceACT,
+        'Section'   : sectionACT,
         }
 
     ptypes_installed = ttool.objectIds()
@@ -177,14 +190,14 @@ def install(self):
             pr("  Type '%s'" % ptype)
             if ptype in ptypes_installed:
                 ttool.manage_delObjects([ptype])
-                pr("   Deleted")
+                pr("   Deleted  ")
 
             ttool.manage_addTypeInformation(
                 id=ptype,
                 add_meta_type='Factory-based Type Information',
                 typeinfo_name=prod+': '+ptype
                 )
-            pr("   Installation")
+            pr("   Installation   ")
 
 
     for ptype in allowed_content_type.keys():
@@ -214,12 +227,12 @@ def install(self):
         pr("  Adding workflow configuration to %s" % sections_id)
         portal[sections_id].manage_addProduct['CPSCore'].addCPSWorkflowConfiguration()
 
-    pr("  Add %s chain to portal type %s in %s of %s" %('workspace_content_wf',
+    pr("  Add %s chain to portal type %s in %s of %s" %('section_folder_wf',
                                                         'CPSChat',
                                                         '.cps_workflow_configuration',
                                                         sections_id))
     wfc = getattr(portal[sections_id], '.cps_workflow_configuration')
-    wfc.manage_addChain(portal_type='CPSChat', chain='section_content_wf')
+    wfc.manage_addChain(portal_type='CPSChat', chain='section_folder_wf')
 
     ##########################################
     # SKINS
@@ -264,6 +277,48 @@ def install(self):
     ##############################################
 
     pr(cps_chat_i18n_update(self))
+
+    ##############################################
+    # New roles
+    ##############################################
+
+    new_roles = ['ChatModerator',
+                 'ChatPoster',
+                 'ChatGuest',
+                 ]
+
+    already = portal.valid_roles()
+
+    for new_role in new_roles:
+        if new_role not in already:
+            portal._addRole(new_role)
+            pr(" Add role for mail manager %s" % new_role)
+
+    ##############################################
+    # Permissions
+    ##############################################
+
+
+    chat_perms = {
+        chatModerate: ['Manager',
+                       'WorkspaceManager',
+                       'SectionManager',
+                       'ChatModerator',
+                       ],
+        chatPost: ['Manager',
+                   'WorkspaceManager',
+                   'SectionManager',
+                   'ChatPoster',
+                   ],
+        chatReply: ['Manager',
+                    'WorkspaceManager',
+                    'SectionManager',
+                    'ChatGuest',],
+        }
+
+    for perm, roles in chat_perms.items():
+        portal.manage_permission(perm, roles, 0)
+        pr("  Permission %s" % perm)
 
     pr("End of CPSChat install")
     return pr('flush')
