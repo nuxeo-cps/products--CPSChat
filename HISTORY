@@ -1,4 +1,19 @@
 *******************************************
+** CPSChat V0.0.7 [R1 build 2003-10/08-15:01 by ben]
+
+ZODB Requires:
+~~~~~~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- portal type name and desc i18n
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- nice icon
+*******************************************
 ** CPSChat V0.0.6 [R1 build 2003-10/06-07:20 by ben]
 
 ZODB Requires:
