@@ -1,4 +1,21 @@
 *******************************************
+** CPSChat V0.0.9 [R1 build 2003/12/23-11:35 by ben]
+
+ZODB Requires:
+~~~~~~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Added and refactorded unit tests from old MI product (SF)
+- Code cleanup (SF)
+
+*******************************************
 ** CPSChat V0.0.8 [R1 build 2003/11/17-14:54 by ben]
 
 ZODB Requires:
