@@ -168,7 +168,7 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
         """
         wftool = self.portal_workflow
         for post_id, published in messages.items():
-            if published:
+            if int(published):
                 message = self.get(post_id)
                 wftool.doActionFor(message,
                                    'publish_post',
@@ -192,7 +192,7 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
                     parent = post
                     message = getattr(post, post_id)
                     continue
-            if published:
+            if int(published):
                 wftool.doActionFor(message,
                                    'publish_post',
                                    comment='Message Acceptance',
