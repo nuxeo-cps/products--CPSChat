@@ -25,7 +25,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: en\n"
-"POT-Creation-Date: 2004-04-27 02:01default\n"
+"POT-Creation-Date: 2004-07-22 14:22default\n"
 "PO-Revision-Date: 2004-04-27 02:04+0200\n"
 "Last-Translator: Julien Anguenot <anguenot@nuxeo.com>\n"
 "Language-Team:  <janguenot@nuxeo.com>\n"
@@ -461,4 +461,3 @@ msgstr "Reply to messages"
 #~ msgid "label_think_about_refresh"
 #~ msgstr ""
 #~ "Think about performing some refresh to see the latest posted questions."
-
