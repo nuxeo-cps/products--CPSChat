@@ -11,8 +11,13 @@
      parent.frames['CHAT_MAIN_FRAME'].window.location.reload();
      return 1;
      }
+     function scrollit() {
+        for (I=1; I<=500; I++){
+                window.scroll(0,I);
+        }
+     }
 </script>
-<body>
+<body onLoad="scrollit()">
     <div class="group">
     <span class="itemDate">##########################################</span>
     <h2 class="itemDate">C P S / C H AT</h2>
@@ -24,7 +29,7 @@
       </div>
       <div class="field">
         <tal:block repeat="member_id here/getModeratorMemberIds">
-          <span class="itemDate" tal:content="member_id" /><br />
+          <span class="itemDate" tal:content="python:here.getMemberFullNameFromId(member_id)" /><br />
         </tal:block>
         <tal:block repeat="group_id here/getModeratorGroupIds">
           <span class="itemDate" tal:content="group_id" /><br />
@@ -48,10 +53,10 @@
   <tal:block repeat="item here/getPublicMessages">
     <span class="itemDate">
     [&nbsp;
-     <span tal:replace="python:item.Date()" />
+     <span tal:replace="python:here.getDateStr(DateTime(item.CreationDate()))" />
      &nbsp;]&nbsp;
     </span>
-     <span class="itemCreator" tal:content="item/getCreator" />&nbsp;
+     <span class="itemCreator" tal:content="python:here.getMemberFullNameFromId(item.getCreator())" />&nbsp;
      <span class="itemMessage" tal:content="item/message" /><br />
      <tal:block repeat="reply item/getPublicReplies">
        &nbsp;&nbsp;(&nbsp;<span
