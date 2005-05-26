@@ -1,22 +1,3 @@
-# translation of en.po to 
-# translation of en.po to
-# translation of en.po to
-# translation of en.po to
-# translation of en.po to
-# translation of en.po to
-# translation of en.po to
-# translation of en.po to
-# translation of en.po to
-# translation of en.po to
-# translation of en.po to
-# translation of en.po to
-# translation of en.po to
-# translation of en.po to
-# translation of en.po to
-# translation of en.po to
-# translation of en.po to
-# translation of en.po to francais
-# translation of en.po to Français
 # Gettext Message File for default.
 # Your Name <your@email>, Year
 # Julien Anguenot <ja@nuxeo.com>, 2003.
@@ -33,11 +14,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language-code: LL\n"
-"Language-name: Language\n"
 "Preferred-encodings: utf-8 latin1\n"
-"Domain: default\n"
 "X-Generator: KBabel 1.3.1\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Domain: default\n"
 
 #.   <input type="submit" class="standalone" value="button_moderate" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
