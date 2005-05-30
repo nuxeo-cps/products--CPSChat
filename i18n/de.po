@@ -1,7 +1,6 @@
 # translation of en.po to German
 # Georg Hennemann <georg.hennemann@dhl.com>, 2005.
 # 
-# 
 msgid ""
 msgstr ""
 "Project-Id-Version: CPSCalendar-de CPS-3.2.4\n"
