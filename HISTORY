@@ -1,4 +1,21 @@
 *******************************************
+** CPSChat V0.9.1 [R1 build 2005/06/02-11:45 by fguillaume]
+** SVN URL: https://svn.nuxeo.org/pub/CPSChat/trunk Revision: 22105
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Updated translations.
+- Display full name instead of id.
+
+*******************************************
 ** CPSChat V0.9.0 [R1 build 2005/04/08-15:59 by ben]
 
 Requires:
