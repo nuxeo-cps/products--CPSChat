@@ -6,7 +6,8 @@ New features:
 -
 Bug fixes:
 ~~~~~~~~~~
--
+- Don't use 0-length __init__.py files, they cause problems with stupid
+  windows unarchivers.
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 -
