@@ -82,7 +82,7 @@
                                    value python:here.getDateStr(value, fmt='short')" />
             <button id="trigger"
                     tal:attributes="id string:trigger_effective_date">...</button>
-            <tal:block define="fmt python:here.Localizer.default('jscalendar_date_fmt');"
+            <tal:block define="fmt python:here.translation_service('jscalendar_date_fmt');"
                       replace="structure string:<script type='text/javascript'>
                               Calendar.setup(
                       {
@@ -110,7 +110,7 @@
                                    value python:here.getDateStr(value, fmt='short')" />
             <button id="trigger"
                     tal:attributes="id string:trigger_effective_date">...</button>
-            <tal:block define="fmt python:here.Localizer.default('jscalendar_date_fmt');"
+            <tal:block define="fmt python:here.translation_service('jscalendar_date_fmt');"
                       replace="structure string:<script type='text/javascript'>
                               Calendar.setup(
                       {
