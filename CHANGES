@@ -8,6 +8,8 @@ Bug fixes:
 ~~~~~~~~~~
 - Don't use 0-length __init__.py files, they cause problems with stupid
   windows unarchivers.
+- removed buggy specific localroles templates and use those of CPSDefault
+  instead
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 -

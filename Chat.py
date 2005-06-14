@@ -72,7 +72,7 @@ factory_type_information = (
                    },
                   {'id': 'localroles',
                    'name': 'action_local_roles',
-                   'action': 'cps_chat_localrole_form',
+                   'action': 'folder_localrole_form',
                    'permissions': (chatModerate,)
                    },
                   ),
