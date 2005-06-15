@@ -10,6 +10,7 @@ Bug fixes:
   windows unarchivers.
 - removed buggy specific localroles templates and use those of CPSDefault
   instead
+- Taking advantage of the new centralized CPSI18n.tests.translations module.
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 -
