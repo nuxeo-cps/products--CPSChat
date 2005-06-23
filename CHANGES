@@ -11,6 +11,7 @@ Bug fixes:
 - removed buggy specific localroles templates and use those of CPSDefault
   instead
 - Taking advantage of the new centralized CPSI18n.tests.translations module.
+- Fixed translation files through the CPSI18n/bin/fix_pos script.
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 -
