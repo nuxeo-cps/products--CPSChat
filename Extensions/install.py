@@ -56,16 +56,17 @@ class CPSChatInstaller(CPSInstaller):
     def verifyPortalTypes(self):
         """Verify portal types
         """
-
         ptypes = {
-            'Chat' : {'allowed_content_types': ('ChatItem'),
-                      'typeinfo_name': 'CPSChat: Chat',
-                      'add_meta_type': 'Factory-based Type Information',
-                      },
-            'ChatItem' : {'allowed_content_types': (),
-                          'typeinfo_name': 'CPSChat: ChatItem',
-                          'add_meta_type': 'Factory-based Type Information',
-                           },
+            'Chat': {
+                'typeinfo_name': 'CPSChat: Chat (Chat)',
+                'add_meta_type': 'Factory-based Type Information',
+                'allowed_content_types': ('ChatItem',),
+                },
+            'ChatItem': {
+                'typeinfo_name': 'CPSChat: ChatItem (ChatItem)',
+                'add_meta_type': 'Factory-based Type Information',
+                'allowed_content_types': (),
+                },
             }
         self.verifyContentTypes(ptypes, destructive=1)
 
