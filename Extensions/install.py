@@ -69,9 +69,7 @@ class CPSChatInstaller(CPSInstaller):
                 },
             }
         self.verifyContentTypes(ptypes, destructive=1)
-
-        self.allowContentTypes('Chat', 'Workspace')
-        self.allowContentTypes('Chat', 'Section')
+        self.allowContentTypes('Chat', ('Workspace', 'Section'))
         self.allowContentTypes('ChatItem', 'Chat')
 
     def installCustomWorkflows(self):
