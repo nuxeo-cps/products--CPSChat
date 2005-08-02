@@ -1,12 +1,9 @@
-# ##########################################################
-# ################# DON'T EDIT THIS FILE! ##################
-# ##########################################################
 # Gettext Message File for default.
 # Your Name <your@email>, Year
 msgid ""
 msgstr ""
 "Project-Id-Version: default\n"
-"POT-Creation-Date: 2004-07-22 14:22default\n"
+"POT-Creation-Date: 2005-08-02 16:01default\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Your Name <your@email>\n"
 "Language-Team: Name <email>\n"
@@ -270,4 +267,10 @@ msgid "action_chat_item_reply"
 msgstr ""
 
 msgid "action_chat_reply_to_questions"
+msgstr ""
+
+msgid "label_chat_close"
+msgstr ""
+
+msgid "label_chat_unclose"
 msgstr ""

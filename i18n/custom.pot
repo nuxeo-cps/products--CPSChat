@@ -54,3 +54,9 @@ msgstr ""
 
 msgid "action_chat_reply_to_questions"
 msgstr ""
+
+msgid "label_chat_close"
+msgstr ""
+
+msgid "label_chat_unclose"
+msgstr ""

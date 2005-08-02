@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CPSChat_en\n"
-"POT-Creation-Date: 2004-07-22 14:22default\n"
+"POT-Creation-Date: 2005-08-02 16:01default\n"
 "PO-Revision-Date: 2004-09-24 09:39+0200\n"
 "Last-Translator: Aitzol Naberan BurgaÃ±a <anaberan@codesyntax.com>\n"
 "Language-Team: Euskara <eu@li.org>\n"
@@ -275,3 +275,184 @@ msgstr "Reply to this message"
 msgid "action_chat_reply_to_questions"
 msgstr "Reply to messages"
 
+#, fuzzy
+msgid "label_chat_close"
+msgstr "This chat is closed"
+
+#, fuzzy
+msgid "label_chat_unclose"
+msgstr "This chat is closed"
+
+msgid "Role1"
+msgstr "XXX"
+
+#, fuzzy
+msgid "button_assign_roles"
+msgstr "Save Changes"
+
+msgid "button_change"
+msgstr "Enregistrer"
+
+#, fuzzy
+msgid "button_delete"
+msgstr "Moderate"
+
+#, fuzzy
+msgid "button_search"
+msgstr "Save Changes"
+
+#, fuzzy
+msgid "label_email"
+msgstr "modify"
+
+msgid "label_from"
+msgstr "De "
+
+#, fuzzy
+msgid "label_group"
+msgstr "From"
+
+#, fuzzy
+msgid "label_group_name"
+msgstr "From"
+
+#, fuzzy
+msgid "label_in"
+msgstr "To :"
+
+#, fuzzy
+msgid "label_local_roles_search_term"
+msgstr "Refresh rate (seconds)"
+
+#, fuzzy
+msgid "label_roles"
+msgstr "Host"
+
+#, fuzzy
+msgid "label_user"
+msgstr "Users"
+
+#, fuzzy
+msgid "label_user_email"
+msgstr "Answer the questions"
+
+#, fuzzy
+msgid "label_user_fullname"
+msgstr "Your answer :"
+
+msgid "label_moderate_phase1"
+msgstr ""
+"Cela donnera la possiblité de répondre à la question. Vous pouvez encore "
+"modifier la question."
+
+msgid "chat_edit_heading"
+msgstr "Modifier les propriétées du chat."
+
+msgid ""
+"Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
+msgstr ""
+"Le Chat <strong> ${chat_id} </strong> avec  : <strong> ${chat_host} </strong>"
+
+msgid ""
+"Chat History of <strong> ${chat_id} </strong> with : <strong> ${chat_host} </"
+"strong>"
+msgstr ""
+"Historique du chat <strong> ${chat_id} </strong> avec : <strong> "
+"${chat_host} </strong>"
+
+msgid "Modify the question &nbsp;:&nbsp; ${id_question}"
+msgstr "Modifier la question &nbsp;:&nbsp; ${id_question}"
+
+msgid "Modify the reply &nbsp;:&nbsp; ${id_question}"
+msgstr "Modifier la réponse &nbsp;:&nbsp; ${id_question}"
+
+msgid "button_publish"
+msgstr "Publier"
+
+msgid "button_submit"
+msgstr "Soumettre"
+
+msgid "chat_add_answer_heading"
+msgstr "Répondre à cette question"
+
+msgid "chat_add_answers_heading"
+msgstr "Répondre aux questions"
+
+msgid "chat_ass_post_warning"
+msgstr ""
+"Rappellez vous que les questions que vous soumettez ne seront pas "
+"accessibles tout de suite sur le chat. Un modérateur la validera par la "
+"suite."
+
+msgid "chat_empty_history"
+msgstr "Le chat est vide pour le moment."
+
+msgid "chat_enter_a_message"
+msgstr "Poser une question"
+
+msgid "chat_enter_your_nickname"
+msgstr "Votre pseudo"
+
+msgid "chat_your_question"
+msgstr "Votre question"
+
+msgid "label_answer_one_question"
+msgstr "Répondre"
+
+msgid "label_answers_to_be_accepted"
+msgstr "Réponses en attente d'acceptation"
+
+msgid "label_answers_to_be_published"
+msgstr "Réponses "
+
+msgid "label_chat_answer"
+msgstr "Réponse"
+
+msgid "label_chat_discussions_online"
+msgstr "Discussion en ligne avec une personnalité"
+
+msgid "label_date"
+msgstr "Date"
+
+#, fuzzy
+msgid "label_messages_to_be_accepted"
+msgstr "Answers waiting to be accepted."
+
+msgid "label_moderate_answer_questions"
+msgstr ""
+"Vous pouvez répondre aux questions séparemment en en choissisant une dans le "
+"tablau ci-dessous. Vous avez la possiblité de répondre à toutes les "
+"questions en attente en cliquant sur le liens \"répondre à toutes les "
+"questions\" sur la droite."
+
+msgid "label_moderate_phase2"
+msgstr ""
+"Dernière étapa avant publication. Vous pouvez encore modifier la réponse si "
+"vous en avez besoin. Après cette étape la réponse la question sera "
+"disponible au publique."
+
+msgid "label_no_answered_questions"
+msgstr "Pas de nouvelle question à publier"
+
+msgid "label_no_pending_questions"
+msgstr "Pas de questions soumisses"
+
+msgid "label_published"
+msgstr "Publier"
+
+msgid "label_question_answer"
+msgstr "Réponse"
+
+msgid "label_question_form"
+msgstr "Question de : "
+
+msgid "label_refresh"
+msgstr "Rafraîchir pour avoir les dernières questions soumises."
+
+msgid "label_reply_to_pending questions"
+msgstr "Questions en attente d'un réponse."
+
+msgid "label_think_about_refresh"
+msgstr ""
+"Pensez à réaliser des rafraîchissements afin de récupérer les dernières "
+"questions soumises."

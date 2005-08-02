@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CPSChat\n"
-"POT-Creation-Date: 2004-07-22 14:22default\n"
+"POT-Creation-Date: 2005-08-02 16:01default\n"
 "PO-Revision-Date: 2004-09-30 16:09+0100\n"
 "Last-Translator: Fabio Nosari <fabnos@fastwebnet.it>\n"
 "Language-Team: ita <fabnos@fastwebnet.it>\n"
@@ -23,210 +23,216 @@ msgstr ""
 "Domain: default\n"
 
 #.   <input type="submit" class="standalone" value="button_moderate" />
-#: from
-#: ../skins/cps_chat/cps_chat_lib.pt
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_moderate"
 msgstr "Modera"
 
 #.   <input type="submit" class="standalone" value="button_post" />
-#: from
-#: ../skins/cps_chat/cps_chat_lib.pt
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_post"
 msgstr "Invia"
 
 #.   <input type="submit" class="standalone" value="button_remove" />
-#: from
-#: ../skins/cps_chat/cps_chat_lib.pt
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_remove"
 msgstr "Rimuovi"
 
 #.   <h1>
-#: from
-#: ../skins/cps_chat/cps_chat_answer_form.pt
+#.           Answer to chat messages
+#.       </h1>
+#: from ../skins/cps_chat/cps_chat_answer_form.pt
 msgid "chat_answer_heading"
 msgstr "Aggiungi una risposta ai messaggi"
 
 #.   <h1>
-#: from
-#: ../skins/cps_chat/cps_chat_moderate_form.pt
+#.           Moderate the chat
+#.       </h1>
+#: from ../skins/cps_chat/cps_chat_moderate_form.pt
 msgid "chat_moderate_heading"
 msgstr "Modera la chat"
 
 #.   <h1>
-#: from
-#: ../skins/cps_chat/cps_chat_item_reply_to_form.pt
+#.         Reply to a message
+#.       </h1>
+#: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "heading_chat_add_reply"
 msgstr "Rispondi ad un messaggio"
 
 #.   <h1>
-#: from
-#: ../skins/cps_chat/cps_chat_edit_form.pt
+#.           Edit Chat Property
+#.       </h1>
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "heading_chat_edit"
 msgstr "Modifica le proprietà della chat"
 
 #.   <h1>
-#: from
-#: ../skins/cps_chat/cps_chat_item_edit_form.pt
+#.         Modify chat message
+#.       </h1>
+#: from ../skins/cps_chat/cps_chat_item_edit_form.pt
 msgid "heading_chat_item_modify"
 msgstr "Modifica il messaggio"
 
 #.   <span>Accept</span>
-#: from
-#: ../skins/cps_chat/cps_chat_lib.pt
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_accept"
 msgstr "Accetta"
 
 #.   <span>
-#: from
-#: ../skins/cps_chat/cps_chat_lib.pt
+#.                  Accept/reject
+#.                </span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_accept_reject"
 msgstr "Accetta/Rifiuta"
 
 #.   <span>Add an answer</span>
-#: from
-#: ../skins/cps_chat/cps_chat_answer_form.pt
+#: from ../skins/cps_chat/cps_chat_answer_form.pt
 msgid "label_add_answer"
 msgstr "Aggiungi una risposta"
 
 #.   <h3>
-#: from
-#: ../skins/cps_chat/cps_chat_lib.pt
+#.       Answers waiting to be accepted.
+#.     </h3>
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_answer_waiting"
 msgstr "Risposte in attesa di moderazione:"
 
 #.   <h3>
-#: from
-#: ../skins/cps_chat/cps_chat_lib.pt
+#.       You way remove some messages
+#.     </h3>
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_delete_messages"
 msgstr "Rimuovi alcuni o tutti i messaggi:"
 
 #.   <span>Description</span>
-#: from
-#: ../skins/cps_chat/cps_chat_edit_form.pt
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_description"
 msgstr "Descrizione:"
 
 #.   <span>Host</span>
-#: from
-#: ../skins/cps_chat/cps_chat_edit_form.pt
+#.   <span class="itemCreator">
+#.             Chat Guest
+#.           </span>
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
 #: ../skins/cps_chat/cps_chat_main_frame.pt
 msgid "label_chat_guest"
 msgstr "Ospite (i) della chat:"
 
 #.   <span>
-#: from
-#: ../skins/cps_chat/cps_chat_lib.pt
+#.           This chat is closed
+#.         </span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_is_closed"
 msgstr "Questa chat è chiusa."
 
 #.   <span>Is the chat
-#: from
-#: ../skins/cps_chat/cps_chat_edit_form.pt
+#.                     moderated ?</span>
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_is_moderated"
 msgstr "Moderi la chat a priori ?"
 
 #.   <span>Message</span>
-#: from
-#: ../skins/cps_chat/cps_chat_item_edit_form.pt
+#.   <span>
+#.               Message
+#.             </span>
+#: from ../skins/cps_chat/cps_chat_item_edit_form.pt
 #: ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "label_chat_message"
 msgstr "Messaggio:"
 
 #.   <h3>
-#: from
-#: ../skins/cps_chat/cps_chat_lib.pt
+#.       Messages waiting to be accepted.
+#.     </h3>
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_messages_waiting"
 msgstr "Messaggi in attesa di moderazione:"
 
 #.   <span class="itemCreator">
-#: from
-#: ../skins/cps_chat/cps_chat_main_frame.pt
+#.             Chat moderators :
+#.           </span>
+#: from ../skins/cps_chat/cps_chat_main_frame.pt
 msgid "label_chat_moderator_lists"
 msgstr "Moderatore (i) della chat:"
 
 #.   <span>
-#: from
-#: ../skins/cps_chat/cps_chat_lib.pt
+#.           You are not allowed to post on this chat
+#.         </span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_not_allowed_to_post"
 msgstr "Non hai i permessi per inserire messaggi in questa chat."
 
 #.   <span>Pseudo</span>
-#: from
-#: ../skins/cps_chat/cps_chat_item_edit_form.pt
+#: from ../skins/cps_chat/cps_chat_item_edit_form.pt
 msgid "label_chat_pseudo"
 msgstr "Nickname:"
 
 #.   <span>Question</span>
-#: from
-#: ../skins/cps_chat/cps_chat_answer_form.pt
+#: from ../skins/cps_chat/cps_chat_answer_form.pt
 #: ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_question"
 msgstr "Domanda:"
 
 #.   <span>Modify</span>
-#: from
-#: ../skins/cps_chat/cps_chat_lib.pt
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_question_modify"
 msgstr "Modifica"
 
 #.   <span>Reply</span>
-#: from
-#: ../skins/cps_chat/cps_chat_answer_form.pt
+#: from ../skins/cps_chat/cps_chat_answer_form.pt
 msgid "label_chat_question_reply"
 msgstr "Rispondi alla domanda:"
 
 #.   <span>
-#: from
-#: ../skins/cps_chat/cps_chat_edit_form.pt
+#.                     Chat refresh rate</span>
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_refresh_rate"
 msgstr "Aggiorna la chat ogni: n° secondi"
 
 #.   <span>Reply</span>
-#: from
-#: ../skins/cps_chat/cps_chat_item_reply_to_form.pt
+#: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "label_chat_reply"
 msgstr "Rispondi"
 
 #.   <span>Title</span>
-#: from
-#: ../skins/cps_chat/cps_chat_edit_form.pt
+#: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_title"
 msgstr "Titolo:"
 
 #.   <span class="itemDate">
-#: from
-#: ../skins/cps_chat/cps_chat_user_frame.pt
+#.         Users
+#.       </span>
+#: from ../skins/cps_chat/cps_chat_user_frame.pt
 msgid "label_chat_users"
 msgstr "Utenti"
 
 #.   <span>
-#: from
-#: ../skins/cps_chat/cps_chat_lib.pt
+#.                 Message
+#.               </span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_cps_chat_enter_message"
 msgstr "Messaggio:"
 
 #.   <span>
-#: from
-#: ../skins/cps_chat/cps_chat_lib.pt
+#.                 Pseudo
+#.               </span>
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_cps_chat_enter_pseudo"
 msgstr "Nickname"
 
 #.   <span>modify</span>
-#: from
-#: ../skins/cps_chat/cps_chat_lib.pt
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_modify"
 msgstr "modifica"
 
 #.   <span>
-#: from
-#: ../skins/cps_chat/cps_chat_answer_form.pt
+#.             No new question to moderate
+#.           </span>
+#: from ../skins/cps_chat/cps_chat_answer_form.pt
 #: ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_no_questions_to_moderate"
 msgstr "Non sono presenti nuovi messaggi da moderare."
 
 #.   <span>Reject</span>
-#: from
-#: ../skins/cps_chat/cps_chat_lib.pt
+#: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_reject"
 msgstr "Rifiuta"
 
@@ -269,3 +275,181 @@ msgstr "Rispondi a questo messaggio"
 msgid "action_chat_reply_to_questions"
 msgstr "Rispondi ai messaggi"
 
+#, fuzzy
+msgid "label_chat_close"
+msgstr "Le chat est clos"
+
+#, fuzzy
+msgid "label_chat_unclose"
+msgstr "Le chat est clos"
+
+#, fuzzy
+msgid "button_assign_roles"
+msgstr "Enregistrer"
+
+msgid "button_change"
+msgstr "Enregistrer"
+
+#, fuzzy
+msgid "button_delete"
+msgstr "Modérer"
+
+#, fuzzy
+msgid "button_search"
+msgstr "Enregistrer"
+
+#, fuzzy
+msgid "label_email"
+msgstr "Modifier"
+
+msgid "label_from"
+msgstr "De "
+
+#, fuzzy
+msgid "label_group"
+msgstr "De "
+
+#, fuzzy
+msgid "label_group_name"
+msgstr "De "
+
+#, fuzzy
+msgid "label_in"
+msgstr "en :"
+
+#, fuzzy
+msgid "label_local_roles_search_term"
+msgstr "Delai pour le rafraîchissement (secondes)"
+
+#, fuzzy
+msgid "label_roles"
+msgstr "Personnalité invitée"
+
+#, fuzzy
+msgid "label_user"
+msgstr "Utilisateurs"
+
+#, fuzzy
+msgid "label_user_email"
+msgstr "Répondre"
+
+#, fuzzy
+msgid "label_user_fullname"
+msgstr "Votre réponse :"
+
+msgid "label_moderate_phase1"
+msgstr ""
+"Cela donnera la possiblité de répondre à la question. Vous pouvez encore "
+"modifier la question."
+
+msgid "chat_edit_heading"
+msgstr "Modifier les propriétées du chat."
+
+msgid ""
+"Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
+msgstr ""
+"Le Chat <strong> ${chat_id} </strong> avec  : <strong> ${chat_host} </strong>"
+
+msgid ""
+"Chat History of <strong> ${chat_id} </strong> with : <strong> ${chat_host} </"
+"strong>"
+msgstr ""
+"Historique du chat <strong> ${chat_id} </strong> avec : <strong> "
+"${chat_host} </strong>"
+
+msgid "Modify the question &nbsp;:&nbsp; ${id_question}"
+msgstr "Modifier la question &nbsp;:&nbsp; ${id_question}"
+
+msgid "Modify the reply &nbsp;:&nbsp; ${id_question}"
+msgstr "Modifier la réponse &nbsp;:&nbsp; ${id_question}"
+
+msgid "button_publish"
+msgstr "Publier"
+
+msgid "button_submit"
+msgstr "Soumettre"
+
+msgid "chat_add_answer_heading"
+msgstr "Répondre à cette question"
+
+msgid "chat_add_answers_heading"
+msgstr "Répondre aux questions"
+
+msgid "chat_ass_post_warning"
+msgstr ""
+"Rappellez vous que les questions que vous soumettez ne seront pas "
+"accessibles tout de suite sur le chat. Un modérateur la validera par la "
+"suite."
+
+msgid "chat_empty_history"
+msgstr "Le chat est vide pour le moment."
+
+msgid "chat_enter_a_message"
+msgstr "Poser une question"
+
+msgid "chat_enter_your_nickname"
+msgstr "Votre pseudo"
+
+msgid "chat_your_question"
+msgstr "Votre question"
+
+msgid "label_answer_one_question"
+msgstr "Répondre"
+
+msgid "label_answers_to_be_accepted"
+msgstr "Réponses en attente d'acceptation"
+
+msgid "label_answers_to_be_published"
+msgstr "Réponses "
+
+msgid "label_chat_answer"
+msgstr "Réponse"
+
+msgid "label_chat_discussions_online"
+msgstr "Discussion en ligne avec une personnalité"
+
+msgid "label_date"
+msgstr "Date"
+
+#, fuzzy
+msgid "label_messages_to_be_accepted"
+msgstr "Réponses en attente d'acceptation"
+
+msgid "label_moderate_answer_questions"
+msgstr ""
+"Vous pouvez répondre aux questions séparemment en en choissisant une dans le "
+"tablau ci-dessous. Vous avez la possiblité de répondre à toutes les "
+"questions en attente en cliquant sur le liens \"répondre à toutes les "
+"questions\" sur la droite."
+
+msgid "label_moderate_phase2"
+msgstr ""
+"Dernière étapa avant publication. Vous pouvez encore modifier la réponse si "
+"vous en avez besoin. Après cette étape la réponse la question sera "
+"disponible au publique."
+
+msgid "label_no_answered_questions"
+msgstr "Pas de nouvelle question à publier"
+
+msgid "label_no_pending_questions"
+msgstr "Pas de questions soumisses"
+
+msgid "label_published"
+msgstr "Publier"
+
+msgid "label_question_answer"
+msgstr "Réponse"
+
+msgid "label_question_form"
+msgstr "Question de : "
+
+msgid "label_refresh"
+msgstr "Rafraîchir pour avoir les dernières questions soumises."
+
+msgid "label_reply_to_pending questions"
+msgstr "Questions en attente d'un réponse."
+
+msgid "label_think_about_refresh"
+msgstr ""
+"Pensez à réaliser des rafraîchissements afin de récupérer les dernières "
+"questions soumises."
