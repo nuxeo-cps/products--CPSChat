@@ -14,6 +14,7 @@ Bug fixes:
 - Fixed translation files through the CPSI18n/bin/fix_pos script.
 - Replaced incorrect code producing broken urls using virtual hosting.
 - #394 ("Close" / "Unclose" actions are not i18n)
+- #554 (CPSChat auto-refresh scrolls back to the middle of the iframe)
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 - rename CPSChatPermissions in permissions and deprecate the CPSChatPermissions

@@ -12,9 +12,8 @@
      return 1;
      }
      function scrollit() {
-        for (I=1; I<=500; I++){
-                window.scroll(0,I);
-        }
+        var me = parent.frames['CHAT_MAIN_FRAME'].window;
+        me.scrollTo(0,me.document.body.scrollHeight);
      }
 </script>
 <body onLoad="scrollit()">
