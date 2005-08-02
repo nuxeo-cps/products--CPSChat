@@ -19,7 +19,7 @@
 """CPSChat is chat product for CPS3.
 """
 
-import CPSChat.permissions
+import permissions
 
 import CPSMemberShipPatch
 
