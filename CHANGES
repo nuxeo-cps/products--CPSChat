@@ -13,6 +13,7 @@ Bug fixes:
 - Taking advantage of the new centralized CPSI18n.tests.translations module.
 - Fixed translation files through the CPSI18n/bin/fix_pos script.
 - Replaced incorrect code producing broken urls using virtual hosting.
+- #394 ("Close" / "Unclose" actions are not i18n)
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 -
