@@ -36,7 +36,7 @@ from Products.CMFCore.permissions import View
 from Products.CPSCore.CPSBase import CPSBaseFolder, CPSBase_adder
 from Products.CPSCore.CPSMembershipTool import CPSUnrestrictedUser
 
-from CPSChatPermissions import chatModerate, chatReply, chatPost
+from permissions import chatModerate, chatReply, chatPost
 
 factory_type_information = (
     { 'id': 'Chat',

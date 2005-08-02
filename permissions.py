@@ -1,4 +1,3 @@
-# -*- coding: ISO-8859-15 -*-
 # (C) Copyright 2005 Nuxeo SARL <http://nuxeo.com>
 # Author: Julien Anguenot <ja@nuxeo.com>
 #
@@ -20,21 +19,22 @@
 
 __author__ = "Julien Anguenot <ja@nuxeo.com>"
 
-"""Backward compatibility;  see Products.CPSChat.permissions
+"""CPS Chat Permissions
+
+  - 'Chat Moderate' : Permission you need to moderate the chat
+
+  - 'Chat Reply'    : Permission you need to answer question
+
+  - 'Chat Post'     : Permission you need to post question
 """
 
-from warnings import warn
+from Products.CMFCore.permissions import setDefaultRoles
 
-warn("The module, "
-     "'Products.CPSChat.CPSChatPermissions' "
-     "is a deprecated compatiblity alias for "
-     "'Products.CPSChat.permissions'; "
-     "please use the new module instead. "
-     "This reference will be removed within CPS-3.6",
-     DeprecationWarning)
+chatModerate = 'Chat Moderate'
+setDefaultRoles(chatModerate, ('Manager', 'Owner'))
 
-# BBB : can be removed in CPS-3.6
-from Products.CPSChat.permissions import chatModerate
-from Products.CPSChat.permissions import chatReply
-from Products.CPSChat.permissions import chatPost
+chatReply = 'Chat Reply'
+setDefaultRoles(chatReply, ('Manager', 'Owner'))
 
+chatPost = 'Chat Post'
+setDefaultRoles(chatPost, ('Manager', 'Owner'))

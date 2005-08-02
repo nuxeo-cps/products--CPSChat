@@ -16,4 +16,4 @@ Bug fixes:
 - #394 ("Close" / "Unclose" actions are not i18n)
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
--
+- rename CPSChatPermissions in permissions and deprecate the CPSChatPermissions

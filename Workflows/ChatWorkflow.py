@@ -26,9 +26,7 @@ import os, sys
 from zLOG import LOG, INFO, DEBUG
 
 from Products.CMFCore.permissions import View, ModifyPortalContent
-
-from Products.CPSChat.CPSChatPermissions import chatModerate, \
-     chatReply, chatPost
+from Products.CPSChat.permissions import chatModerate, chatReply, chatPost
 
 from Products.CPSWorkflow.transitions import \
      TRANSITION_INITIAL_CREATE, \

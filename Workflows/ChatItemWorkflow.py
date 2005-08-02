@@ -26,8 +26,7 @@ import os, sys
 from zLOG import LOG, INFO, DEBUG
 
 from Products.CMFCore.permissions import View, ModifyPortalContent
-from Products.CPSChat.CPSChatPermissions import chatModerate, \
-     chatReply, chatPost
+from Products.CPSChat.permissions import chatModerate, chatReply, chatPost
 
 from Products.CPSWorkflow.transitions import \
      TRANSITION_INITIAL_CREATE, \
@@ -96,7 +95,7 @@ def chatItemWorkflowsInstall(self):
                     transitions=('create_content',
                                  'publish_post',
                                  'submit_question',))
-                                 
+
     ##########################################################################
     #                                  PENDING
     ##########################################################################
@@ -292,9 +291,9 @@ def chatItemWorkflowsInstall(self):
     vdef.setProperties(description='Time of the last transition',
                        default_expr="state_change/getDateTime",
                        for_status=1, update_always=1)
-    
+
     ################ Scripts #################
-    
+
     wfscripts = {
             'publish_question': {
                 '_owner': None,
@@ -304,8 +303,8 @@ obj = state_change.object
 obj.publishInitialPost()
 """
             },
-        }    
-    
+        }
+
     for scriptid, scriptdef in wfscripts.items():
         wf.scripts._setObject(scriptid, PythonScript(scriptid))
         script = wf.scripts[scriptid]
@@ -564,7 +563,7 @@ obj.publishInitialPost()
                        for_status=1, update_always=1)
 
     ################ Scripts #################
-    
+
     wfscripts = {
             'publish_question': {
                 '_owner': None,

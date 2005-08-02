@@ -23,8 +23,10 @@ Installer/Updater fot the CPSChat component.
 """
 
 from Products.CPSInstaller.CPSInstaller import CPSInstaller
-from Products.CPSChat.CPSChatPermissions import chatModerate, chatPost, \
-    chatReply
+
+from Products.CPSChat.permissions import chatModerate
+from Products.CPSChat.permissions import chatPost
+from Products.CPSChat.permissions import chatReply
 
 SECTIONS_ID = 'sections'
 WORKSPACES_ID = 'workspaces'
