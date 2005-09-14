@@ -158,7 +158,7 @@ msgstr "Nu esti autorizat sa scrii mesaje pe acest chat"
 #.   <span>Pseudo</span>
 #: from ../skins/cps_chat/cps_chat_item_edit_form.pt
 msgid "label_chat_pseudo"
-msgstr "Porecla"
+msgstr "Pseudonim"
 
 #.   <span>Question</span>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
@@ -180,7 +180,7 @@ msgstr "Raspunde"
 #.                     Chat refresh rate</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_refresh_rate"
-msgstr "Rata de reincarcare(secunde)"
+msgstr "Rata de reincarcare (secunde)"
 
 #.   <span>Reply</span>
 #: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
@@ -211,7 +211,7 @@ msgstr "Mesaj"
 #.               </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_cps_chat_enter_pseudo"
-msgstr "Porecla"
+msgstr "Pseudonim"
 
 #.   <span>modify</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
@@ -272,179 +272,178 @@ msgstr "Raspunde la mesaje"
 
 #, fuzzy
 msgid "label_chat_close"
-msgstr "Le chat est clos"
+msgstr "Chat-ul este inchis"
 
 #, fuzzy
 msgid "label_chat_unclose"
-msgstr "Le chat est clos"
+msgstr "Chatul este inchis"
 
 #, fuzzy
 msgid "button_assign_roles"
-msgstr "Enregistrer"
+msgstr "Inregistrare"
 
 msgid "button_change"
-msgstr "Enregistrer"
+msgstr "Inregistrare"
 
 #, fuzzy
 msgid "button_delete"
-msgstr "Modérer"
+msgstr "Moderare"
 
 #, fuzzy
 msgid "button_search"
-msgstr "Enregistrer"
+msgstr "Inregistrare"
 
 #, fuzzy
 msgid "label_email"
-msgstr "Modifier"
+msgstr "Modificare"
 
 msgid "label_from"
-msgstr "De "
+msgstr "Pentru "
 
 #, fuzzy
 msgid "label_group"
-msgstr "De "
+msgstr "Pentru "
 
 #, fuzzy
 msgid "label_group_name"
-msgstr "De "
+msgstr "Pentru "
 
 #, fuzzy
 msgid "label_in"
-msgstr "en :"
+msgstr "in :"
 
 #, fuzzy
 msgid "label_local_roles_search_term"
-msgstr "Delai pour le rafraîchissement (secondes)"
+msgstr "Intarzierea ratei de reincarcare (secunde)"
 
 #, fuzzy
 msgid "label_roles"
-msgstr "Personnalité invitée"
+msgstr "Persoane invitate"
 
 #, fuzzy
 msgid "label_user"
-msgstr "Utilisateurs"
+msgstr "Utilizatori"
 
 #, fuzzy
 msgid "label_user_email"
-msgstr "Répondre"
+msgstr "Raspuns"
 
 #, fuzzy
 msgid "label_user_fullname"
-msgstr "Votre réponse :"
+msgstr "Raspunsul tau :"
 
 msgid "label_moderate_phase1"
 msgstr ""
-"Cela donnera la possiblité de répondre à la question. Vous pouvez encore "
-"modifier la question."
+"Ai posibilitatea de a raspunde la intrebare. Inca poti "
+"modifica intrebarea."
 
 msgid "chat_edit_heading"
-msgstr "Modifier les propriétées du chat."
+msgstr "Modifica proprietatile chatului."
 
 msgid ""
 "Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
 msgstr ""
-"Le Chat <strong> ${chat_id} </strong> avec  : <strong> ${chat_host} </strong>"
+"Chatul <strong> ${chat_id} </strong> cu: <strong> ${chat_host} </strong>"
 
 msgid ""
-"Chat History of <strong> ${chat_id} </strong> with : <strong> ${chat_host} </"
+"Istoricul chatului <strong> ${chat_id} </strong> cu: <strong> ${chat_host} </"
 "strong>"
 msgstr ""
-"Historique du chat <strong> ${chat_id} </strong> avec : <strong> "
+"Istoricul chatului <strong> ${chat_id} </strong> cu: <strong> "
 "${chat_host} </strong>"
 
 msgid "Modify the question &nbsp;:&nbsp; ${id_question}"
-msgstr "Modifier la question &nbsp;:&nbsp; ${id_question}"
+msgstr "Modifica intrebarea &nbsp;:&nbsp; ${id_question}"
 
 msgid "Modify the reply &nbsp;:&nbsp; ${id_question}"
-msgstr "Modifier la réponse &nbsp;:&nbsp; ${id_question}"
+msgstr "Modifica raspunsul &nbsp;:&nbsp; ${id_question}"
 
 msgid "button_publish"
-msgstr "Publier"
+msgstr "Publica"
 
 msgid "button_submit"
-msgstr "Soumettre"
+msgstr "Trimite"
 
 msgid "chat_add_answer_heading"
-msgstr "Répondre à cette question"
+msgstr "Raspunde la aceasta intrebare"
 
 msgid "chat_add_answers_heading"
-msgstr "Répondre aux questions"
+msgstr "Raspunde la intrebari"
 
 msgid "chat_ass_post_warning"
 msgstr ""
-"Rappellez vous que les questions que vous soumettez ne seront pas "
-"accessibles tout de suite sur le chat. Un modérateur la validera par la "
-"suite."
+"Intrebarile pe care le trimiti nu sunt vizibile "
+"imediat pe chat. Urmeaza sa fie validate "
+"un moderator."
 
 msgid "chat_empty_history"
-msgstr "Le chat est vide pour le moment."
+msgstr "Momentan chatul este gol."
 
 msgid "chat_enter_a_message"
-msgstr "Poser une question"
+msgstr "Pune o intrebare"
 
 msgid "chat_enter_your_nickname"
-msgstr "Votre pseudo"
+msgstr "Pseudonimul tau"
 
 msgid "chat_your_question"
-msgstr "Votre question"
+msgstr "Intrebarea ta"
 
 msgid "label_answer_one_question"
-msgstr "Répondre"
+msgstr "Raspuns"
 
 msgid "label_answers_to_be_accepted"
-msgstr "Réponses en attente d'acceptation"
+msgstr "Raspunsul asteapta sa fie acceptat"
 
 msgid "label_answers_to_be_published"
-msgstr "Réponses "
+msgstr "Raspunsuri "
 
 msgid "label_chat_answer"
-msgstr "Réponse"
+msgstr "Raspuns"
 
 msgid "label_chat_discussions_online"
-msgstr "Discussion en ligne avec une personnalité"
+msgstr "Discuta online cu o persoana
 
 msgid "label_date"
-msgstr "Date"
+msgstr "Data"
 
 #, fuzzy
 msgid "label_messages_to_be_accepted"
-msgstr "Réponses en attente d'acceptation"
+msgstr "Raspunsul asteapta sa fie acceptat"
 
 msgid "label_moderate_answer_questions"
 msgstr ""
-"Vous pouvez répondre aux questions séparemment en en choissisant une dans le "
-"tablau ci-dessous. Vous avez la possiblité de répondre à toutes les "
-"questions en attente en cliquant sur le liens \"répondre à toutes les "
-"questions\" sur la droite."
+"Poti sa raspunzi la intrebari separat, alegand un "
+"tabel de mai jos. Ai posibilitatea sa raspunzi la toate "
+"intrebarile asteptare apasand linkurile \"raspunde la toate "
+"intrebarile\" din partea dreapta."
 
 msgid "label_moderate_phase2"
 msgstr ""
-"Dernière étapa avant publication. Vous pouvez encore modifier la réponse si "
-"vous en avez besoin. Après cette étape la réponse la question sera "
-"disponible au publique."
+"Ultima etapa inaintea publicarii. Daca doresti, poti inca modifica "
+"raspunsul. Dupa aceasta etapa, raspunsul va fi "
+"publicat."
 
 msgid "label_no_answered_questions"
-msgstr "Pas de nouvelle question à publier"
+msgstr "Nu sunt noi intrebari pentru publicare"
 
 msgid "label_no_pending_questions"
-msgstr "Pas de questions soumisses"
+msgstr "Nu au fost trimise intrebari"
 
 msgid "label_published"
-msgstr "Publier"
+msgstr "Publicat"
 
 msgid "label_question_answer"
-msgstr "Réponse"
+msgstr "Raspuns"
 
 msgid "label_question_form"
-msgstr "Question de : "
+msgstr "Intrebare de la : "
 
 msgid "label_refresh"
-msgstr "Rafraîchir pour avoir les dernières questions soumises."
+msgstr "Reincarca pentru a vedea ultimele intrebari trimise."
 
 msgid "label_reply_to_pending questions"
-msgstr "Questions en attente d'un réponse."
+msgstr "Intrebari care asteapta un raspuns."
 
 msgid "label_think_about_refresh"
 msgstr ""
-"Pensez à réaliser des rafraîchissements afin de récupérer les dernières "
-"questions soumises."
+"Reactualizeaza pentru a vedea ultimele intrebari trimise."
