@@ -133,8 +133,19 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
         list = []
         for post in self.values():
             rstate = wftool.getInfoFor(post, 'review_state')
-            if rstate == 'published' or include_pending and rstate == 'pending':
-                list.append(post)
+            if (rstate == 'published' or
+                include_pending and
+                rstate == 'pending'):
+                # Order them by creation date because BTree folders
+                # are not ordered
+                i = 0
+                for elt in list:
+                    if post.CreationDate() > elt.CreationDate():
+                        list.insert(i, post)
+                        break
+                    i += 1
+                if i == 0:
+                    list.append(post)
         return list
 
     security.declareProtected(chatModerate, 'getPendingMessages')
