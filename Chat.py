@@ -28,10 +28,12 @@ import time
 from Globals import InitializeClass
 from AccessControl import ClassSecurityInfo
 from AccessControl.SecurityManagement import newSecurityManager
+from Acquisition import aq_base
 
 from Products.BTreeFolder2.BTreeFolder2 import BTreeFolder2Base
 
 from Products.CMFCore.permissions import View
+from Products.CMFCore.utils import getToolByName
 
 from Products.CPSCore.CPSBase import CPSBaseFolder, CPSBase_adder
 from Products.CPSCore.CPSMembershipTool import CPSUnrestrictedUser
@@ -351,6 +353,21 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
             new = [x for x in self.chat_users if (x[1] + self._getTimeToLeave()
                                                   > nyt)]
             self.chat_users = new
+
+    security.declareProtected(View, 'getUserFullNameFromId')
+    def getUserFullNameFromId(self, user_id):
+        """Return the member full name from id
+        """
+        # To get proper computed attributes, we need to ask the
+        # entry directly from the directory
+        try:
+            utool = getToolByName(self, 'portal_url')
+            portal = utool.getPortalObject()
+            dir = portal.portal_directories.members
+            fullname = dir._getEntry(user_id)[dir.title_field]
+        except (AttributeError, KeyError):
+            fullname = user_id
+        return fullname
 
 InitializeClass(Chat)
 

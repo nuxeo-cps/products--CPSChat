@@ -6,7 +6,7 @@ New features:
 -
 Bug fixes:
 ~~~~~~~~~~
--
+- #915 : Local roles in-effective in CPSChat
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 -

@@ -28,7 +28,7 @@
       </div>
       <div class="field">
         <tal:block repeat="member_id here/getModeratorMemberIds">
-          <span class="itemDate" tal:content="python:here.getMemberFullNameFromId(member_id)" /><br />
+          <span class="itemDate" tal:content="python:here.getUserFullNameFromId(member_id)" /><br />
         </tal:block>
         <tal:block repeat="group_id here/getModeratorGroupIds">
           <span class="itemDate" tal:content="group_id" /><br />
@@ -55,7 +55,7 @@
      <span tal:replace="python:here.getDateStr(DateTime(item.CreationDate()))" />
      &nbsp;]&nbsp;
     </span>
-     <span class="itemCreator" tal:content="python:here.getMemberFullNameFromId(item.getCreator())" />&nbsp;
+     <span class="itemCreator" tal:content="python:here.getUserFullNameFromId(item.getCreator())" />&nbsp;
      <span class="itemMessage" tal:content="item/message" /><br />
      <tal:block repeat="reply item/getPublicReplies">
        &nbsp;&nbsp;(&nbsp;<span
@@ -65,7 +65,7 @@
            <span tal:replace="python:here.getDateStr(reply.modification_date)" />
           &nbsp;]&nbsp;
         </span>
-        <span class="itemCreator" tal:content="python:here.getMemberFullNameFromId(reply.getCreator())" />&nbsp;
+        <span class="itemCreator" tal:content="python:here.getUserFullNameFromId(reply.getCreator())" />&nbsp;
         <span class="itemMessage" tal:content="reply/message" /><br />
     </tal:block>
   </tal:block>
