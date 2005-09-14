@@ -20,7 +20,7 @@
 __author__ = "Julien Anguenot <ja@nuxeo.com>"
 
 
-from Products.CPSCore.CPSMembershipTool import CPSMembershipTool
+from Products.CPSCore.CPSMembershipTool import CPSMembershipTool as mtool
 
 #
 # Monkey patch the CPSMemberShipTool.
@@ -28,8 +28,6 @@ from Products.CPSCore.CPSMembershipTool import CPSMembershipTool
 # the local roles within the Chat.
 #
 
-roles_managing_local_roles = ('WorkspaceManager',
-                              'SectionManager',
-                              'ChatModerator')
-
-CPSMembershipTool.roles_managing_local_roles = roles_managing_local_roles
+ChatModerator = 'ChatModerator'
+if ChatModerator not in mtool.roles_managing_local_roles:
+    mtool.roles_managing_local_roles += (ChatModerator,)
