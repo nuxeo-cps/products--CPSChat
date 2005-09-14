@@ -270,65 +270,51 @@ msgstr "Raspunde la acest mesaj"
 msgid "action_chat_reply_to_questions"
 msgstr "Raspunde la mesaje"
 
-#, fuzzy
 msgid "label_chat_close"
 msgstr "Chat-ul este inchis"
 
-#, fuzzy
 msgid "label_chat_unclose"
 msgstr "Chatul este inchis"
 
-#, fuzzy
 msgid "button_assign_roles"
 msgstr "Inregistrare"
 
 msgid "button_change"
 msgstr "Inregistrare"
 
-#, fuzzy
 msgid "button_delete"
 msgstr "Moderare"
 
-#, fuzzy
 msgid "button_search"
 msgstr "Inregistrare"
 
-#, fuzzy
 msgid "label_email"
 msgstr "Modificare"
 
 msgid "label_from"
 msgstr "Pentru "
 
-#, fuzzy
 msgid "label_group"
 msgstr "Pentru "
 
-#, fuzzy
 msgid "label_group_name"
 msgstr "Pentru "
 
-#, fuzzy
 msgid "label_in"
 msgstr "in :"
 
-#, fuzzy
 msgid "label_local_roles_search_term"
 msgstr "Intarzierea ratei de reincarcare (secunde)"
 
-#, fuzzy
 msgid "label_roles"
 msgstr "Persoane invitate"
 
-#, fuzzy
 msgid "label_user"
 msgstr "Utilizatori"
 
-#, fuzzy
 msgid "label_user_email"
 msgstr "Raspuns"
 
-#, fuzzy
 msgid "label_user_fullname"
 msgstr "Raspunsul tau :"
 
@@ -401,12 +387,11 @@ msgid "label_chat_answer"
 msgstr "Raspuns"
 
 msgid "label_chat_discussions_online"
-msgstr "Discuta online cu o persoana
+msgstr "Discuta online cu o persoana"
 
 msgid "label_date"
 msgstr "Data"
 
-#, fuzzy
 msgid "label_messages_to_be_accepted"
 msgstr "Raspunsul asteapta sa fie acceptat"
 
