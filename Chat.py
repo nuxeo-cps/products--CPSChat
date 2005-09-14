@@ -365,21 +365,6 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
                                                   > nyt)]
             self.chat_users = new
 
-    security.declareProtected(View, 'getUserFullNameFromId')
-    def getUserFullNameFromId(self, user_id):
-        """Return the member full name from id
-        """
-        # To get proper computed attributes, we need to ask the
-        # entry directly from the directory
-        try:
-            utool = getToolByName(self, 'portal_url')
-            portal = utool.getPortalObject()
-            dir = portal.portal_directories.members
-            fullname = dir._getEntry(user_id)[dir.title_field]
-        except (AttributeError, KeyError):
-            fullname = user_id
-        return fullname
-
 InitializeClass(Chat)
 
 def addChat(container, id, REQUEST=None, **kw):

@@ -20,7 +20,7 @@
     <div align="left">
         <img width="12" height="12" src="chat_user.gif" />
         <span class="itemCreator" 
-	      tal:content="python:here.getUserFullNameFromId(user_id)" />
+	      tal:content="python:here.portal_membership.getFullnameFromId(user_id)" />
     </div>
     </tal:block>
   </div>
