@@ -1,4 +1,21 @@
 *******************************************
+** CPSChat V0.10.1 [R1 build 2005/09/21-14:53 by fguillaume]
+** SVN URL: https://svn.nuxeo.org/pub/CPSChat/trunk Revision: 27306
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- #915 : Local roles in-effective in CPSChat
+- #917 : Chat messages displayed alphabetically, not by timeline.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
 ** CPSChat V0.10.0 [R1 build 2005/08/05-15:36 by fguillaume]
 ** SVN URL: https://svn.nuxeo.org/pub/CPSChat/trunk Revision: 25541
 Requires:

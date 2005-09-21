@@ -6,8 +6,7 @@ New features:
 -
 Bug fixes:
 ~~~~~~~~~~
-- #915 : Local roles in-effective in CPSChat
-- #917 : Chat messages displayed alphabetically, not by timeline.
+-
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 -
