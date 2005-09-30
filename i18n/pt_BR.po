@@ -1,17 +1,8 @@
-# translation of pt-BR.po to Português do Brasil
-# translation of pt-br.po to PortuguÃªs do Brasil
-# translation of cpschat.po to PortuguÃªs do Brasil
-# ##########################################################
-# ################# DON'T EDIT THIS FILE! ##################
-# ##########################################################
-# Gettext Message File for default.
-# Your Name <your@email>, Year
-# Mario Olimpio de Menezes <mario@curiango.ipen.br>, 2004.
 msgid ""
 msgstr ""
 "Project-Id-Version: pt-BR\n"
 "POT-Creation-Date: 2005-08-02 16:01default\n"
-"PO-Revision-Date: 2005-06-15 14:06-0300\n"
+"PO-Revision-Date: 2005-09-29 11:01-0300\n"
 "Last-Translator: Mario Olimpio de Menezes <mario@ipen.br>\n"
 "Language-Team: Portugues do Brasil <pt@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -37,35 +28,30 @@ msgid "button_remove"
 msgstr "Remover"
 
 #.   <h1>
-#.           Answer to chat messages
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 msgid "chat_answer_heading"
 msgstr "Resposta"
 
 #.   <h1>
-#.           Moderate the chat
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_moderate_form.pt
 msgid "chat_moderate_heading"
 msgstr "Moderar o bate-papo"
 
 #.   <h1>
-#.         Reply to a message
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "heading_chat_add_reply"
 msgstr "Responder para uma mensagem"
 
 #.   <h1>
-#.           Edit Chat Property
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "heading_chat_edit"
 msgstr "Editar propriedades do bate-papo"
 
 #.   <h1>
-#.         Modify chat message
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_item_edit_form.pt
 msgid "heading_chat_item_modify"
@@ -77,7 +63,6 @@ msgid "label_accept"
 msgstr "Aceitar"
 
 #.   <span>
-#.                  Accept/reject
 #.                </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_accept_reject"
@@ -89,14 +74,12 @@ msgid "label_add_answer"
 msgstr "Adicionar uma resposta"
 
 #.   <h3>
-#.       Answers waiting to be accepted.
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_answer_waiting"
 msgstr "Respostas esperando serem aceitas."
 
 #.   <h3>
-#.       You way remove some messages
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_delete_messages"
@@ -108,52 +91,43 @@ msgid "label_chat_description"
 msgstr "Descrição"
 
 #.   <span>Host</span>
-#.   <span class="itemCreator">
 #.             Chat Guest
-#.           </span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 #: ../skins/cps_chat/cps_chat_main_frame.pt
 msgid "label_chat_guest"
 msgstr "Convidado do bate-papo"
 
 #.   <span>
-#.           This chat is closed
 #.         </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_is_closed"
 msgstr "Este bate-papo está fechado."
 
 #.   <span>Is the chat
-#.                     moderated ?</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_is_moderated"
 msgstr "Este bate-papo é moderado?"
 
 #.   <span>Message</span>
-#.   <span>
 #.               Message
-#.             </span>
 #: from ../skins/cps_chat/cps_chat_item_edit_form.pt
 #: ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "label_chat_message"
 msgstr "Mensagem"
 
 #.   <h3>
-#.       Messages waiting to be accepted.
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_messages_waiting"
 msgstr "Mensagens esperando serem aceitas."
 
 #.   <span class="itemCreator">
-#.             Chat moderators :
 #.           </span>
 #: from ../skins/cps_chat/cps_chat_main_frame.pt
 msgid "label_chat_moderator_lists"
 msgstr "Moderadores do bate-papo:"
 
 #.   <span>
-#.           You are not allowed to post on this chat
 #.         </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_not_allowed_to_post"
@@ -181,7 +155,6 @@ msgid "label_chat_question_reply"
 msgstr "Responder"
 
 #.   <span>
-#.                     Chat refresh rate</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_refresh_rate"
 msgstr "Taxa de atualização do bate-papo"
@@ -197,21 +170,18 @@ msgid "label_chat_title"
 msgstr "Título"
 
 #.   <span class="itemDate">
-#.         Users
 #.       </span>
 #: from ../skins/cps_chat/cps_chat_user_frame.pt
 msgid "label_chat_users"
 msgstr "Usuários"
 
 #.   <span>
-#.                 Message
 #.               </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_cps_chat_enter_message"
 msgstr "Mensagem"
 
 #.   <span>
-#.                 Pseudo
 #.               </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_cps_chat_enter_pseudo"
@@ -223,7 +193,6 @@ msgid "label_modify"
 msgstr "Modificar"
 
 #.   <span>
-#.             No new question to moderate
 #.           </span>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 #: ../skins/cps_chat/cps_chat_lib.pt
@@ -274,180 +243,9 @@ msgstr "Resposta"
 msgid "action_chat_reply_to_questions"
 msgstr "Responder a questões"
 
-#, fuzzy
 msgid "label_chat_close"
-msgstr "This chat is closed"
+msgstr "Fechar"
 
-#, fuzzy
 msgid "label_chat_unclose"
-msgstr "This chat is closed"
+msgstr "Abrir"
 
-msgid "Role1"
-msgstr "XXX"
-
-#, fuzzy
-msgid "button_assign_roles"
-msgstr "Save Changes"
-
-msgid "button_change"
-msgstr "Save Changes"
-
-#, fuzzy
-msgid "button_delete"
-msgstr "Moderate"
-
-#, fuzzy
-msgid "button_search"
-msgstr "Save Changes"
-
-#, fuzzy
-msgid "label_email"
-msgstr "modify"
-
-msgid "label_from"
-msgstr "From"
-
-#, fuzzy
-msgid "label_group"
-msgstr "From"
-
-#, fuzzy
-msgid "label_group_name"
-msgstr "From"
-
-#, fuzzy
-msgid "label_in"
-msgstr "To :"
-
-#, fuzzy
-msgid "label_local_roles_search_term"
-msgstr "Refresh rate (seconds)"
-
-#, fuzzy
-msgid "label_roles"
-msgstr "Host"
-
-#, fuzzy
-msgid "label_user"
-msgstr "Users"
-
-#, fuzzy
-msgid "label_user_email"
-msgstr "Answer the questions"
-
-#, fuzzy
-msgid "label_user_fullname"
-msgstr "Your answer :"
-
-msgid "label_moderate_phase1"
-msgstr ""
-"It will give the possiblity to reply to the question. You can still modify "
-"the question."
-
-msgid "chat_edit_heading"
-msgstr "Edit Chat Property"
-
-msgid ""
-"Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
-msgstr ""
-"Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
-
-msgid ""
-"Chat History of <strong> ${chat_id} </strong> with : <strong> ${chat_host} </"
-"strong>"
-msgstr ""
-"Chat History of <strong> ${chat_id} </strong> with : <strong> ${chat_host} </"
-"strong>"
-
-msgid "Modify the question &nbsp;:&nbsp; ${id_question}"
-msgstr "Modify the question &nbsp;:&nbsp; ${id_question}"
-
-msgid "Modify the reply &nbsp;:&nbsp; ${id_question}"
-msgstr "Modify the reply &nbsp;:&nbsp; ${id_question}"
-
-msgid "button_publish"
-msgstr "Publish"
-
-msgid "button_submit"
-msgstr "Submit"
-
-msgid "chat_add_answer_heading"
-msgstr "Answer this question"
-
-msgid "chat_add_answers_heading"
-msgstr "Answer the questions"
-
-msgid "chat_ass_post_warning"
-msgstr ""
-"Please, remember your post won't be visible straight within the chat board. "
-"A moderator will check it out."
-
-msgid "chat_empty_history"
-msgstr "The chat is currently empty."
-
-msgid "chat_enter_a_message"
-msgstr "Post a question"
-
-msgid "chat_enter_your_nickname"
-msgstr "Your nick name"
-
-msgid "chat_your_question"
-msgstr "Your question"
-
-msgid "label_answer_one_question"
-msgstr "Answer"
-
-msgid "label_answers_to_be_accepted"
-msgstr "Answers waiting to be accepted."
-
-msgid "label_answers_to_be_published"
-msgstr "Answers waiting to be published."
-
-msgid "label_chat_answer"
-msgstr "Answer"
-
-msgid "label_chat_discussions_online"
-msgstr "Online discussion with a personnality."
-
-msgid "label_date"
-msgstr "Date"
-
-#, fuzzy
-msgid "label_messages_to_be_accepted"
-msgstr "Answers waiting to be accepted."
-
-msgid "label_moderate_answer_questions"
-msgstr ""
-"You can answer the question by choosing one in the array below.  You can as "
-"well anwser to all at the same time by clicking the link Reply to pending "
-"questions on the right. "
-
-msgid "label_moderate_phase2"
-msgstr ""
-"This is the last step. You can still modify the answer if you need to. After "
-"this step the answer will be available to the public."
-
-msgid "label_no_answered_questions"
-msgstr "No new question to publish."
-
-msgid "label_no_pending_questions"
-msgstr "No question with a pending state."
-
-msgid "label_published"
-msgstr "Published"
-
-msgid "label_question_answer"
-msgstr "Answer"
-
-msgid "label_question_form"
-msgstr "Question from :"
-
-msgid "label_refresh"
-msgstr "Refresh for the latest ones"
-
-msgid "label_reply_to_pending questions"
-msgstr "Questions waiting for a reply."
-
-msgid "label_think_about_refresh"
-msgstr ""
-"Think about performing some refresh to see the latest posted questions."
