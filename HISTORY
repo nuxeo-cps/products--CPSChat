@@ -1,4 +1,22 @@
 *******************************************
+** CPSChat V0.11.0 [R1 build 2005/11/07-15:10 by fguillaume]
+** SVN URL: https://svn.nuxeo.org/pub/CPSChat/trunk Revision: 29055
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+- updated Brazilian Portuguese translations (Thanks to Mario Olimpio de Menezes
+  <mario [at] curiango.ipen.br>)
+-
+Bug fixes:
+~~~~~~~~~~
+-
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
 ** CPSChat V0.10.1 [R1 build 2005/09/21-14:53 by fguillaume]
 ** SVN URL: https://svn.nuxeo.org/pub/CPSChat/trunk Revision: 27306
 Requires:
