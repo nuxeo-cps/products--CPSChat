@@ -82,15 +82,6 @@ factory_type_information = (
       },
     )
 
-def cmpCreationDate(x, y):
-    """ For sortings by DublinCore CreationDate. """
-    
-    if x.CreationDate() < y.CreationDate():
-        return -1
-    elif x.CreationDate() > y.CreationDate():
-        return +1
-    return 0
-
 class Chat(BTreeFolder2Base, CPSBaseFolder):
     """Chat class
     """
@@ -136,21 +127,21 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
 
     security.declareProtected(View, 'getPublicMessages')
     def getPublicMessages(self, include_pending=0):
-        """Returns the whole chat items
+        """Returns the whole chat items, ordered by creation date.
         """
 
-        # fetch the list, filtered by review_state
+        
         getInfoFor = self.portal_workflow.getInfoFor
         states = ['published']
         if include_pending:
             states.append['pending']
-        filtered = [post for post in self.values()\
+        filtered = [(post.CreationDate(), post) for post in self.values()\
                         if getInfoFor(post, 'review_state') in states]
 
         # Order them by creation date because BTree folders
         # are not ordered
-        filtered.sort(cmpCreationDate)
-        return filtered
+        filtered.sort()
+        return [x[1] for x in filtered]
 
     security.declareProtected(chatModerate, 'getPendingMessages')
     def getPendingMessages(self):
