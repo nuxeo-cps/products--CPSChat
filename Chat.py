@@ -129,15 +129,12 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
     def getPublicMessages(self, include_pending=0):
         """Returns the whole chat items, ordered by creation date.
         """
-
-        
-        getInfoFor = self.portal_workflow.getInfoFor
+        wftool = getToolByName(self, 'portal_workflow')
         states = ['published']
         if include_pending:
             states.append['pending']
-        filtered = [(post.CreationDate(), post) for post in self.values()\
-                        if getInfoFor(post, 'review_state') in states]
-
+        filtered = [(post.CreationDate(), post) for post in self.values()
+                    if wftool.getInfoFor(post, 'review_state') in states]
         # Order them by creation date because BTree folders
         # are not ordered
         filtered.sort()
