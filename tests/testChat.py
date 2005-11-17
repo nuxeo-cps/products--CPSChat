@@ -4,21 +4,21 @@ if __name__ == '__main__':
 
 import unittest
 from Testing import ZopeTestCase
-import CPSChatTestCase
 
 import DateTime
 
-class TestChat(CPSChatTestCase.CPSChatTestCase):
+class TestChat(ZopeTestCase.ZopeTestCase):
     def afterSetUp(self):
-        self.login('manager')
-        self.ws = self.portal.workspaces
-        self.ws.manage_addProduct['CPSChat'].manage_addCPSChat('chat')
-        self.chat = self.ws.chat
+        self.app.manage_addProduct['CPSChat'].manage_addCPSChat('chat')
+        self.chat = self.app.chat
 
         #self.ws.invokeFactory(doc_type, doc_id)
 
     def beforeTearDown(self):
         self.logout()
+
+    # Old tests that were meant to be inside a CPSChatTestCase (ie CPSTestCase)
+    # instance and already commented out.   
 
     #def testZMI(self):
     #    "Test ZMI methods"
