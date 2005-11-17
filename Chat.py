@@ -144,7 +144,7 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
     def getPendingMessages(self):
         """Returns the messages that need to be moderated
         """
-        wftool = self.portal_workflow
+        wftool = getToolByName(self, 'portal_workflow')
         list = []
         for post in self.values():
             if wftool.getInfoFor(post, 'review_state') == 'waiting':
@@ -155,7 +155,7 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
     def getPendingAnswerMessages(self):
         """Returns the messages that need to be moderated
         """
-        wftool = self.portal_workflow
+        wftool = getToolByName(self, 'portal_workflow')
         list = []
         for main_post in self.values():
             for post in main_post.objectValues():
@@ -172,7 +172,7 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
 
         If accepted then publish them else drop.
         """
-        wftool = self.portal_workflow
+        wftool = getToolByName(self, 'portal_workflow')
         for post_id, published in messages.items():
             action = int(published)
             message = self.get(post_id)
@@ -195,7 +195,7 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
 
         If accepted then publish them else drop.
         """
-        wftool = self.portal_workflow
+        wftool = getToolByName(self, 'portal_workflow')
         for post_id, published in messages.items():
             parent = None
             message = None
@@ -224,7 +224,7 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
     def isClosed(self):
         """Is the chat closed
         """
-        wftool = self.portal_workflow
+        wftool = getToolByName(self, 'portal_workflow')
         return wftool.getInfoFor(self, 'review_state') == 'closed'
 
     ##############################################
@@ -248,12 +248,12 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
         kw['pseudo'] = pseudo
         ob.editProps(**kw)
 
-        mtool = self.portal_membership
+        mtool = getToolByName(self, 'portal_membership')
         isAno = mtool.isAnonymousUser()
 
         # Moderation business
         if not self.isModerated():
-            wftool = self.portal_workflow
+            wftool = getToolByName(self, 'portal_workflow')
             if not isAno:
                 user = mtool.getAuthenticatedMember()
                 member_id = user.getMemberId()
@@ -338,7 +338,7 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
     def trackChatUser(self, pseudo='', REQUEST=None):
         """Track the current user
         """
-        mtool = self.portal_membership
+        mtool = getToolByName(self, 'portal_membership')
         isAno = mtool.isAnonymousUser()
         nyt = int(time.time())
 
