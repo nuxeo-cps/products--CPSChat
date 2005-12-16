@@ -132,7 +132,7 @@ class Chat(BTreeFolder2Base, CPSBaseFolder):
         wftool = getToolByName(self, 'portal_workflow')
         states = ['published']
         if include_pending:
-            states.append['pending']
+            states.append('pending')
         filtered = [(post.CreationDate(), post) for post in self.values()
                     if wftool.getInfoFor(post, 'review_state') in states]
         # Order them by creation date because BTree folders

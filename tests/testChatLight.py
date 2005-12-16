@@ -43,7 +43,10 @@ class CPSChatLightTestCase(unittest.TestCase):
         self.chat.fake_values = [item2, item1]
         # msg below is for readability of failure        
         result = [item.msg for item in self.chat.getPublicMessages()]
-        self.assertEquals(result, ['item 1', 'item 2']) 
+        self.assertEquals(result, ['item 1', 'item 2'])
+        result = [item.msg for item in self.chat.getPublicMessages(include_pending=1)]
+        self.assertEquals(result, ['item 1', 'item 2'])
+        
 
 def test_suite():
     suite = unittest.TestSuite()
