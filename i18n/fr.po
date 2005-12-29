@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
-"POT-Creation-Date: 2005-08-02 16:01default\n"
+"POT-Creation-Date: 2005-12-29 16:50default\n"
 "PO-Revision-Date: 2005-08-02 16:03+0200\n"
 "Last-Translator: Julien Anguenot <anguenot@dhcp-316-577>\n"
 "Language-Team:  <en@li.org>\n"
@@ -281,4 +281,3 @@ msgstr "Clôre le chat"
 
 msgid "label_chat_unclose"
 msgstr "Réouvrir le chat"
-

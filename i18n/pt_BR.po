@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: pt-BR\n"
-"POT-Creation-Date: 2005-08-02 16:01default\n"
+"POT-Creation-Date: 2005-12-29 16:50default\n"
 "PO-Revision-Date: 2005-09-29 11:01-0300\n"
 "Last-Translator: Mario Olimpio de Menezes <mario@ipen.br>\n"
 "Language-Team: Portugues do Brasil <pt@li.org>\n"
@@ -28,30 +28,35 @@ msgid "button_remove"
 msgstr "Remover"
 
 #.   <h1>
+#.           Answer to chat messages
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 msgid "chat_answer_heading"
 msgstr "Resposta"
 
 #.   <h1>
+#.           Moderate the chat
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_moderate_form.pt
 msgid "chat_moderate_heading"
 msgstr "Moderar o bate-papo"
 
 #.   <h1>
+#.         Reply to a message
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "heading_chat_add_reply"
 msgstr "Responder para uma mensagem"
 
 #.   <h1>
+#.           Edit Chat Property
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "heading_chat_edit"
 msgstr "Editar propriedades do bate-papo"
 
 #.   <h1>
+#.         Modify chat message
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_item_edit_form.pt
 msgid "heading_chat_item_modify"
@@ -63,6 +68,7 @@ msgid "label_accept"
 msgstr "Aceitar"
 
 #.   <span>
+#.                  Accept/reject
 #.                </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_accept_reject"
@@ -74,12 +80,14 @@ msgid "label_add_answer"
 msgstr "Adicionar uma resposta"
 
 #.   <h3>
+#.       Answers waiting to be accepted.
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_answer_waiting"
 msgstr "Respostas esperando serem aceitas."
 
 #.   <h3>
+#.       You way remove some messages
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_delete_messages"
@@ -91,43 +99,52 @@ msgid "label_chat_description"
 msgstr "Descrição"
 
 #.   <span>Host</span>
+#.   <span class="itemCreator">
 #.             Chat Guest
+#.           </span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 #: ../skins/cps_chat/cps_chat_main_frame.pt
 msgid "label_chat_guest"
 msgstr "Convidado do bate-papo"
 
 #.   <span>
+#.           This chat is closed
 #.         </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_is_closed"
 msgstr "Este bate-papo está fechado."
 
 #.   <span>Is the chat
+#.                     moderated ?</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_is_moderated"
 msgstr "Este bate-papo é moderado?"
 
 #.   <span>Message</span>
+#.   <span>
 #.               Message
+#.             </span>
 #: from ../skins/cps_chat/cps_chat_item_edit_form.pt
 #: ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "label_chat_message"
 msgstr "Mensagem"
 
 #.   <h3>
+#.       Messages waiting to be accepted.
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_messages_waiting"
 msgstr "Mensagens esperando serem aceitas."
 
 #.   <span class="itemCreator">
+#.             Chat moderators :
 #.           </span>
 #: from ../skins/cps_chat/cps_chat_main_frame.pt
 msgid "label_chat_moderator_lists"
 msgstr "Moderadores do bate-papo:"
 
 #.   <span>
+#.           You are not allowed to post on this chat
 #.         </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_not_allowed_to_post"
@@ -155,6 +172,7 @@ msgid "label_chat_question_reply"
 msgstr "Responder"
 
 #.   <span>
+#.                     Chat refresh rate</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_refresh_rate"
 msgstr "Taxa de atualização do bate-papo"
@@ -170,18 +188,21 @@ msgid "label_chat_title"
 msgstr "Título"
 
 #.   <span class="itemDate">
+#.         Users
 #.       </span>
 #: from ../skins/cps_chat/cps_chat_user_frame.pt
 msgid "label_chat_users"
 msgstr "Usuários"
 
 #.   <span>
+#.                 Message
 #.               </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_cps_chat_enter_message"
 msgstr "Mensagem"
 
 #.   <span>
+#.                 Pseudo
 #.               </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_cps_chat_enter_pseudo"
@@ -193,6 +214,7 @@ msgid "label_modify"
 msgstr "Modificar"
 
 #.   <span>
+#.             No new question to moderate
 #.           </span>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 #: ../skins/cps_chat/cps_chat_lib.pt
@@ -248,4 +270,3 @@ msgstr "Fechar"
 
 msgid "label_chat_unclose"
 msgstr "Abrir"
-

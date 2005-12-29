@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CPSChat_en\n"
-"POT-Creation-Date: 2005-08-02 16:01default\n"
+"POT-Creation-Date: 2005-12-29 16:50default\n"
 "PO-Revision-Date: 2004-09-24 09:39+0200\n"
 "Last-Translator: Aitzol Naberan BurgaÃ±a <anaberan@codesyntax.com>\n"
 "Language-Team: Euskara <eu@li.org>\n"
@@ -277,68 +277,20 @@ msgstr "Reply to messages"
 
 #, fuzzy
 msgid "label_chat_close"
-msgstr "This chat is closed"
+msgstr "Close"
 
 #, fuzzy
 msgid "label_chat_unclose"
-msgstr "This chat is closed"
+msgstr "Unclose"
 
 msgid "Role1"
 msgstr "XXX"
 
-#, fuzzy
-msgid "button_assign_roles"
-msgstr "Save Changes"
-
 msgid "button_change"
 msgstr "Enregistrer"
 
-#, fuzzy
-msgid "button_delete"
-msgstr "Moderate"
-
-#, fuzzy
-msgid "button_search"
-msgstr "Save Changes"
-
-#, fuzzy
-msgid "label_email"
-msgstr "modify"
-
 msgid "label_from"
 msgstr "De "
-
-#, fuzzy
-msgid "label_group"
-msgstr "From"
-
-#, fuzzy
-msgid "label_group_name"
-msgstr "From"
-
-#, fuzzy
-msgid "label_in"
-msgstr "To :"
-
-#, fuzzy
-msgid "label_local_roles_search_term"
-msgstr "Refresh rate (seconds)"
-
-#, fuzzy
-msgid "label_roles"
-msgstr "Host"
-
-#, fuzzy
-msgid "label_user"
-msgstr "Users"
-
-#, fuzzy
-msgid "label_user_email"
-msgstr "Answer the questions"
-
-#, fuzzy
-msgid "label_user_fullname"
-msgstr "Your answer :"
 
 msgid "label_moderate_phase1"
 msgstr ""
@@ -413,10 +365,6 @@ msgstr "Discussion en ligne avec une personnalité"
 
 msgid "label_date"
 msgstr "Date"
-
-#, fuzzy
-msgid "label_messages_to_be_accepted"
-msgstr "Answers waiting to be accepted."
 
 msgid "label_moderate_answer_questions"
 msgstr ""
