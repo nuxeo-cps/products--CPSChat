@@ -1,20 +1,15 @@
-# translation of en.po to German
-# Georg Hennemann <georg.hennemann@dhl.com>, 2005.
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: CPSCalendar-de CPS-3.2.4\n"
+"Project-Id-Version: CPSCalendar-de CPS-3.3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2005-12-29 16:50default\n"
-"PO-Revision-Date: 2005-03-14 09:38+0100\n"
+"POT-Creation-Date: 2005-12-30 12:40default\n"
+"PO-Revision-Date: 2005-10-23 20:17+0200\n"
 "Last-Translator:  Georg Hennemann <georg.hennemann@dhl.com>\n"
-"Language-Team: de <rheinland@dzug.org>\n"
+"Language-Team: German <rheinland@dzug.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=iso-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language-Code: de\n"
-"Language-Name: German\n"
-"Domain: default\n"
 
 #.   <input type="submit" class="standalone" value="button_moderate" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
@@ -278,21 +273,57 @@ msgid "label_chat_unclose"
 msgstr "Unclose"
 
 #~ msgid "Role1"
-#~ msgstr "XXX"
+#~ msgstr "Rolle 1"
+
+#~ msgid "button_assign_roles"
+#~ msgstr "Rollen zuweisen"
 
 #~ msgid "button_change"
-#~ msgstr "Save Changes"
+#~ msgstr "Ändern"
+
+#~ msgid "button_delete"
+#~ msgstr "Löschen"
+
+#~ msgid "button_search"
+#~ msgstr "Suchen"
+
+#~ msgid "label_email"
+#~ msgstr "Email"
 
 #~ msgid "label_from"
-#~ msgstr "From"
+#~ msgstr "Von"
+
+#~ msgid "label_group"
+#~ msgstr "Gruppe"
+
+#~ msgid "label_group_name"
+#~ msgstr "Gruppen Name"
+
+#~ msgid "label_in"
+#~ msgstr "Zu :"
+
+#~ msgid "label_local_roles_search_term"
+#~ msgstr "Wiederhol Frequenz (Sekunden)"
+
+#~ msgid "label_roles"
+#~ msgstr "Rolle"
+
+#~ msgid "label_user"
+#~ msgstr "Teilnehmer"
+
+#~ msgid "label_user_email"
+#~ msgstr "Teilnehmer Email"
+
+#~ msgid "label_user_fullname"
+#~ msgstr "Ihre Antwort:"
 
 #~ msgid "label_moderate_phase1"
 #~ msgstr ""
-#~ "It will give the possiblity to reply to the question. You can still "
-#~ "modify the question."
+#~ "Dies gibt Ihnen die Möglichkeit auf die Frage zu antzworten. Sie "
+#~ "könnendennoch die Frage ändern."
 
 #~ msgid "chat_edit_heading"
-#~ msgstr "Edit Chat Property"
+#~ msgstr "Bearbeite Chat Eigenschaften"
 
 #~ msgid ""
 #~ "Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
@@ -303,94 +334,96 @@ msgstr "Unclose"
 #~ "Chat History of <strong> ${chat_id} </strong> with : <strong> "
 #~ "${chat_host} </strong>"
 #~ msgstr ""
-#~ "Chat History of <strong> ${chat_id} </strong> with : <strong> "
+#~ "Chat Historie von <strong> ${chat_id} </strong> with : <strong> "
 #~ "${chat_host} </strong>"
 
 #~ msgid "Modify the question &nbsp;:&nbsp; ${id_question}"
-#~ msgstr "Modify the question &nbsp;:&nbsp; ${id_question}"
+#~ msgstr "Ändern der Frage &nbsp;:&nbsp; ${id_question}"
 
 #~ msgid "Modify the reply &nbsp;:&nbsp; ${id_question}"
-#~ msgstr "Modify the reply &nbsp;:&nbsp; ${id_question}"
+#~ msgstr "Ändern der Antwort &nbsp;:&nbsp; ${id_question}"
 
 #~ msgid "button_publish"
-#~ msgstr "Publish"
+#~ msgstr "Publizieren"
 
 #~ msgid "button_submit"
-#~ msgstr "Submit"
+#~ msgstr "Absenden"
 
 #~ msgid "chat_add_answer_heading"
-#~ msgstr "Answer this question"
+#~ msgstr "Beantworte die Frage"
 
 #~ msgid "chat_add_answers_heading"
-#~ msgstr "Answer the questions"
+#~ msgstr "Beantworten Sie die Fragen"
 
 #~ msgid "chat_ass_post_warning"
 #~ msgstr ""
-#~ "Please, remember your post won't be visible straight within the chat "
-#~ "board. A moderator will check it out."
+#~ "Beachten Sie das Ihre Nachricht nicht sofort sichtbar ist. Ein Moderator "
+#~ "wird dieseerst prüfen."
 
 #~ msgid "chat_empty_history"
-#~ msgstr "The chat is currently empty."
+#~ msgstr "Dieser Chat ist noch leer."
 
 #~ msgid "chat_enter_a_message"
-#~ msgstr "Post a question"
+#~ msgstr "Posten Sie eine Nachricht"
 
 #~ msgid "chat_enter_your_nickname"
-#~ msgstr "Your nick name"
+#~ msgstr "Ihr Kose Name"
 
 #~ msgid "chat_your_question"
-#~ msgstr "Your question"
+#~ msgstr "Ihre Frage"
 
 #~ msgid "label_answer_one_question"
-#~ msgstr "Answer"
+#~ msgstr "Antwort"
 
 #~ msgid "label_answers_to_be_accepted"
-#~ msgstr "Answers waiting to be accepted."
+#~ msgstr "Die Antworten liegen dem Moderator vor"
 
 #~ msgid "label_answers_to_be_published"
-#~ msgstr "Answers waiting to be published."
+#~ msgstr "Die Antworten stehen Bereit zur Publikation"
 
 #~ msgid "label_chat_answer"
-#~ msgstr "Answer"
+#~ msgstr "Antwort"
 
 #~ msgid "label_chat_discussions_online"
-#~ msgstr "Online discussion with a personnality."
+#~ msgstr "Online Diskussion mit Ihrem Nickname"
 
 #~ msgid "label_date"
-#~ msgstr "Date"
+#~ msgstr "Datum"
+
+#~ msgid "label_messages_to_be_accepted"
+#~ msgstr "Die antworten liegen dem Moderator vor"
 
 #~ msgid "label_moderate_answer_questions"
 #~ msgstr ""
-#~ "You can answer the question by choosing one in the array below.  You can "
-#~ "as well anwser to all at the same time by clicking the link Reply to "
-#~ "pending questions on the right. "
+#~ "Sie können die Frage beantworten indem Sie unten eine auswählen.Oder Sie "
+#~ "können auch alle beantworten indem Sie auf den VerweisAntworte auf "
+#~ "schwebende Fragen rechts klicken."
 
 #~ msgid "label_moderate_phase2"
 #~ msgstr ""
-#~ "This is the last step. You can still modify the answer if you need to. "
-#~ "After this step the answer will be available to the public."
+#~ "Dies ist der letzte Schritt. Sie können immer noch die Antwort ändernwen "
+#~ "Sie möchten. Nach diesem Schritt ist die Antwort publiziert."
 
 #~ msgid "label_no_answered_questions"
-#~ msgstr "No new question to publish."
+#~ msgstr "Es liegt keine neue Frage zur Publikation vor"
 
 #~ msgid "label_no_pending_questions"
-#~ msgstr "No question with a pending state."
+#~ msgstr "Es liegen keine Fragen mit Status schwebend vor"
 
 #~ msgid "label_published"
-#~ msgstr "Published"
+#~ msgstr "Publiziert"
 
 #~ msgid "label_question_answer"
-#~ msgstr "Answer"
+#~ msgstr "Antwort"
 
 #~ msgid "label_question_form"
-#~ msgstr "Question from :"
+#~ msgstr "Frage von :"
 
 #~ msgid "label_refresh"
-#~ msgstr "Refresh for the latest ones"
+#~ msgstr "Hole die neuesten Einträge"
 
 #~ msgid "label_reply_to_pending questions"
-#~ msgstr "Questions waiting for a reply."
+#~ msgstr "Fragen warten auf Antwort"
 
 #~ msgid "label_think_about_refresh"
-#~ msgstr ""
-#~ "Think about performing some refresh to see the latest posted questions."
+#~ msgstr "Denken sie daran die neusten Einträge abzuholen"
