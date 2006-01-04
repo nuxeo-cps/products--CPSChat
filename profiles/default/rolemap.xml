@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<rolemap>
+  <roles>
+    <role name="ChatGuest"/>
+    <role name="ChatModerator"/>
+    <role name="ChatPoster"/>
+  </roles>
+  <permissions>
+    <permission name="Chat Moderate" acquire="False">
+      <role name="Manager"/>
+      <role name="WorkspaceManager"/>
+      <role name="SectionManager"/>
+      <role name="ChatModerator"/>
+    </permission>
+    <permission name="Chat Post" acquire="False">
+      <role name="Manager"/>
+      <role name="WorkspaceManager"/>
+      <role name="SectionManager"/>
+      <role name="ChatPoster"/>
+    </permission>
+    <permission name="Chat Reply" acquire="False">
+      <role name="Manager"/>
+      <role name="WorkspaceManager"/>
+      <role name="SectionManager"/>
+      <role name="ChatModerator"/>
+      <role name="ChatGuest"/>
+    </permission>
+  </permissions>
+</rolemap>

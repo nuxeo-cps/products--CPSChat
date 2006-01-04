@@ -26,6 +26,10 @@ import CPSMemberShipPatch
 from Products.CMFCore import utils
 from Products.CMFCore.DirectoryView import registerDirectory
 from Products.CMFCore.permissions import AddPortalContent
+from Products.GenericSetup import profile_registry
+from Products.GenericSetup import EXTENSION
+
+from Products.CPSDefault.interfaces import ICPSSite
 
 import Chat
 import ChatItem
@@ -48,3 +52,11 @@ def initialize(registrar):
                       extra_constructors=contentConstructors,
                       fti=fti
                       ).initialize(registrar)
+    profile_registry.registerProfile(
+        'default',
+        'CPS Chat',
+        "Chat product for CPS.",
+        'profiles/default',
+        'CPSChat',
+        EXTENSION,
+        for_=ICPSSite)

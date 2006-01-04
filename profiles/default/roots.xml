@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<roots>
+  <root name="sections" portal_type="Section"
+        local_workflows="sections_workflows"/>
+  <root name="workspaces" portal_type="Workspace"
+        local_workflows="workspaces_workflows"/>
+  <root name="members" portal_type="Workspace"
+        local_workflows="workspaces_workflows"/>
+</roots>
