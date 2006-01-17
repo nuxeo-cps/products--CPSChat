@@ -17,8 +17,7 @@ class TestChat(ZopeTestCase.ZopeTestCase):
     def beforeTearDown(self):
         self.logout()
 
-    # Old tests that were meant to be inside a CPSChatTestCase (ie CPSTestCase)
-    # instance and already commented out.   
+    # Old tests that were meant to be inside a CPSTestCase
 
     #def testZMI(self):
     #    "Test ZMI methods"

@@ -27,14 +27,14 @@ def warn(a, b):
 from Products import CPSChat
 
 # BBB : can be remove in CPS-3.6
-from CPSChat import permissions
+from Products.CPSChat import permissions
 
 # XXX : Remove deprecation warnings for the tests
 # waiting for the zope.deprecation of Zope3...
 warnings.orig_warn = warnings.warn
 warnings.warn = warn
 
-from CPSChat import CPSChatPermissions as old
+from Products.CPSChat import CPSChatPermissions as old
 
 # Restore back the warnings
 warnings.warn = warnings.orig_warn
