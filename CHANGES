@@ -8,6 +8,7 @@ Bug fixes:
 ~~~~~~~~~~
 - #917 : Sorting of posts worked only partially
 - Fix bug on Chat.getPublicMessages() with the including_pending flag.
+- Removed dependency to CPSBoxes property cps_is_portalbox in profile
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 -
