@@ -1,4 +1,22 @@
 *******************************************
+** CPSChat V0.11.1 [R1 build 2006/01/23-17:26 by fermigier]
+** SVN URL: https://svn.nuxeo.org/pub/CPSChat/trunk Revision: 31976
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- #917 : Sorting of posts worked only partially
+- Fix bug on Chat.getPublicMessages() with the including_pending flag.
+- Removed dependency to CPSBoxes property cps_is_portalbox in profile
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
 ** CPSChat V0.11.0 [R1 build 2005/11/07-15:10 by fguillaume]
 ** SVN URL: https://svn.nuxeo.org/pub/CPSChat/trunk Revision: 29055
 Requires:
