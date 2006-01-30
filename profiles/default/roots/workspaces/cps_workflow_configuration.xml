@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<object name=".cps_workflow_configuration">
+  <local-workflows>
+    <type name="Chat" wf="chat_workspace_wf"/>
+    <type name="ChatItem" wf="chat_item_workspace_wf"/>
+  </local-workflows>
+</object>
