@@ -7,6 +7,8 @@ New features:
 Bug fixes:
 ~~~~~~~~~~
 -
+
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
--
+- Useless files in extension profile.
+- Moved files around for new roots import format.
