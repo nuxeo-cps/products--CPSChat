@@ -1,4 +1,22 @@
 *******************************************
+** CPSChat V0.11.2 [R1 build 2006/02/17-20:14 by fermigier]
+** SVN URL: https://svn.nuxeo.org/pub/CPSChat/trunk Revision: 32994
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+-
+
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+- Useless files in extension profile.
+- Moved files around for new roots import format.
+
+*******************************************
 ** CPSChat V0.11.1 [R1 build 2006/01/23-17:26 by fermigier]
 ** SVN URL: https://svn.nuxeo.org/pub/CPSChat/trunk Revision: 31976
 Requires:
