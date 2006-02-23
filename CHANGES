@@ -6,7 +6,7 @@ New features:
 -
 Bug fixes:
 ~~~~~~~~~~
--
+- #1451: no workflows were defined in the profile
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 -
