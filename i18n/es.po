@@ -1,42 +1,19 @@
-# translation of fr.po to 
-# translation of fr.po to
-# translation of fr.po to
-# translation of fr.po to
-# translation of fr.po to
-# translation of fr.po to
-# translation of fr.po to
-# translation of fr.po to
-# translation of fr.po to
-# translation of fr.po to
-# translation of fr.po to
-# translation of fr.po to
-# translation of fr.po to
-# translation of fr.po to
-# translation of fr.po to ben
-# translation of fr.po to francais
-# translation of fr.po to Français
-# Gettext Message File for default.
-# Your Name <your@email>, Year
-# Julien Anguenot <ja@nuxeo.com>, 2003.
-# emmanuel <epietriga@nuxeo.com>, 2003.
-# ben <ben@nuxeo.com>, 2004.
-# Julien Anguenot <anguenot@nuxeo.com>, 2004.
 msgid ""
 msgstr ""
-"Project-Id-Version: CPChat\n"
-"POT-Creation-Date: 2006-01-03 14:49default\n"
-"PO-Revision-Date: 2005-05-18 16:11+0100\n"
-"Last-Translator: Jesús <jesusmartin@lasalle.es>\n"
+"Project-Id-Version: CPSChat\n"
+"POT-Creation-Date: 2005-08-02 16:01default\n"
+"PO-Revision-Date: 2006-02-22 09:53+0100\n"
+"Last-Translator: Jesús Martín <jesusmartin@lasalle.es>\n"
 "Language-Team: español <jesusmartin@lasalle.es>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language-Code: es\n"
-"Language-Name: Spanish\n"
 "Preferred-encodings: utf-8 latin1\n"
+"X-Generator: KBabel 1.10.1\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
 "Domain: default\n"
-"X-Generator: KBabel 1.3.1\n"
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: SPAIN\n"
 
@@ -60,7 +37,7 @@ msgstr "Borrar"
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 msgid "chat_answer_heading"
-msgstr "Responder a los mensajes"
+msgstr "Responder"
 
 #.   <h1>
 #.           Moderate the chat
@@ -74,21 +51,21 @@ msgstr "Moderar el chat"
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "heading_chat_add_reply"
-msgstr "Responder a un mensaje"
+msgstr "Responder al mensaje"
 
 #.   <h1>
 #.           Edit Chat Property
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "heading_chat_edit"
-msgstr "Modificar las propiedades del chat"
+msgstr "Editar propiedades del chat"
 
 #.   <h1>
 #.         Modify chat message
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_item_edit_form.pt
 msgid "heading_chat_item_modify"
-msgstr "Modificar el mensaje"
+msgstr "Modificar mensajes del chat"
 
 #.   <span>Accept</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
@@ -112,14 +89,14 @@ msgstr "Añadir una respuesta"
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_answer_waiting"
-msgstr "Respuesta en espera de ser validada"
+msgstr "Respuestas esperando ser aceptadas"
 
 #.   <h3>
 #.       You way remove some messages
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_delete_messages"
-msgstr "Puede borrar mensajes"
+msgstr "Puede borrar algunos de los mensajes"
 
 #.   <span>Description</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
@@ -146,7 +123,7 @@ msgstr "El chat está cerrado"
 #.                     moderated ?</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_is_moderated"
-msgstr "¿Está el chat moderado a priori?"
+msgstr "¿Está este chat moderado?"
 
 #.   <span>Message</span>
 #.   <span>
@@ -162,32 +139,32 @@ msgstr "Mensaje"
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_messages_waiting"
-msgstr "Mensajes a la espera de ser validados"
+msgstr "Mensajes esperando ser aceptados"
 
 #.   <span class="itemCreator">
 #.             Chat moderators :
 #.           </span>
 #: from ../skins/cps_chat/cps_chat_main_frame.pt
 msgid "label_chat_moderator_lists"
-msgstr "Moderador(es) del chat "
+msgstr "Moderadores del chat"
 
 #.   <span>
 #.           You are not allowed to post on this chat
 #.         </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_not_allowed_to_post"
-msgstr "No está autorizado a enviar mensajes en este chat"
+msgstr "No tienes permisos para participar en este chat"
 
 #.   <span>Pseudo</span>
 #: from ../skins/cps_chat/cps_chat_item_edit_form.pt
 msgid "label_chat_pseudo"
-msgstr "Pseudónimo"
+msgstr "Apodo"
 
 #.   <span>Question</span>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 #: ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_question"
-msgstr "Pregunta"
+msgstr "Cuestión"
 
 #.   <span>Modify</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
@@ -203,17 +180,17 @@ msgstr "Responder"
 #.                     Chat refresh rate</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_refresh_rate"
-msgstr "retraso en la actualización (segundos)"
+msgstr "Ratio de refresco (segundos)"
 
 #.   <span>Reply</span>
 #: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "label_chat_reply"
-msgstr "Respuesta"
+msgstr "Responder"
 
 #.   <span>Title</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_title"
-msgstr "Titulado"
+msgstr "Título"
 
 #.   <span class="itemDate">
 #.         Users
@@ -234,7 +211,7 @@ msgstr "Mensaje"
 #.               </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_cps_chat_enter_pseudo"
-msgstr "Pseudónimo"
+msgstr "Apodo"
 
 #.   <span>modify</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
@@ -247,7 +224,7 @@ msgstr "Modificar"
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 #: ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_no_questions_to_moderate"
-msgstr "No hay nuevas preguntas para moderar"
+msgstr "No hay cuestiones para moderar"
 
 #.   <span>Reject</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
@@ -255,7 +232,7 @@ msgid "label_reject"
 msgstr "Rechazar"
 
 msgid "ChatPoster"
-msgstr "Enviar mensaje al chat"
+msgstr "Emisor del chat"
 
 msgid "ChatModerator"
 msgstr "Moderador del chat"
@@ -264,28 +241,28 @@ msgid "ChatGuest"
 msgstr "Invitado del chat"
 
 msgid "psm_cps_chat_properties_modified"
-msgstr "Propiedades del chat puestas al día"
+msgstr "Propiedades del chat actualizadas"
 
 msgid "psm_messages_removed"
 msgstr "Mensajes borrados"
 
 msgid "psm_chat_item_properties_updated"
-msgstr "Propiedades del mensaje modificadas"
+msgstr "Actualizado"
 
 msgid "psm_chat_item_reply"
-msgstr "Respuesta registrada"
+msgstr "Respuesta enviada"
 
 msgid "psm_cps_chat_closed_done"
-msgstr "El chat se cerró correctamente"
+msgstr "Cerrado"
 
 msgid "psm_cps_chat_closed_not_possible"
-msgstr "El cierre del chat ha fallado"
+msgstr "No es posible cerrarlo"
 
 msgid "psm_cps_chat_unclosed_done"
-msgstr "El chat sigue abierto"
+msgstr "Reabierto"
 
 msgid "psm_cps_chat_unclosed_not_possible"
-msgstr "La reapertura del chat ha fallado"
+msgstr "No se puede reabrir"
 
 msgid "action_chat_item_reply"
 msgstr "Responder a este mensaje"
@@ -293,133 +270,9 @@ msgstr "Responder a este mensaje"
 msgid "action_chat_reply_to_questions"
 msgstr "Responder a los mensajes"
 
-#, fuzzy
 msgid "label_chat_close"
-msgstr "Close"
+msgstr "Cerrar"
 
-#, fuzzy
 msgid "label_chat_unclose"
-msgstr "Unclose"
+msgstr "Abrir"
 
-#~ msgid "Role1"
-#~ msgstr "XXX"
-
-#~ msgid "button_change"
-#~ msgstr "Enregistrer"
-
-#~ msgid "label_from"
-#~ msgstr "De "
-
-#~ msgid "label_moderate_phase1"
-#~ msgstr ""
-#~ "Cela donnera la possiblité de répondre à la question. Vous pouvez encore "
-#~ "modifier la question."
-
-#~ msgid "chat_edit_heading"
-#~ msgstr "Modifier les propriétées du chat."
-
-#~ msgid ""
-#~ "Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
-#~ msgstr ""
-#~ "Le Chat <strong> ${chat_id} </strong> avec  : <strong> ${chat_host} </"
-#~ "strong>"
-
-#~ msgid ""
-#~ "Chat History of <strong> ${chat_id} </strong> with : <strong> "
-#~ "${chat_host} </strong>"
-#~ msgstr ""
-#~ "Historique du chat <strong> ${chat_id} </strong> avec : <strong> "
-#~ "${chat_host} </strong>"
-
-#~ msgid "Modify the question &nbsp;:&nbsp; ${id_question}"
-#~ msgstr "Modifier la question &nbsp;:&nbsp; ${id_question}"
-
-#~ msgid "Modify the reply &nbsp;:&nbsp; ${id_question}"
-#~ msgstr "Modifier la réponse &nbsp;:&nbsp; ${id_question}"
-
-#~ msgid "button_publish"
-#~ msgstr "Publier"
-
-#~ msgid "button_submit"
-#~ msgstr "Soumettre"
-
-#~ msgid "chat_add_answer_heading"
-#~ msgstr "Répondre à cette question"
-
-#~ msgid "chat_add_answers_heading"
-#~ msgstr "Répondre aux questions"
-
-#~ msgid "chat_ass_post_warning"
-#~ msgstr ""
-#~ "Rappellez vous que les questions que vous soumettez ne seront pas "
-#~ "accessibles tout de suite sur le chat. Un modérateur la validera par la "
-#~ "suite."
-
-#~ msgid "chat_empty_history"
-#~ msgstr "Le chat est vide pour le moment."
-
-#~ msgid "chat_enter_a_message"
-#~ msgstr "Poser une question"
-
-#~ msgid "chat_enter_your_nickname"
-#~ msgstr "Votre pseudo"
-
-#~ msgid "chat_your_question"
-#~ msgstr "Votre question"
-
-#~ msgid "label_answer_one_question"
-#~ msgstr "Répondre"
-
-#~ msgid "label_answers_to_be_accepted"
-#~ msgstr "Réponses en attente d'acceptation"
-
-#~ msgid "label_answers_to_be_published"
-#~ msgstr "Réponses "
-
-#~ msgid "label_chat_answer"
-#~ msgstr "Réponse"
-
-#~ msgid "label_chat_discussions_online"
-#~ msgstr "Discussion en ligne avec une personnalité"
-
-#~ msgid "label_date"
-#~ msgstr "Date"
-
-#~ msgid "label_moderate_answer_questions"
-#~ msgstr ""
-#~ "Vous pouvez répondre aux questions séparemment en en choissisant une dans "
-#~ "le tablau ci-dessous. Vous avez la possiblité de répondre à toutes les "
-#~ "questions en attente en cliquant sur le liens \"répondre à toutes les "
-#~ "questions\" sur la droite."
-
-#~ msgid "label_moderate_phase2"
-#~ msgstr ""
-#~ "Dernière étapa avant publication. Vous pouvez encore modifier la réponse "
-#~ "si vous en avez besoin. Après cette étape la réponse la question sera "
-#~ "disponible au publique."
-
-#~ msgid "label_no_answered_questions"
-#~ msgstr "Pas de nouvelle question à publier"
-
-#~ msgid "label_no_pending_questions"
-#~ msgstr "Pas de questions soumisses"
-
-#~ msgid "label_published"
-#~ msgstr "Publier"
-
-#~ msgid "label_question_answer"
-#~ msgstr "Réponse"
-
-#~ msgid "label_question_form"
-#~ msgstr "Question de : "
-
-#~ msgid "label_refresh"
-#~ msgstr "Rafraîchir pour avoir les dernières questions soumises."
-
-#~ msgid "label_reply_to_pending questions"
-#~ msgstr "Questions en attente d'un réponse."
-
-#~ msgid "label_think_about_refresh"
-#~ msgstr ""
-#~ "Pensez à réaliser des rafraîchissements afin de récupérer les dernières "
-#~ "questions soumises."
