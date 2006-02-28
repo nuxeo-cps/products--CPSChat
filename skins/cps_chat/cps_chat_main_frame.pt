@@ -65,7 +65,7 @@
            <span tal:replace="python:here.getDateStr(reply.modification_date)" />
           &nbsp;]&nbsp;
         </span>
-        <span class="itemCreator" tal:content="python:here.portal_memberhip.getFullnameFromId(reply.getCreator())" />&nbsp;
+        <span class="itemCreator" tal:content="python:here.portal_membership.getFullnameFromId(reply.getCreator())" />&nbsp;
         <span class="itemMessage" tal:content="reply/message" /><br />
     </tal:block>
   </tal:block>
