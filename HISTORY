@@ -1,4 +1,21 @@
 *******************************************
+** CPSChat V0.11.3 [R1 build 2006/03/03-17:26 by ben]
+** SVN URL: https://svn.nuxeo.org/pub/CPSChat/trunk Revision: 33854
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- #1451: no workflows were defined in the profile
+- fixed typo (portal_memberhip) in the responses publication template
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
 ** CPSChat V0.11.2 [R1 build 2006/02/17-20:14 by fermigier]
 ** SVN URL: https://svn.nuxeo.org/pub/CPSChat/trunk Revision: 32994
 Requires:
