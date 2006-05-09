@@ -1,4 +1,24 @@
 *******************************************
+** CPSChat V0.11.4 [R1 build 2006/05/09-10:09 by madarche]
+** SVN URL: https://svn.nuxeo.org/pub/CPSChat/trunk Revision: 45353
+Requires:
+~~~~~~~~~
+-
+New features:
+~~~~~~~~~~~~~
+-
+Bug fixes:
+~~~~~~~~~~
+- Fixed #1643 : The chat area spits error pages when a user is not sending
+  messages.
+- Stopped empty messages to be sent in the chat area since they are useless and
+  users may also misuse it. So now when a user "Submit" if there isn't any
+  message in the input area, no empty line will appear in the chat area.
+New internal features:
+~~~~~~~~~~~~~~~~~~~~~~
+-
+
+*******************************************
 ** CPSChat V0.11.3 [R1 build 2006/03/03-17:26 by ben]
 ** SVN URL: https://svn.nuxeo.org/pub/CPSChat/trunk Revision: 33854
 Requires:
