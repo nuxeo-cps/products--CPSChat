@@ -6,7 +6,11 @@ New features:
 -
 Bug fixes:
 ~~~~~~~~~~
--
+- Fixed #1643 : The chat area spits error pages when a user is not sending
+  messages.
+- Stopped empty messages to be sent in the chat area since they are useless and
+  users may also misuse it. So now when a user "Submit" if there isn't any
+  message in the input area, no empty line will appear in the chat area.
 New internal features:
 ~~~~~~~~~~~~~~~~~~~~~~
 -
