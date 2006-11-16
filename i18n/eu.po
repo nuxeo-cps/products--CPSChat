@@ -1,112 +1,107 @@
-# translation of CPSChat_en.po to Euskara
-# Gettext Message File for default.
-# Your Name <your@email>, Year
-# Julien Anguenot <ja@nuxeo.com>, 2003.
-# emmanuel <epietriga@nuxeo.com>, 2003.
-# Julien Anguenot <anguenot@nuxeo.com>, 2004.
-# Aitzol Naberan BurgaÃ±a <anaberan@codesyntax.com>, 2004.
 msgid ""
 msgstr ""
-"Project-Id-Version: CPSChat_en\n"
-"POT-Creation-Date: 2006-01-03 14:49default\n"
-"PO-Revision-Date: 2004-09-24 09:39+0200\n"
-"Last-Translator: Aitzol Naberan BurgaÃ±a <anaberan@codesyntax.com>\n"
-"Language-Team: Euskara <eu@li.org>\n"
+"Project-Id-Version: CPSChat\n"
+"POT-Creation-Date: 2005-08-02 16:01default\n"
+"PO-Revision-Date: 2006-11-16 15:34+0100\n"
+"Last-Translator: Jesus Martin <jesusmartin@lasalle.es>\n"
+"Language-Team: euskera <perikoalkoain@lasalle.es>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=ISO-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Preferred-encodings: utf-8 latin1\n"
-"X-Generator: KBabel 1.3\n"
-"Language-Code: eu\n"
-"Language-Name: Basque\n"
+"X-Generator: KBabel 1.10.1\n"
+"Language-Code: es\n"
+"Language-Name: Spanish\n"
 "Domain: default\n"
+"X-Poedit-Language: basque\n"
+"X-Poedit-Country: SPAIN\n"
 
 #.   <input type="submit" class="standalone" value="button_moderate" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_moderate"
-msgstr "Moderate"
+msgstr "Moderatu"
 
 #.   <input type="submit" class="standalone" value="button_post" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_post"
-msgstr "Submit "
+msgstr "Bidali"
 
 #.   <input type="submit" class="standalone" value="button_remove" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_remove"
-msgstr "Remove"
+msgstr "Ezabatu"
 
 #.   <h1>
 #.           Answer to chat messages
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 msgid "chat_answer_heading"
-msgstr "Add answer to messages"
+msgstr "Erantzun"
 
 #.   <h1>
 #.           Moderate the chat
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_moderate_form.pt
 msgid "chat_moderate_heading"
-msgstr "Moderate the chat"
+msgstr "Berriketa moderatu"
 
 #.   <h1>
 #.         Reply to a message
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "heading_chat_add_reply"
-msgstr "Reply to a message"
+msgstr "Mezuari erantzun"
 
 #.   <h1>
 #.           Edit Chat Property
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "heading_chat_edit"
-msgstr "Edit chat properties"
+msgstr "Berriketaren ezaugarriak editatu"
 
 #.   <h1>
 #.         Modify chat message
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_item_edit_form.pt
 msgid "heading_chat_item_modify"
-msgstr "Modify chat message"
+msgstr "Berriketaren mezuak aldatu"
 
 #.   <span>Accept</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_accept"
-msgstr "Accept"
+msgstr "Onartu"
 
 #.   <span>
 #.                  Accept/reject
 #.                </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_accept_reject"
-msgstr "Accept/reject"
+msgstr "Onartu/Ukatu"
 
 #.   <span>Add an answer</span>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 msgid "label_add_answer"
-msgstr "Add an answer"
+msgstr "Erantzun bat gehitu"
 
 #.   <h3>
 #.       Answers waiting to be accepted.
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_answer_waiting"
-msgstr "Answers waiting for moderation"
+msgstr "Onarpenaren zain dauden erantzunak"
 
 #.   <h3>
 #.       You way remove some messages
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_delete_messages"
-msgstr "You way remove some of the messages"
+msgstr "Mezuren batzuk ezaba ditzakezu"
 
 #.   <span>Description</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_description"
-msgstr "Description "
+msgstr "Dekribapena"
 
 #.   <span>Host</span>
 #.   <span class="itemCreator">
@@ -115,20 +110,20 @@ msgstr "Description "
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 #: ../skins/cps_chat/cps_chat_main_frame.pt
 msgid "label_chat_guest"
-msgstr "Guest"
+msgstr "Gonbidatua"
 
 #.   <span>
 #.           This chat is closed
 #.         </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_is_closed"
-msgstr "This chat is closed"
+msgstr "Berriketa itxita dago"
 
 #.   <span>Is the chat
 #.                     moderated ?</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_is_moderated"
-msgstr "Is the chat moderated ?"
+msgstr "Berriketa moderatuta al dago?"
 
 #.   <span>Message</span>
 #.   <span>
@@ -137,91 +132,91 @@ msgstr "Is the chat moderated ?"
 #: from ../skins/cps_chat/cps_chat_item_edit_form.pt
 #: ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "label_chat_message"
-msgstr "Message"
+msgstr "Mezua"
 
 #.   <h3>
 #.       Messages waiting to be accepted.
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_messages_waiting"
-msgstr "Messages waiting for moderation"
+msgstr "Onarpenaren zain dauden mezuak"
 
 #.   <span class="itemCreator">
 #.             Chat moderators :
 #.           </span>
 #: from ../skins/cps_chat/cps_chat_main_frame.pt
 msgid "label_chat_moderator_lists"
-msgstr "Chat moderators"
+msgstr "Berriketaren moderatzaileak"
 
 #.   <span>
 #.           You are not allowed to post on this chat
 #.         </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_not_allowed_to_post"
-msgstr "You are not allowed to post on this chat"
+msgstr "Ez duzu baimenik berriketa honetan parte hartzeko"
 
 #.   <span>Pseudo</span>
 #: from ../skins/cps_chat/cps_chat_item_edit_form.pt
 msgid "label_chat_pseudo"
-msgstr "Nickname"
+msgstr "Ezizena"
 
 #.   <span>Question</span>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 #: ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_question"
-msgstr "Question"
+msgstr "galdera"
 
 #.   <span>Modify</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_question_modify"
-msgstr "Modify"
+msgstr "Aldatu"
 
 #.   <span>Reply</span>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 msgid "label_chat_question_reply"
-msgstr "Reply"
+msgstr "Erantzun"
 
 #.   <span>
 #.                     Chat refresh rate</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_refresh_rate"
-msgstr "Refresh rate (seconds)"
+msgstr "Frexkatze-ratioa (segundotan)"
 
 #.   <span>Reply</span>
 #: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "label_chat_reply"
-msgstr "Reply"
+msgstr "Erantzun"
 
 #.   <span>Title</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_title"
-msgstr "Title"
+msgstr "Izenburua"
 
 #.   <span class="itemDate">
 #.         Users
 #.       </span>
 #: from ../skins/cps_chat/cps_chat_user_frame.pt
 msgid "label_chat_users"
-msgstr "Users"
+msgstr "Erabiltzaileak"
 
 #.   <span>
 #.                 Message
 #.               </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_cps_chat_enter_message"
-msgstr "Message"
+msgstr "Mezua"
 
 #.   <span>
 #.                 Pseudo
 #.               </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_cps_chat_enter_pseudo"
-msgstr "Nickname"
+msgstr "Ezizena"
 
 #.   <span>modify</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_modify"
-msgstr "modify"
+msgstr "Aldatu"
 
 #.   <span>
 #.             No new question to moderate
@@ -229,178 +224,55 @@ msgstr "modify"
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 #: ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_no_questions_to_moderate"
-msgstr "No new question to moderate"
+msgstr "Ez dago moderatu beharreko galderarik"
 
 #.   <span>Reject</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_reject"
-msgstr "Reject"
+msgstr "Ukatu"
 
 msgid "ChatPoster"
-msgstr "Chat Poster "
+msgstr "Berriketaren igorlea"
 
 msgid "ChatModerator"
-msgstr "Chat Moderator "
+msgstr "Berriketaren moderatzailea"
 
 msgid "ChatGuest"
-msgstr "Chat Guest "
+msgstr "Berriketaren gonbidatua"
 
 msgid "psm_cps_chat_properties_modified"
-msgstr "Chat properties updated"
+msgstr "Berriketaren ezaugarri gaurkotuak"
 
 msgid "psm_messages_removed"
-msgstr "Messages removed"
+msgstr "Ezabatutako mezuak"
 
 msgid "psm_chat_item_properties_updated"
-msgstr "Chat item properties updated"
+msgstr "Gaurkotua"
 
 msgid "psm_chat_item_reply"
-msgstr "Reply done"
+msgstr "Bidalitako erantzuna"
 
 msgid "psm_cps_chat_closed_done"
-msgstr "This chat is closed now"
+msgstr "Itxita"
 
 msgid "psm_cps_chat_closed_not_possible"
-msgstr "Problem : this chat has not been closed"
+msgstr "Ezin da itxi"
 
 msgid "psm_cps_chat_unclosed_done"
-msgstr "This chat is be reopen"
+msgstr "Berrirekia"
 
 msgid "psm_cps_chat_unclosed_not_possible"
-msgstr "Problem : reopening of the chat failed"
+msgstr "Ezin da berrireki"
 
 msgid "action_chat_item_reply"
-msgstr "Reply to this message"
+msgstr "Mezu honi erantzun"
 
 msgid "action_chat_reply_to_questions"
-msgstr "Reply to messages"
+msgstr "Mezuei erantzun"
 
-#, fuzzy
 msgid "label_chat_close"
-msgstr "Close"
+msgstr "Itxi"
 
-#, fuzzy
 msgid "label_chat_unclose"
-msgstr "Unclose"
+msgstr "Ireki"
 
-msgid "Role1"
-msgstr "XXX"
-
-msgid "button_change"
-msgstr "Enregistrer"
-
-msgid "label_from"
-msgstr "De "
-
-msgid "label_moderate_phase1"
-msgstr ""
-"Cela donnera la possiblité de répondre à la question. Vous pouvez encore "
-"modifier la question."
-
-msgid "chat_edit_heading"
-msgstr "Modifier les propriétées du chat."
-
-msgid ""
-"Chat <strong> ${chat_id} </strong> with : <strong> ${chat_host} </strong>"
-msgstr ""
-"Le Chat <strong> ${chat_id} </strong> avec  : <strong> ${chat_host} </strong>"
-
-msgid ""
-"Chat History of <strong> ${chat_id} </strong> with : <strong> ${chat_host} </"
-"strong>"
-msgstr ""
-"Historique du chat <strong> ${chat_id} </strong> avec : <strong> "
-"${chat_host} </strong>"
-
-msgid "Modify the question &nbsp;:&nbsp; ${id_question}"
-msgstr "Modifier la question &nbsp;:&nbsp; ${id_question}"
-
-msgid "Modify the reply &nbsp;:&nbsp; ${id_question}"
-msgstr "Modifier la réponse &nbsp;:&nbsp; ${id_question}"
-
-msgid "button_publish"
-msgstr "Publier"
-
-msgid "button_submit"
-msgstr "Soumettre"
-
-msgid "chat_add_answer_heading"
-msgstr "Répondre à cette question"
-
-msgid "chat_add_answers_heading"
-msgstr "Répondre aux questions"
-
-msgid "chat_ass_post_warning"
-msgstr ""
-"Rappellez vous que les questions que vous soumettez ne seront pas "
-"accessibles tout de suite sur le chat. Un modérateur la validera par la "
-"suite."
-
-msgid "chat_empty_history"
-msgstr "Le chat est vide pour le moment."
-
-msgid "chat_enter_a_message"
-msgstr "Poser une question"
-
-msgid "chat_enter_your_nickname"
-msgstr "Votre pseudo"
-
-msgid "chat_your_question"
-msgstr "Votre question"
-
-msgid "label_answer_one_question"
-msgstr "Répondre"
-
-msgid "label_answers_to_be_accepted"
-msgstr "Réponses en attente d'acceptation"
-
-msgid "label_answers_to_be_published"
-msgstr "Réponses "
-
-msgid "label_chat_answer"
-msgstr "Réponse"
-
-msgid "label_chat_discussions_online"
-msgstr "Discussion en ligne avec une personnalité"
-
-msgid "label_date"
-msgstr "Date"
-
-msgid "label_moderate_answer_questions"
-msgstr ""
-"Vous pouvez répondre aux questions séparemment en en choissisant une dans le "
-"tablau ci-dessous. Vous avez la possiblité de répondre à toutes les "
-"questions en attente en cliquant sur le liens \"répondre à toutes les "
-"questions\" sur la droite."
-
-msgid "label_moderate_phase2"
-msgstr ""
-"Dernière étapa avant publication. Vous pouvez encore modifier la réponse si "
-"vous en avez besoin. Après cette étape la réponse la question sera "
-"disponible au publique."
-
-msgid "label_no_answered_questions"
-msgstr "Pas de nouvelle question à publier"
-
-msgid "label_no_pending_questions"
-msgstr "Pas de questions soumisses"
-
-msgid "label_published"
-msgstr "Publier"
-
-msgid "label_question_answer"
-msgstr "Réponse"
-
-msgid "label_question_form"
-msgstr "Question de : "
-
-msgid "label_refresh"
-msgstr "Rafraîchir pour avoir les dernières questions soumises."
-
-msgid "label_reply_to_pending questions"
-msgstr "Questions en attente d'un réponse."
-
-msgid "label_think_about_refresh"
-msgstr ""
-"Pensez à réaliser des rafraîchissements afin de récupérer les dernières "
-"questions soumises."
