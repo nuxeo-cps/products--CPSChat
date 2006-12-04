@@ -1,3 +1,23 @@
+===========================================================
+Package: CPSChat 0.11.5
+===========================================================
+First release built by: madarche at: 2006-12-04T15:33:21
+SVN Tag: https://svn.nuxeo.org/pub/CPS3/products/CPSChat/tags/0.11.5
+Build from: https://svn.nuxeo.org/pub/CPS3/products/CPSChat/trunk@50420
+
+Requires
+~~~~~~~~
+-
+New features
+~~~~~~~~~~~~
+-
+Bug fixes
+~~~~~~~~~
+- [packaging] bundleman svn property
+New internal features
+~~~~~~~~~~~~~~~~~~~~~
+- 
+
 *******************************************
 ** CPSChat V0.11.4 [R1 build 2006/05/09-10:09 by madarche]
 ** SVN URL: https://svn.nuxeo.org/pub/CPSChat/trunk Revision: 45353
