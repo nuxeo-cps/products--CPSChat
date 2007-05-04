@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: en\n"
-"POT-Creation-Date: 2006-01-03 14:49default\n"
+"POT-Creation-Date: 2007-05-04 11:22default\n"
 "PO-Revision-Date: 2005-08-02 16:02+0200\n"
 "Last-Translator: Julien Anguenot <anguenot@dhcp-316-577>\n"
 "Language-Team:  <en@li.org>\n"

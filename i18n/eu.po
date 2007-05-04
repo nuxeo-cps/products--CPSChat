@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CPSChat\n"
-"POT-Creation-Date: 2005-08-02 16:01default\n"
+"POT-Creation-Date: 2007-05-04 11:22default\n"
 "PO-Revision-Date: 2006-11-16 15:34+0100\n"
 "Last-Translator: Jesus Martin <jesusmartin@lasalle.es>\n"
 "Language-Team: euskera <perikoalkoain@lasalle.es>\n"
@@ -275,4 +275,3 @@ msgstr "Itxi"
 
 msgid "label_chat_unclose"
 msgstr "Ireki"
-
