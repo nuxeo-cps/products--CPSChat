@@ -8,11 +8,12 @@ msgstr ""
 "Last-Translator:  Georg Hennemann <georg.hennemann@dhl.com>\n"
 "Language-Team: German <rheinland@dzug.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language-Code: de\n"
-"Domain: default\n"
 "Language-Name: German\n"
+"Domain: default\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Preferred-Encodings: utf-8\n"
 
 #.   <input type="submit" class="standalone" value="button_moderate" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
@@ -27,7 +28,7 @@ msgstr "Absenden"
 #.   <input type="submit" class="standalone" value="button_remove" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_remove"
-msgstr "Löschen"
+msgstr "LÃ¶schen"
 
 #.   <h1>
 #.           Answer to chat messages
@@ -93,7 +94,7 @@ msgstr "Antworten in der Warteschlange "
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_delete_messages"
-msgstr "Lösche Nachrichten"
+msgstr "LÃ¶sche Nachrichten"
 
 #.   <span>Description</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
@@ -238,13 +239,13 @@ msgid "ChatGuest"
 msgstr "Chat Gast"
 
 msgid "psm_cps_chat_properties_modified"
-msgstr "Chat Eigenschaften geändert"
+msgstr "Chat Eigenschaften geÃ¤ndert"
 
 msgid "psm_messages_removed"
-msgstr "Nachrichten gelöscht"
+msgstr "Nachrichten gelÃ¶scht"
 
 msgid "psm_chat_item_properties_updated"
-msgstr "Chatnachricht Eigenschaften geändert"
+msgstr "Chatnachricht Eigenschaften geÃ¤ndert"
 
 msgid "psm_chat_item_reply"
 msgstr "Antworten"
@@ -253,13 +254,13 @@ msgid "psm_cps_chat_closed_done"
 msgstr "Chat geschlossen"
 
 msgid "psm_cps_chat_closed_not_possible"
-msgstr "Chat schliessen nicht möglich"
+msgstr "Chat schliessen nicht mÃ¶glich"
 
 msgid "psm_cps_chat_unclosed_done"
 msgstr "Chat wiederoffen "
 
 msgid "psm_cps_chat_unclosed_not_possible"
-msgstr "Chat öffnen nicht möglich"
+msgstr "Chat Ã¶ffnen nicht mÃ¶glich"
 
 msgid "action_chat_item_reply"
 msgstr "Antwort "
@@ -282,10 +283,10 @@ msgstr "Unclose"
 #~ msgstr "Rollen zuweisen"
 
 #~ msgid "button_change"
-#~ msgstr "Ändern"
+#~ msgstr "Ã„ndern"
 
 #~ msgid "button_delete"
-#~ msgstr "Löschen"
+#~ msgstr "LÃ¶schen"
 
 #~ msgid "button_search"
 #~ msgstr "Suchen"
@@ -322,8 +323,8 @@ msgstr "Unclose"
 
 #~ msgid "label_moderate_phase1"
 #~ msgstr ""
-#~ "Dies gibt Ihnen die Möglichkeit auf die Frage zu antzworten. Sie "
-#~ "könnendennoch die Frage ändern."
+#~ "Dies gibt Ihnen die MÃ¶glichkeit auf die Frage zu antzworten. Sie "
+#~ "kÃ¶nnendennoch die Frage Ã¤ndern."
 
 #~ msgid "chat_edit_heading"
 #~ msgstr "Bearbeite Chat Eigenschaften"
@@ -341,10 +342,10 @@ msgstr "Unclose"
 #~ "${chat_host} </strong>"
 
 #~ msgid "Modify the question &nbsp;:&nbsp; ${id_question}"
-#~ msgstr "Ändern der Frage &nbsp;:&nbsp; ${id_question}"
+#~ msgstr "Ã„ndern der Frage &nbsp;:&nbsp; ${id_question}"
 
 #~ msgid "Modify the reply &nbsp;:&nbsp; ${id_question}"
-#~ msgstr "Ändern der Antwort &nbsp;:&nbsp; ${id_question}"
+#~ msgstr "Ã„ndern der Antwort &nbsp;:&nbsp; ${id_question}"
 
 #~ msgid "button_publish"
 #~ msgstr "Publizieren"
@@ -361,7 +362,7 @@ msgstr "Unclose"
 #~ msgid "chat_ass_post_warning"
 #~ msgstr ""
 #~ "Beachten Sie das Ihre Nachricht nicht sofort sichtbar ist. Ein Moderator "
-#~ "wird dieseerst prüfen."
+#~ "wird dieseerst prÃ¼fen."
 
 #~ msgid "chat_empty_history"
 #~ msgstr "Dieser Chat ist noch leer."
@@ -398,14 +399,14 @@ msgstr "Unclose"
 
 #~ msgid "label_moderate_answer_questions"
 #~ msgstr ""
-#~ "Sie können die Frage beantworten indem Sie unten eine auswählen.Oder Sie "
-#~ "können auch alle beantworten indem Sie auf den VerweisAntworte auf "
+#~ "Sie kÃ¶nnen die Frage beantworten indem Sie unten eine auswÃ¤hlen.Oder Sie "
+#~ "kÃ¶nnen auch alle beantworten indem Sie auf den VerweisAntworte auf "
 #~ "schwebende Fragen rechts klicken."
 
 #~ msgid "label_moderate_phase2"
 #~ msgstr ""
-#~ "Dies ist der letzte Schritt. Sie können immer noch die Antwort ändernwen "
-#~ "Sie möchten. Nach diesem Schritt ist die Antwort publiziert."
+#~ "Dies ist der letzte Schritt. Sie kÃ¶nnen immer noch die Antwort Ã¤ndernwen "
+#~ "Sie mÃ¶chten. Nach diesem Schritt ist die Antwort publiziert."
 
 #~ msgid "label_no_answered_questions"
 #~ msgstr "Es liegt keine neue Frage zur Publikation vor"
@@ -423,10 +424,10 @@ msgstr "Unclose"
 #~ msgstr "Frage von :"
 
 #~ msgid "label_refresh"
-#~ msgstr "Hole die neuesten Einträge"
+#~ msgstr "Hole die neuesten EintrÃ¤ge"
 
 #~ msgid "label_reply_to_pending questions"
 #~ msgstr "Fragen warten auf Antwort"
 
 #~ msgid "label_think_about_refresh"
-#~ msgstr "Denken sie daran die neusten Einträge abzuholen"
+#~ msgstr "Denken sie daran die neusten EintrÃ¤ge abzuholen"

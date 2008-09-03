@@ -3,19 +3,19 @@ msgstr ""
 "Project-Id-Version: CPSChat\n"
 "POT-Creation-Date: 2007-05-04 11:22default\n"
 "PO-Revision-Date: 2006-02-22 09:53+0100\n"
-"Last-Translator: Jesús Martín <jesusmartin@lasalle.es>\n"
-"Language-Team: español <jesusmartin@lasalle.es>\n"
+"Last-Translator: JesÃºs MartÃ­n <jesusmartin@lasalle.es>\n"
+"Language-Team: espaÃ±ol <jesusmartin@lasalle.es>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Preferred-encodings: utf-8 latin1\n"
 "X-Generator: KBabel 1.10.1\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
 "Language-Code: es\n"
 "Language-Name: Spanish\n"
 "Domain: default\n"
-"X-Poedit-Language: Spanish\n"
-"X-Poedit-Country: SPAIN\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Preferred-Encodings: utf-8\n"
 
 #.   <input type="submit" class="standalone" value="button_moderate" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
@@ -82,7 +82,7 @@ msgstr "Aceptar/rechazar"
 #.   <span>Add an answer</span>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 msgid "label_add_answer"
-msgstr "Añadir una respuesta"
+msgstr "AÃ±adir una respuesta"
 
 #.   <h3>
 #.       Answers waiting to be accepted.
@@ -101,7 +101,7 @@ msgstr "Puede borrar algunos de los mensajes"
 #.   <span>Description</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_description"
-msgstr "Descripción "
+msgstr "DescripciÃ³n "
 
 #.   <span>Host</span>
 #.   <span class="itemCreator">
@@ -117,13 +117,13 @@ msgstr "Invitado"
 #.         </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_is_closed"
-msgstr "El chat está cerrado"
+msgstr "El chat estÃ¡ cerrado"
 
 #.   <span>Is the chat
 #.                     moderated ?</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_is_moderated"
-msgstr "¿Está este chat moderado?"
+msgstr "Â¿EstÃ¡ este chat moderado?"
 
 #.   <span>Message</span>
 #.   <span>
@@ -164,7 +164,7 @@ msgstr "Apodo"
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 #: ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_question"
-msgstr "Cuestión"
+msgstr "CuestiÃ³n"
 
 #.   <span>Modify</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
@@ -190,7 +190,7 @@ msgstr "Responder"
 #.   <span>Title</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_title"
-msgstr "Título"
+msgstr "TÃ­tulo"
 
 #.   <span class="itemDate">
 #.         Users

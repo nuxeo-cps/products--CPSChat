@@ -4,13 +4,14 @@ msgstr ""
 "POT-Creation-Date: 2006-01-03 14:49default\n"
 "PO-Revision-Date: 2007-05-01 16:23+0100\n"
 "Last-Translator: \n"
-"Language-Team: PortuguÍs <luis727@gmail.com>\n"
+"Language-Team: Portugu√™s <luis727@gmail.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language-Code: pt\n"
-"Language-Name: Portuguese Brazilian\n"
+"Language-Name: pt\n"
 "Domain: default\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Preferred-Encodings: utf-8\n"
 
 #.   <input type="submit" class="standalone" value="button_moderate" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
@@ -84,7 +85,7 @@ msgstr "Adicionar uma resposta"
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_answer_waiting"
-msgstr "Respostas ‡ espera de serem aceites."
+msgstr "Respostas √† espera de serem aceites."
 
 #.   <h3>
 #.       You way remove some messages
@@ -96,7 +97,7 @@ msgstr "Pode remover algumas mensagens"
 #.   <span>Description</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_description"
-msgstr "DescriÁ„o"
+msgstr "Descri√ß√£o"
 
 #.   <span>Host</span>
 #.   <span class="itemCreator">
@@ -112,13 +113,13 @@ msgstr "Convidado do chat"
 #.         </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_is_closed"
-msgstr "Este chat est· fechado."
+msgstr "Este chat est√° fechado."
 
 #.   <span>Is the chat
 #.                     moderated ?</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_is_moderated"
-msgstr "Este chat È moderado?"
+msgstr "Este chat √© moderado?"
 
 #.   <span>Message</span>
 #.   <span>
@@ -134,7 +135,7 @@ msgstr "Mensagem"
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_messages_waiting"
-msgstr "Mensagens ‡ espera de aceites."
+msgstr "Mensagens √† espera de aceites."
 
 #.   <span class="itemCreator">
 #.             Chat moderators :
@@ -148,7 +149,7 @@ msgstr "Moderadores de chat:"
 #.         </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_not_allowed_to_post"
-msgstr "VocÍ n„o est· autorizado a postar neste chat"
+msgstr "Voc√™ n√£o est√° autorizado a postar neste chat"
 
 #.   <span>Pseudo</span>
 #: from ../skins/cps_chat/cps_chat_item_edit_form.pt
@@ -159,7 +160,7 @@ msgstr "Apelido"
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 #: ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_question"
-msgstr "Quest„o"
+msgstr "Quest√£o"
 
 #.   <span>Modify</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
@@ -175,7 +176,7 @@ msgstr "Responder"
 #.                     Chat refresh rate</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_refresh_rate"
-msgstr "Taxa de actualizaÁ„o da conversa"
+msgstr "Taxa de actualiza√ß√£o da conversa"
 
 #.   <span>Reply</span>
 #: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
@@ -185,14 +186,14 @@ msgstr "Responder"
 #.   <span>Title</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_title"
-msgstr "TÌtulo"
+msgstr "T√≠tulo"
 
 #.   <span class="itemDate">
 #.         Users
 #.       </span>
 #: from ../skins/cps_chat/cps_chat_user_frame.pt
 msgid "label_chat_users"
-msgstr "Usu·rios"
+msgstr "Usu√°rios"
 
 #.   <span>
 #.                 Message
@@ -219,7 +220,7 @@ msgstr "Modificar"
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 #: ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_no_questions_to_moderate"
-msgstr "Nenhuma nova quest„o para moderar"
+msgstr "Nenhuma nova quest√£o para moderar"
 
 #.   <span>Reject</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
@@ -251,19 +252,19 @@ msgid "psm_cps_chat_closed_done"
 msgstr "Fechado"
 
 msgid "psm_cps_chat_closed_not_possible"
-msgstr "N„o È possÌvel"
+msgstr "N√£o √© poss√≠vel"
 
 msgid "psm_cps_chat_unclosed_done"
 msgstr "Reaberto"
 
 msgid "psm_cps_chat_unclosed_not_possible"
-msgstr "N„o È possÌvel reabrir"
+msgstr "N√£o √© poss√≠vel reabrir"
 
 msgid "action_chat_item_reply"
 msgstr "Resposta"
 
 msgid "action_chat_reply_to_questions"
-msgstr "Responder a questıes"
+msgstr "Responder a quest√µes"
 
 msgid "label_chat_close"
 msgstr "Fechar"

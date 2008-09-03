@@ -14,19 +14,19 @@ msgstr ""
 "Last-Translator: Julien Anguenot <anguenot@dhcp-316-577>\n"
 "Language-Team:  <en@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ISO-8859-15\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Preferred-encodings: utf-8 latin1\n"
 "X-Generator: KBabel 1.10.1\n"
 "Language-Code: fr\n"
 "Language-Name: French\n"
 "Domain: default\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Preferred-Encodings: utf-8\n"
 
 #.   <input type="submit" class="standalone" value="button_moderate" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "button_moderate"
-msgstr "Modérer"
+msgstr "ModÃ©rer"
 
 #.   <input type="submit" class="standalone" value="button_post" />
 #: from ../skins/cps_chat/cps_chat_lib.pt
@@ -43,28 +43,28 @@ msgstr "Effacer"
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 msgid "chat_answer_heading"
-msgstr "Répondre aux messages"
+msgstr "RÃ©pondre aux messages"
 
 #.   <h1>
 #.           Moderate the chat
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_moderate_form.pt
 msgid "chat_moderate_heading"
-msgstr "Modérer le chat"
+msgstr "ModÃ©rer le chat"
 
 #.   <h1>
 #.         Reply to a message
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "heading_chat_add_reply"
-msgstr "Répondre à un message"
+msgstr "RÃ©pondre Ã  un message"
 
 #.   <h1>
 #.           Edit Chat Property
 #.       </h1>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "heading_chat_edit"
-msgstr "Modifier les propriétés du chat"
+msgstr "Modifier les propriÃ©tÃ©s du chat"
 
 #.   <h1>
 #.         Modify chat message
@@ -88,14 +88,14 @@ msgstr "Accepter/rejeter"
 #.   <span>Add an answer</span>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 msgid "label_add_answer"
-msgstr "Ajouter une réponse"
+msgstr "Ajouter une rÃ©ponse"
 
 #.   <h3>
 #.       Answers waiting to be accepted.
 #.     </h3>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_answer_waiting"
-msgstr "Réponse en attente de validation"
+msgstr "RÃ©ponse en attente de validation"
 
 #.   <h3>
 #.       You way remove some messages
@@ -116,7 +116,7 @@ msgstr "Description "
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 #: ../skins/cps_chat/cps_chat_main_frame.pt
 msgid "label_chat_guest"
-msgstr "Invité"
+msgstr "InvitÃ©"
 
 #.   <span>
 #.           This chat is closed
@@ -129,7 +129,7 @@ msgstr "Le chat est clos"
 #.                     moderated ?</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_is_moderated"
-msgstr "Le chat est-il modéré à priori ?"
+msgstr "Le chat est-il modÃ©rÃ© Ã  priori ?"
 
 #.   <span>Message</span>
 #.   <span>
@@ -152,14 +152,14 @@ msgstr "Messages en attente de validation"
 #.           </span>
 #: from ../skins/cps_chat/cps_chat_main_frame.pt
 msgid "label_chat_moderator_lists"
-msgstr "Modérateur(s) du chat"
+msgstr "ModÃ©rateur(s) du chat"
 
 #.   <span>
 #.           You are not allowed to post on this chat
 #.         </span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_chat_not_allowed_to_post"
-msgstr "Vous n'êtes pas authorisé à poster sur ce chat"
+msgstr "Vous n'Ãªtes pas authorisÃ© Ã  poster sur ce chat"
 
 #.   <span>Pseudo</span>
 #: from ../skins/cps_chat/cps_chat_item_edit_form.pt
@@ -180,23 +180,23 @@ msgstr "Modifier"
 #.   <span>Reply</span>
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 msgid "label_chat_question_reply"
-msgstr "Répondre"
+msgstr "RÃ©pondre"
 
 #.   <span>
 #.                     Chat refresh rate</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_refresh_rate"
-msgstr "Delai pour le rafraîchissement (secondes)"
+msgstr "Delai pour le rafraÃ®chissement (secondes)"
 
 #.   <span>Reply</span>
 #: from ../skins/cps_chat/cps_chat_item_reply_to_form.pt
 msgid "label_chat_reply"
-msgstr "Réponse"
+msgstr "RÃ©ponse"
 
 #.   <span>Title</span>
 #: from ../skins/cps_chat/cps_chat_edit_form.pt
 msgid "label_chat_title"
-msgstr "Intitulé"
+msgstr "IntitulÃ©"
 
 #.   <span class="itemDate">
 #.         Users
@@ -230,7 +230,7 @@ msgstr "Modifier"
 #: from ../skins/cps_chat/cps_chat_answer_form.pt
 #: ../skins/cps_chat/cps_chat_lib.pt
 msgid "label_no_questions_to_moderate"
-msgstr "Pas de nouvelle question à modérer"
+msgstr "Pas de nouvelle question Ã  modÃ©rer"
 
 #.   <span>Reject</span>
 #: from ../skins/cps_chat/cps_chat_lib.pt
@@ -241,43 +241,43 @@ msgid "ChatPoster"
 msgstr "Posteur sur clavardage "
 
 msgid "ChatModerator"
-msgstr "Modérateur de clavardage "
+msgstr "ModÃ©rateur de clavardage "
 
 msgid "ChatGuest"
-msgstr "Invité de clavardage "
+msgstr "InvitÃ© de clavardage "
 
 msgid "psm_cps_chat_properties_modified"
-msgstr "Propriétés du chat mises à jour."
+msgstr "PropriÃ©tÃ©s du chat mises Ã  jour."
 
 msgid "psm_messages_removed"
-msgstr "Messages éffacés"
+msgstr "Messages Ã©ffacÃ©s"
 
 msgid "psm_chat_item_properties_updated"
-msgstr "Propriétés du message modifées"
+msgstr "PropriÃ©tÃ©s du message modifÃ©es"
 
 msgid "psm_chat_item_reply"
-msgstr "Réponse enregistrée"
+msgstr "RÃ©ponse enregistrÃ©e"
 
 msgid "psm_cps_chat_closed_done"
-msgstr "Le chat a été clos avec succès"
+msgstr "Le chat a Ã©tÃ© clos avec succÃ¨s"
 
 msgid "psm_cps_chat_closed_not_possible"
-msgstr "Le clôture du chat a échouée"
+msgstr "Le clÃ´ture du chat a Ã©chouÃ©e"
 
 msgid "psm_cps_chat_unclosed_done"
-msgstr "Le chat est maintenant est réouvert"
+msgstr "Le chat est maintenant est rÃ©ouvert"
 
 msgid "psm_cps_chat_unclosed_not_possible"
-msgstr "La réouverture du chat a échouée"
+msgstr "La rÃ©ouverture du chat a Ã©chouÃ©e"
 
 msgid "action_chat_item_reply"
-msgstr "Répondre à  ce message"
+msgstr "RÃ©pondre Ã   ce message"
 
 msgid "action_chat_reply_to_questions"
-msgstr "Répondre aux messages"
+msgstr "RÃ©pondre aux messages"
 
 msgid "label_chat_close"
-msgstr "Clôre le chat"
+msgstr "ClÃ´re le chat"
 
 msgid "label_chat_unclose"
-msgstr "Réouvrir le chat"
+msgstr "RÃ©ouvrir le chat"
