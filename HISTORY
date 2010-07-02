@@ -1,4 +1,21 @@
 ===========================================================
+Package: CPSChat 0.12.2
+===========================================================
+First release built by: gracinet at: 2010-03-13T17:40:31
+Requires
+~~~~~~~~
+-
+New features
+~~~~~~~~~~~~
+-
+Bug fixes
+~~~~~~~~~
+- First hgbundler managed release
+New internal features
+~~~~~~~~~~~~~~~~~~~~~
+- 
+
+===========================================================
 Package: CPSChat 0.12.1
 ===========================================================
 First release built by: madarche at: 2008-11-23T21:59:27
